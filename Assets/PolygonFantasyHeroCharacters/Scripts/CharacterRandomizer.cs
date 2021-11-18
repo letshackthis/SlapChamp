@@ -1,6 +1,9 @@
 ﻿// character randomizer version 1.30
+
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace PsychoticLab
 {
@@ -58,20 +61,20 @@ namespace PsychoticLab
         public Color[] bodyArt = { new Color(0.0509804f, 0.6745098f, 0.9843138f), new Color(0.7215686f, 0.2666667f, 0.2666667f), new Color(0.3058824f, 0.7215686f, 0.6862745f), new Color(0.9254903f, 0.882353f, 0.8509805f), new Color(0.3098039f, 0.7058824f, 0.3137255f), new Color(0.5294118f, 0.3098039f, 0.6470588f), new Color(0.8666667f, 0.7764707f, 0.254902f), new Color(0.2392157f, 0.4588236f, 0.8156863f) };
 
         // list of enabed objects on character
-        [HideInInspector]
+        
         public List<GameObject> enabledObjects = new List<GameObject>();
 
         // character object lists
         // male list
-        [HideInInspector]
+    
         public CharacterObjectGroups male;
 
         // female list
-        [HideInInspector]
+    
         public CharacterObjectGroups female;
 
         // universal list
-        [HideInInspector]
+ 
         public CharacterObjectListsAllGender allGender;
 
         // reference to camera transform, used for rotation around the model during or after a randomization (this is sourced from Camera.main, so the main camera must be in the scene for this to work)
@@ -133,7 +136,15 @@ namespace PsychoticLab
             ActivateItem(male.leg_Right[0]);
             ActivateItem(male.leg_Left[0]);
 
-            Randomize();
+        }
+
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                Randomize();                
+            }
         }
 
         // character randomization method
