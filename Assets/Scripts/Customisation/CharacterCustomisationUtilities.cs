@@ -3,7 +3,6 @@ using System.Linq;
 using PolygonFantasyHeroCharacters.Scripts;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Customisation
 {
@@ -60,7 +59,6 @@ namespace Customisation
             "HeadCoverings_Base_Hair",
             "HeadCoverings_No_FacialHair",
             "HeadCoverings_No_Hair",
-            "All_03_Chest_Attachment",
             "All_04_Back_Attachment",
             "All_05_Shoulder_Attachment_Right",
             "All_06_Shoulder_Attachment_Left",

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Customisation;
 using PsychoticLab;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ namespace PolygonFantasyHeroCharacters.Scripts
     public class ItemTypeData
     {
         public string name;
+        public ItemType itemType;
         public List<ItemData> itemDataList= new List<ItemData>();
     }
 

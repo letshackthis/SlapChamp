@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using PolygonFantasyHeroCharacters.Scripts;
+using UnityEditor.MemoryProfiler;
 using UnityEngine;
 
 namespace Customisation
@@ -16,5 +17,20 @@ namespace Customisation
         public List<ItemTypeData> FemaleItemTypeDataList => femaleItemTypeDataList;
 
         public List<ItemTypeData> AllGenderItemTypeDataList => allGenderItemTypeDataList;
+
+        public void Save()
+        {
+            
+        }
+
+        public void LoadCurrentConfigCharacter()
+        {
+            
+        }
+
+        public void RandomConfig()
+        {
+            
+        }
     }
 }
