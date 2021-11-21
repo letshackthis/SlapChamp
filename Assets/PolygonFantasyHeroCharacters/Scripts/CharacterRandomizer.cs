@@ -1,18 +1,13 @@
 ﻿// character randomizer version 1.30
 
-using System;
 using System.Collections.Generic;
+using PolygonFantasyHeroCharacters.Scripts;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace PsychoticLab
 {
-    public enum Gender { Male, Female }
-    public enum Race { Human, Elf }
-    public enum SkinColor { White, Brown, Black, Elf }
-    public enum Elements {  Yes, No }
-    public enum HeadCovering { HeadCoverings_Base_Hair, HeadCoverings_No_FacialHair, HeadCoverings_No_Hair }
-    public enum FacialHair { Yes, No }
+  
 
     public class CharacterRandomizer : MonoBehaviour
     {
@@ -155,7 +150,7 @@ namespace PsychoticLab
             Race race = Race.Human;
             SkinColor skinColor = SkinColor.White;
             Elements elements = Elements.Yes;
-            HeadCovering headCovering = HeadCovering.HeadCoverings_Base_Hair;
+            HeadCovering headCovering = HeadCovering.HeadCoveringsBaseHair;
             FacialHair facialHair = FacialHair.Yes;
 
             // disable any enabled objects before clear
@@ -186,13 +181,13 @@ namespace PsychoticLab
             int headCoveringRoll = Random.Range(0, 100);
             // HeadCoverings_Base_Hair
             if (headCoveringRoll <= 33)
-                headCovering = HeadCovering.HeadCoverings_Base_Hair;
+                headCovering = HeadCovering.HeadCoveringsBaseHair;
             // HeadCoverings_No_FacialHair
             if (headCoveringRoll > 33 && headCoveringRoll < 66)
-                headCovering = HeadCovering.HeadCoverings_No_FacialHair;
+                headCovering = HeadCovering.HeadCoveringsNoFacialHair;
             // HeadCoverings_No_Hair
             if (headCoveringRoll >= 66)
-                headCovering = HeadCovering.HeadCoverings_No_Hair;
+                headCovering = HeadCovering.HeadCoveringsNoHair;
 
             // select skin color if human, otherwise set skin color to elf
             switch (race)
@@ -255,27 +250,27 @@ namespace PsychoticLab
                         ActivateItem(cog.eyebrow[Random.Range(0, cog.eyebrow.Count)]);
 
                     //select facial hair (conditional)
-                    if (cog.facialHair.Count != 0 && facialHair == FacialHair.Yes && gender == Gender.Male && headCovering != HeadCovering.HeadCoverings_No_FacialHair)
+                    if (cog.facialHair.Count != 0 && facialHair == FacialHair.Yes && gender == Gender.Male && headCovering != HeadCovering.HeadCoveringsNoFacialHair)
                         ActivateItem(cog.facialHair[Random.Range(0, cog.facialHair.Count)]);
 
                     // select hair attachment
                     switch (headCovering)
                     {
-                        case HeadCovering.HeadCoverings_Base_Hair:
+                        case HeadCovering.HeadCoveringsBaseHair:
                             // set hair attachment to index 1
                             if (allGender.all_Hair.Count != 0)
                                 ActivateItem(allGender.all_Hair[1]);
                             if (allGender.headCoverings_Base_Hair.Count != 0)
                                 ActivateItem(allGender.headCoverings_Base_Hair[Random.Range(0, allGender.headCoverings_Base_Hair.Count)]);
                             break;
-                        case HeadCovering.HeadCoverings_No_FacialHair:
+                        case HeadCovering.HeadCoveringsNoFacialHair:
                             // no facial hair attachment
                             if (allGender.all_Hair.Count != 0)
                                 ActivateItem(allGender.all_Hair[Random.Range(0, allGender.all_Hair.Count)]);
                             if (allGender.headCoverings_No_FacialHair.Count != 0)
                                 ActivateItem(allGender.headCoverings_No_FacialHair[Random.Range(0, allGender.headCoverings_No_FacialHair.Count)]);
                             break;
-                        case HeadCovering.HeadCoverings_No_Hair:
+                        case HeadCovering.HeadCoveringsNoHair:
                             // select hair attachment
                             if (allGender.headCoverings_No_Hair.Count != 0)
                                 ActivateItem(allGender.all_Hair[Random.Range(0, allGender.all_Hair.Count)]);

@@ -1,9 +1,17 @@
 using System;
 using System.Collections.Generic;
+using PsychoticLab;
 using UnityEngine;
 
 namespace PolygonFantasyHeroCharacters.Scripts
 {
+    public enum Gender { Male, Female }
+    public enum Race { Human, Elf }
+    public enum SkinColor { White, Brown, Black, Elf }
+    public enum Elements {  Yes, No }
+    public enum HeadCovering { HeadCoveringsBaseHair, HeadCoveringsNoFacialHair, HeadCoveringsNoHair,None }
+    public enum FacialHair { Yes, No }
+    
     [Serializable]
     public class ItemTypeData
     {
@@ -16,7 +24,10 @@ namespace PolygonFantasyHeroCharacters.Scripts
     {
         public string name;
         public GameObject item;
-    
+
+        public Elements elements;
+        public HeadCovering headCovering= HeadCovering.None; 
+            
         public bool openDefault;
         public bool gamePurchase;
         public bool blueprint;
@@ -26,4 +37,7 @@ namespace PolygonFantasyHeroCharacters.Scripts
         public int moneyAmount;
         public int blueprintAmount;
     }
+
+   
+    
 }

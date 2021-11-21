@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 
-    [CustomEditor(typeof(CharacterCustomisation))]
+    [CustomEditor(typeof(CharacterCustomisationUtilities))]
     public class CustomisationEditor :Editor
     {
         //   [SerializeField] private List<ItemData> manItemDataList;
@@ -11,7 +11,7 @@ using UnityEngine;
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            CharacterCustomisation myTarget = (CharacterCustomisation) target;
+            CharacterCustomisationUtilities myTarget = (CharacterCustomisationUtilities) target;
             
             if(GUILayout.Button("Collect Reference"))
             {
