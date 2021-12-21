@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< Updated upstream
-  <component name="UserContentModel">
-    <attachedFolders />
-    <explicitIncludes />
-    <explicitExcludes />
-=======
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
+      <Path>../../../AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.timeline@1.4.8</Path>
       <Path>Library/PackageCache/com.unity.2d.sprite@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@1.1.4</Path>
@@ -50,7 +45,6 @@
       <Path>Library/PackageCache/com.unity.settings-manager@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.11</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
-      <Path>Library/PackageCache/com.unity.timeline@1.2.12</Path>
       <Path>Library/PackageCache/com.unity.ugui@1.0.0</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
@@ -64,6 +58,5 @@
       <Path>UserSettings</Path>
       <Path>obj</Path>
     </explicitExcludes>
->>>>>>> Stashed changes
   </component>
 </project>
