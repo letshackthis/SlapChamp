@@ -24,7 +24,7 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-        //       nextLevelButton.onClick.AddListener(NextLevel);
+        nextLevelButton.onClick.AddListener(NextLevel);
         retryLevelButton.onClick.AddListener(RetryLevel);
 
         PlayerPrefs.GetInt(StringKeys.enemyIndex, 0);
@@ -63,6 +63,7 @@ public class GameManager : Singleton<GameManager>
 
     private void NextLevel()
     {
+        SceneManager.LoadScene(Random.Range(0, SceneManager.sceneCount -1));
     }
 
     private void RetryLevel()

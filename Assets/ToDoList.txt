@@ -1,0 +1,11 @@
+First release:
+5 different levels
+next level button
+optimize build size syka
+
+Next update:
+sky rotation
+add animation for powerfull slap & for low slap
+add new sounds
+add flying birds
+people & animals on background

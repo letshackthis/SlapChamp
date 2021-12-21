@@ -63,10 +63,10 @@ public class CoinSystem : MonoBehaviour
     private void EnemyAttackPower()
     {
         int lowestHit = 6 * currentLevel + 17;
-        int strongestHit = 9 * currentLevel + 21;
+        int strongestHit = 7 * currentLevel + 21;
         enemyPower = Random.Range(lowestHit, strongestHit);
         dmgPwr = enemyPower;
-        if (dmgPwr >= strongestHit - currentLevel * 2)
+        if (dmgPwr >= (strongestHit - (strongestHit - lowestHit)))
         {
             SoundManager.Instance.PlaySound("wow");
         }
