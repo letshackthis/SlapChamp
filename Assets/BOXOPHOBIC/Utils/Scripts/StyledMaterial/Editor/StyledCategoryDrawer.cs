@@ -8,8 +8,7 @@ namespace Boxophobic.StyledGUI
 {
     public class StyledCategoryDrawer : MaterialPropertyDrawer
     {
-
-        protected string category;
+        public string category;
 
         public StyledCategoryDrawer(string category)
         {
@@ -25,7 +24,7 @@ namespace Boxophobic.StyledGUI
             else
             {
                 GUI.enabled = true;
-                BEditorGUI.DrawCategory(position, category);
+                StyledGUI.DrawInspectorCategory(position, category);
             }
         }
 

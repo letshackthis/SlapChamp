@@ -5,8 +5,7 @@ using UnityEditor;
 
 namespace Boxophobic.Constants
 {
-
-    public static class CONST
+    public static class CONSTANT
     {
         public static Texture2D LogoImage
         {
@@ -125,30 +124,30 @@ namespace Boxophobic.Constants
             }
         }
 
-        //public static GUIStyle TitleStyle
-        //{
-        //    get
-        //    {
-        //        GUIStyle guiStyle = new GUIStyle();
+        public static GUIStyle BoldTextStyle
+        {
+            get
+            {
+                GUIStyle guiStyle = new GUIStyle();
 
-        //        Color color;
+                Color color;
 
-        //        if (EditorGUIUtility.isProSkin)
-        //        {
-        //            color = new Color(0.87f, 0.87f, 0.87f);
-        //        }
-        //        else
-        //        {
-        //            color = new Color(0.27f, 0.27f, 0.27f);
-        //        }
+                if (EditorGUIUtility.isProSkin)
+                {
+                    color = new Color(0.87f, 0.87f, 0.87f);
+                }
+                else
+                {
+                    color = new Color(0.27f, 0.27f, 0.27f);
+                }
 
-        //        guiStyle.normal.textColor = color;
-        //        guiStyle.alignment = TextAnchor.MiddleCenter;
-        //        guiStyle.fontStyle = FontStyle.Bold;
+                guiStyle.normal.textColor = color;
+                guiStyle.alignment = TextAnchor.MiddleCenter;
+                guiStyle.fontStyle = FontStyle.Bold;
 
-        //        return guiStyle;
-        //    }
-        //}
+                return guiStyle;
+            }
+        }
     }
 }
 

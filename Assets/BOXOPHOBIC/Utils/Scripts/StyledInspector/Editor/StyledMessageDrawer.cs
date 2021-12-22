@@ -5,7 +5,6 @@ using UnityEditor;
 
 namespace Boxophobic.StyledGUI
 {
-
     [CustomPropertyDrawer(typeof(StyledMessage))]
     public class StyledMessageAttributeDrawer : PropertyDrawer
     {

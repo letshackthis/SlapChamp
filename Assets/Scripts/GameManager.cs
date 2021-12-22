@@ -12,13 +12,11 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private CoinSystem coinSystem;
     [SerializeField] private Text levelTextUI, vsTextUI;
     [SerializeField] private Button nextLevelButton, retryLevelButton;
-    [SerializeField] private Transform hitIndicator;
 
     public static bool bonusLevel, wasReseted;
 
     protected override void Awake()
     {
-        hitIndicator.SetParent(null);
         base.Awake();
     }
 

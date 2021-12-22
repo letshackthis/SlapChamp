@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,9 +17,10 @@ public class CoinSystem : MonoBehaviour
         powerPriceText,
         bonusHealthText,
         bonusPowerText,
-        playerPowerText,
         playerHealthText,
         enemyHealthText;
+
+    [SerializeField] private TextMeshProUGUI playerPowerText;
 
     [SerializeField] private Image unableHealth, unablePower;
 

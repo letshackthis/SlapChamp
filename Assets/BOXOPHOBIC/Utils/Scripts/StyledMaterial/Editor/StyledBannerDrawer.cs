@@ -2,7 +2,6 @@
 
 using UnityEngine;
 using UnityEditor;
-using System;
 using Boxophobic.Constants;
 
 namespace Boxophobic.StyledGUI
@@ -53,53 +52,38 @@ namespace Boxophobic.StyledGUI
 
             if (EditorGUIUtility.isProSkin)
             {
-                bannerColor = CONST.ColorDarkGray;
-                guiColor = CONST.ColorLightGray;
+                bannerColor = CONSTANT.ColorDarkGray;
+                guiColor = CONSTANT.ColorLightGray;
             }
             else
             {
-                bannerColor = CONST.ColorLightGray;
-                guiColor = CONST.ColorDarkGray;
+                bannerColor = CONSTANT.ColorLightGray;
+                guiColor = CONSTANT.ColorDarkGray;
             }
 
             GUI.color = bannerColor;
 
-            GUI.DrawTexture(bannerBeginRect, CONST.BannerImageBegin, ScaleMode.StretchToFill, true);
-            GUI.DrawTexture(bannerMiddleRect, CONST.BannerImageMiddle, ScaleMode.StretchToFill, true);
-            GUI.DrawTexture(bannerEndRect, CONST.BannerImageEnd, ScaleMode.StretchToFill, true);
+            GUI.DrawTexture(bannerBeginRect, CONSTANT.BannerImageBegin, ScaleMode.StretchToFill, true);
+            GUI.DrawTexture(bannerMiddleRect, CONSTANT.BannerImageMiddle, ScaleMode.StretchToFill, true);
+            GUI.DrawTexture(bannerEndRect, CONSTANT.BannerImageEnd, ScaleMode.StretchToFill, true);
 
-            GUI.Label(bannerFullRect, "<size=14><color=#" + ColorUtility.ToHtmlStringRGB(guiColor) + "><b>" + title + "</b> " + subtitle + "</color></size>", CONST.TitleStyle);
+#if UNITY_2019_3_OR_NEWER
+            GUI.Label(bannerFullRect, "<size=16><color=#" + ColorUtility.ToHtmlStringRGB(guiColor) + ">" + title + subtitle + "</color></size>", CONSTANT.TitleStyle);
+#else
+            GUI.Label(bannerFullRect, "<size=14><color=#" + ColorUtility.ToHtmlStringRGB(guiColor) + "><b>" + title + "</b> " + subtitle + "</color></size>", CONSTANT.TitleStyle);
+#endif
 
             GUI.color = guiColor;
 
 #if AMPLIFY_SHADER_EDITOR
-            if (GUI.Button(iconRect, BConst.IconEdit, new GUIStyle { alignment = TextAnchor.MiddleCenter }))
+            if (GUI.Button(iconRect, CONSTANT.IconEdit, new GUIStyle { alignment = TextAnchor.MiddleCenter }))
             {
-                var baseShaderName = shader.name;
-
-                if (shader.name.Contains("Variant"))
-                {
-                    var separators = new string[] { " Variant" };
-                    string[] result = shader.name.Split(separators, System.StringSplitOptions.None);
-                    baseShaderName = result[0];
-                    baseShaderName = baseShaderName.Replace("Hidden/", "");
-                }
-
-                AmplifyShaderEditor.AmplifyShaderEditorWindow.ConvertShaderToASE(Shader.Find(baseShaderName));
+                AmplifyShaderEditor.AmplifyShaderEditorWindow.ConvertShaderToASE(Shader.Find(shader.name));
             }
 #else
-            if (GUI.Button(iconRect, BConst.IconEdit, new GUIStyle { alignment = TextAnchor.MiddleCenter }))
+            if (GUI.Button(iconRect, CONSTANT.IconEdit, new GUIStyle { alignment = TextAnchor.MiddleCenter }))
             {     
-                var baseShaderName = shader.name;
-
-                if (shader.name.Contains("Variant"))
-                {
-                    var separators = new string[] { " Variant" };
-                    string[] result = shader.name.Split(separators, System.StringSplitOptions.None);
-                    baseShaderName = result[0];
-                    baseShaderName = baseShaderName.Replace("Hidden/", "");
-                }
-                AssetDatabase.OpenAsset(Shader.Find(baseShaderName), 1);
+                AssetDatabase.OpenAsset(Shader.Find(shader.name), 1);
             }
 #endif
 

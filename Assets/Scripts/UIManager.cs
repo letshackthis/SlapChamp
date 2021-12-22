@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
 
     public void Back()
     {
-        settings.DOAnchorPos(new Vector2(-1220, 0), 0.35f);
+        settings.DOAnchorPos(new Vector2(-1296, 0), 0.35f);
     }
 
     public void SoundOnOff()

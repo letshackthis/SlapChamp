@@ -40,36 +40,36 @@ namespace Boxophobic.StyledGUI
             {
                 if (a.colorR < 0)
                 {
-                    bannerColor = CONST.ColorDarkGray;
-                    guiColor = CONST.ColorLightGray;
+                    bannerColor = CONSTANT.ColorDarkGray;
+                    guiColor = CONSTANT.ColorLightGray;
 
                 }
                 else
                 {
                     bannerColor = new Color(a.colorR, a.colorG, a.colorB, 1f);
-                    guiColor = CONST.ColorDarkGray;
+                    guiColor = CONSTANT.ColorDarkGray;
                 }                
             }
             else
             {
-                bannerColor = CONST.ColorLightGray;
-                guiColor = CONST.ColorDarkGray;
+                bannerColor = CONSTANT.ColorLightGray;
+                guiColor = CONSTANT.ColorDarkGray;
             }
 
             GUI.color = bannerColor;
 
-            GUI.DrawTexture(bannerBeginRect, CONST.BannerImageBegin, ScaleMode.StretchToFill, true);
-            GUI.DrawTexture(bannerMiddleRect, CONST.BannerImageMiddle, ScaleMode.StretchToFill, true);
-            GUI.DrawTexture(bannerEndRect, CONST.BannerImageEnd, ScaleMode.StretchToFill, true);
+            GUI.DrawTexture(bannerBeginRect, CONSTANT.BannerImageBegin, ScaleMode.StretchToFill, true);
+            GUI.DrawTexture(bannerMiddleRect, CONSTANT.BannerImageMiddle, ScaleMode.StretchToFill, true);
+            GUI.DrawTexture(bannerEndRect, CONSTANT.BannerImageEnd, ScaleMode.StretchToFill, true);
 
 #if UNITY_2019_3_OR_NEWER
-            GUI.Label(bannerFullRect, "<size=16><color=#" + ColorUtility.ToHtmlStringRGB(guiColor) + ">" + a.title + " " + a.subtitle + "</color></size>", CONST.TitleStyle);
+            GUI.Label(bannerFullRect, "<size=16><color=#" + ColorUtility.ToHtmlStringRGB(guiColor) + ">" + a.title + " " + a.subtitle + "</color></size>", CONSTANT.TitleStyle);
 #else
-            GUI.Label(bannerFullRect, "<size=14><color=#" + ColorUtility.ToHtmlStringRGB(guiColor) + "><b>" + a.title + "</b> " + a.subtitle + "</color></size>", CONST.TitleStyle);
+            GUI.Label(bannerFullRect, "<size=14><color=#" + ColorUtility.ToHtmlStringRGB(guiColor) + "><b>" + a.title + "</b> " + a.subtitle + "</color></size>", CONSTANT.TitleStyle);
 #endif
             GUI.color = guiColor;
 
-            if (GUI.Button(iconRect, CONST.IconHelp, new GUIStyle { alignment = TextAnchor.MiddleCenter }))
+            if (GUI.Button(iconRect, CONSTANT.IconHelp, new GUIStyle { alignment = TextAnchor.MiddleCenter }))
             {
                 Application.OpenURL(a.helpURL);
             }
