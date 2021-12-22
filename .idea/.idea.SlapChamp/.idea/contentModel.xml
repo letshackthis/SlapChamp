@@ -407,6 +407,7 @@
           <e p="HealthManager.cs" t="Include" />
           <e p="HitPower.cs" t="Include" />
           <e p="SaveKeys.cs" t="Include" />
+          <e p="Screenshots.cs" t="Include" />
           <e p="ShipRotation.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="SlapController.cs" t="Include" />

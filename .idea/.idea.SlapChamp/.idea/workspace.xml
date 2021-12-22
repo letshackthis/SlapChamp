@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Screenshots.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/CGIncludes/VS_indirect.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SlapController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -19,21 +20,26 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CoinSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonStateAnimation0.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationItems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HitPower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CoinSystem.cs" />
         <option value="$PROJECT_DIR$/Packages/manifest.json" />
         <option value="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Materials/FantasyHero.mat" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationItems.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationUtilities.cs" />
+        <option value="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CoinSystem.cs" />
       </list>
     </option>
   </component>
@@ -77,6 +83,10 @@
       <workItem from="1640082977238" duration="6507000" />
       <workItem from="1640109975771" duration="278000" />
       <workItem from="1640110414021" duration="28000" />
+      <workItem from="1640121634112" duration="766000" />
+      <workItem from="1640124516028" duration="456000" />
+      <workItem from="1640126485222" duration="696000" />
+      <workItem from="1640172371521" duration="1970000" />
     </task>
     <servers />
   </component>
@@ -86,9 +96,14 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
-    <state x="347" y="116" width="666" height="536" key="find.popup" timestamp="1640096731066">
+    <state x="92" y="92" width="1176" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1640124715138">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
+    <state x="92" y="92" width="1176" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1360.768/1360.0.1920.1080@0.0.1360.768" timestamp="1640124715138" />
+    <state x="347" y="116" width="714" height="536" key="find.popup" timestamp="1640173428747">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state x="347" y="116" width="714" height="536" key="find.popup/0.0.1360.768/1360.0.1920.1080@0.0.1360.768" timestamp="1640173428747" />
     <state x="347" y="116" width="666" height="536" key="find.popup/0.0.1360.768@0.0.1360.768" timestamp="1640096731066" />
     <state x="343" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1640097157358">
       <screen x="0" y="0" width="1360" height="768" />

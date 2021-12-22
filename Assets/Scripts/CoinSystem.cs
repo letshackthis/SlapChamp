@@ -54,7 +54,7 @@ public class CoinSystem : MonoBehaviour
         dmgPwr = 0;
 
         currentLevel = PlayerPrefs.GetInt(StringKeys.level, 1);
-        enemyHealth = Random.Range(5 * currentLevel + 95, 10 * currentLevel + 101);
+        enemyHealth = Random.Range(5 * currentLevel + 95, 9 * currentLevel + 101);
         healthManager.HealthEnemy.MyMaxValue = enemyHealth;
         healthManager.HealthEnemy.MyCurrentValue = enemyHealth;
         enemyHealthText.text = enemyHealth.ToString();

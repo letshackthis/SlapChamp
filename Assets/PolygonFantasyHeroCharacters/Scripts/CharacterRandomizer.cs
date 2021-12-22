@@ -131,16 +131,17 @@ namespace PsychoticLab
             ActivateItem(male.leg_Right[0]);
             ActivateItem(male.leg_Left[0]);
 
+            Randomize();  
         }
 
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                Randomize();                
-            }
-        }
+        // private void Update()
+        // {
+        //     if (Input.GetKeyDown(KeyCode.T))
+        //     {
+        //         Randomize();                
+        //     }
+        // }
 
         // character randomization method
         void Randomize()

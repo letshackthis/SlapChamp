@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using PolygonFantasyHeroCharacters.Scripts;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine;
 
 namespace Customisation
@@ -95,7 +95,7 @@ namespace Customisation
 
         void BuildList(List<ItemTypeData> targetList, string characterPart)
         {
-            EditorUtility.SetDirty(characterCustomisationItems);
+            //EditorUtility.SetDirty(characterCustomisationItems);
 
             Transform[] rootTransform = characterReferences.GetComponentsInChildren<Transform>();
             Transform targetRoot = rootTransform.FirstOrDefault(t => t.gameObject.name == characterPart);
@@ -120,10 +120,9 @@ namespace Customisation
 
                 itemTypeData.itemDataList.Add(currentItemData);
             }
-
             
-            AssetDatabase.Refresh();
-            AssetDatabase.SaveAssets();
+            //AssetDatabase.Refresh();
+           // AssetDatabase.SaveAssets();
         }
 
         private void SetItemCondition(ItemData itemData, string characterPart)

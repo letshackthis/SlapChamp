@@ -27,8 +27,6 @@ public class GameManager : Singleton<GameManager>
         nextLevelButton.onClick.AddListener(NextLevel);
         retryLevelButton.onClick.AddListener(RetryLevel);
 
-        PlayerPrefs.GetInt(StringKeys.enemyIndex, 0);
-
         if (bonusLevel)
         {
             vsTextUI.fontSize = 60;
@@ -41,10 +39,6 @@ public class GameManager : Singleton<GameManager>
             vsTextUI.text = "VS";
             vsTextUI.fontSize = 100;
         }
-    }
-
-    void Update()
-    {
     }
 
     void FixedUpdate()
@@ -63,7 +57,20 @@ public class GameManager : Singleton<GameManager>
 
     private void NextLevel()
     {
-        SceneManager.LoadScene(Random.Range(0, SceneManager.sceneCount -1));
+        while (true)
+        {
+            int randomSceneIndex = Random.Range(0, SceneManager.sceneCountInBuildSettings - 1);
+            if (randomSceneIndex != SceneManager.GetActiveScene().buildIndex)
+            {
+                SceneManager.LoadScene(randomSceneIndex);
+            }
+            else
+            {
+                continue;
+            }
+
+            break;
+        }
     }
 
     private void RetryLevel()
@@ -80,20 +87,24 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public void Win()
+    private void Win()
     {
-        int currentLevel = PlayerPrefs.GetInt(StringKeys.level, 1);
         game.SetActive(false);
         win.SetActive(true);
         SoundManager.Instance.PlaySound("win");
-        int winCoins = coinSystem.totalCoins + 25 * currentLevel;
-        PlayerPrefs.GetInt(StringKeys.totalCoins, winCoins);
+        PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(25));
     }
 
-    public void Fail()
+    private void Fail()
     {
         game.SetActive(false);
         fail.SetActive(true);
         SoundManager.Instance.PlaySound("fail");
+        PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(10));
+    }
+
+    private int GetCoinsToAdd(int multiplier)
+    {
+        return coinSystem.totalCoins + multiplier * PlayerPrefs.GetInt(StringKeys.level, 1);
     }
 }
