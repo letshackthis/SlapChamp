@@ -8,7 +8,6 @@
       <Path>Library/PackageCache/com.unity.2d.sprite@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@1.1.4</Path>
-      <Path>Library/PackageCache/com.unity.ide.vscode@1.1.4</Path>
       <Path>Library/PackageCache/com.unity.modules.ai@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.androidjni@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.animation@1.0.0</Path>
@@ -43,8 +42,6 @@
       <Path>Library/PackageCache/com.unity.modules.wind@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.xr@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.postprocessing@3.1.1</Path>
-      <Path>Library/PackageCache/com.unity.probuilder@4.2.3</Path>
-      <Path>Library/PackageCache/com.unity.settings-manager@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.11</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.4.8</Path>

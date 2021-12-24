@@ -31,10 +31,6 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
-    - StompyRobot.SRF
-    - StompyRobot.SRDebugger
-    - StompyRobot.SRDebugger.Editor
-    - StompyRobot.SRF.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
