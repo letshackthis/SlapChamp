@@ -29,10 +29,10 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
+    - StompyRobot.SRDebugger
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
     - StompyRobot.SRF
-    - StompyRobot.SRDebugger
     - StompyRobot.SRDebugger.Editor
     - StompyRobot.SRF.Editor
     showAdvancedSettings: 0
