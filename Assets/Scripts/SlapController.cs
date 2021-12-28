@@ -13,7 +13,15 @@ public class SlapController : MonoBehaviour
     public bool playerTurn;
     public bool canclick;
 
-    void Start()
+    #region AnimatorStrings
+    private static readonly int Preparing = Animator.StringToHash("preparing");
+    private static readonly int Knocked = Animator.StringToHash("knocked");
+    private static readonly int StandUp = Animator.StringToHash("standUp");
+    private static readonly int IsUp = Animator.StringToHash("isUp");
+    private static readonly int Lowslap = Animator.StringToHash("lowslap");
+    #endregion
+
+    private void Start()
     {
         playerAnimator = GetComponent<Animator>();
         enemyAnimator = enemy.GetComponent<Animator>();
@@ -25,12 +33,12 @@ public class SlapController : MonoBehaviour
     }
 
 
-    void Update()
+    private void Update()
     {
         if (playerTurn)
         {
-            PrepareToSlap("player");
-            enemyAnimator.SetBool("preparing", false);
+            playerAnimator.SetBool(Preparing, true);
+            enemyAnimator.SetBool(Preparing, false);
 
             if (Input.GetMouseButtonDown(0) && !CheckUIClick.IsPointerOverUIObject() && canclick)
             {
@@ -43,24 +51,14 @@ public class SlapController : MonoBehaviour
         }
         else
         {
-            PrepareToSlap("enemy");
-            playerAnimator.SetBool("preparing", false);
+            enemyAnimator.SetBool(Preparing, true);
+            playerAnimator.SetBool(Preparing, false);
         }
     }
-
-    public void PrepareToSlap(string character)
-    {
-        if (character == "player")
-        {
-            playerAnimator.SetBool("preparing", true);
-        }
-        else enemyAnimator.SetBool("preparing", true);
-    }
-
 
     public void PlayerSlapping()
     {
-        playerAnimator.SetBool("preparing", false);
+        playerAnimator.SetBool(Preparing, false);
 
         Hit("player");
         StartCoroutine(DisableIndicator(false, 1));
@@ -70,7 +68,7 @@ public class SlapController : MonoBehaviour
     public IEnumerator EnemySlapping()
     {
         yield return new WaitForSeconds(2);
-        enemyAnimator.SetBool("preparing", false);
+        enemyAnimator.SetBool(Preparing, false);
 
         Hit("enemy");
         StartCoroutine(DisableIndicator(true, 1));
@@ -90,24 +88,55 @@ public class SlapController : MonoBehaviour
         if (character == "player")
         {
             coinSystem.PlayerGetDamage();
-            SoundManager.Instance.PlaySound("slap");
-            GameManager.Instance.Vibration();
             hitPower.sequence.Play();
-            playerAnimator.SetTrigger("knocked");
-            playerAnimator.SetTrigger("standUp");
-            playerAnimator.SetTrigger("isUp");
-            playerTurn = true;
+
+            if (coinSystem.strongHit)
+            {
+                StrongSlap(playerAnimator);
+            }
+            else
+            {
+                LowSlap(playerAnimator);   
+            }
+            
+            DOVirtual.DelayedCall(0.2f, () =>
+            {
+                playerTurn = true;
+                coinSystem.strongHit = false;
+            });
         }
         else
         {
             StartCoroutine(coinSystem.EnemyGetDamage());
-            SoundManager.Instance.PlaySound("slap");
-            GameManager.Instance.Vibration();
-            enemyAnimator.SetTrigger("knocked");
-            enemyAnimator.SetTrigger("standUp");
-            enemyAnimator.SetTrigger("isUp");
-            playerTurn = false;
+
+            if (hitPower.CheckHitPowerSection() == 1f)
+            {
+                StrongSlap(enemyAnimator);
+            }
+            else
+            {
+                LowSlap(enemyAnimator);    
+            }
+            
+            DOVirtual.DelayedCall(0.2f, () => {             playerTurn = false;});
         }
+        
+        SoundManager.Instance.PlaySound("slap");
+        GameManager.Instance.Vibration();
+    }
+
+    
+    private void StrongSlap(Animator animator)
+    {
+        animator.SetTrigger(Knocked);
+        animator.SetTrigger(StandUp);
+        animator.SetTrigger(IsUp);
+        SoundManager.Instance.PlaySound("wow");
+    }
+
+    private void LowSlap(Animator animator)
+    {
+        animator.SetTrigger(Lowslap);
     }
 
     public void StayDown(string character)
@@ -124,7 +153,6 @@ public class SlapController : MonoBehaviour
             if (coinSystem.enemyHealth <= 0)
             {
                 enemyAnimator.enabled = false;
-                Debug.Log("smarti");
             }
         }
     }

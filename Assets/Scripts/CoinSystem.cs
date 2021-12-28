@@ -39,6 +39,7 @@ public class CoinSystem : MonoBehaviour
     [SerializeField] private HealthManager healthManager;
     [SerializeField] private HitPower hitPower;
 
+    public bool strongHit;
     public bool playerWin, playerLoose;
 
     private void Awake()
@@ -67,10 +68,10 @@ public class CoinSystem : MonoBehaviour
         int lowestHit = 6 * currentLevel + 17;
         int strongestHit = 7 * currentLevel + 21;
         enemyPower = Random.Range(lowestHit, strongestHit);
-        dmgPwr = enemyPower;
+        dmgPwr = enemyPower;    
         if (dmgPwr >= (strongestHit - (strongestHit - lowestHit)))
         {
-            SoundManager.Instance.PlaySound("wow");
+            strongHit = true;
         }
     }
 
@@ -119,13 +120,9 @@ public class CoinSystem : MonoBehaviour
 
     public IEnumerator EnemyGetDamage()
     {
-        var PlayerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
-        if (hitPower.CheckHitPowerSection() == 1f)
-        {
-            SoundManager.Instance.PlaySound("wow");
-        }
+        var playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
 
-        if (PlayerHit >= enemyHealth)
+        if (playerHit >= enemyHealth)
         {
             enemyHealthText.text = "0";
             healthManager.HealthEnemy.MyCurrentValue = 0;
@@ -136,8 +133,8 @@ public class CoinSystem : MonoBehaviour
         }
         else
         {
-            playerPowerText.text = PlayerHit.ToString();
-            enemyHealth -= PlayerHit;
+            playerPowerText.text = playerHit.ToString();
+            enemyHealth -= playerHit;
             healthManager.HealthEnemy.MyCurrentValue = enemyHealth;
             enemyHealthText.text = enemyHealth.ToString();
             yield return new WaitForSeconds(5);

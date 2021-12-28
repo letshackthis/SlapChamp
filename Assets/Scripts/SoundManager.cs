@@ -5,8 +5,8 @@ using UnityEngine;
 public class SoundManager : Singleton<SoundManager>
 {
     private AudioSource aSource;
-    public AudioClip slap;
-    public AudioClip wow;
+    public AudioClip[] slap;
+    public AudioClip[] wow;
     public AudioClip win;
     public AudioClip fail;
 
@@ -32,24 +32,20 @@ public class SoundManager : Singleton<SoundManager>
             return;
         }
 
-        if (name == "slap")
+        switch (name)
         {
-            aSource.PlayOneShot(slap);
-        }
-
-        if (name == "wow")
-        {
-            aSource.PlayOneShot(wow);
-        }
-
-        if (name == "win")
-        {
-            aSource.PlayOneShot(win);
-        }
-
-        if (name == "fail")
-        {
-            aSource.PlayOneShot(fail);
+            case "slap":
+                aSource.PlayOneShot(slap[Random.Range(0, slap.Length)]);
+                break;
+            case "wow":
+                aSource.PlayOneShot(wow[Random.Range(0, wow.Length)]);
+                break;
+            case "win":
+                aSource.PlayOneShot(win);
+                break;
+            case "fail":
+                aSource.PlayOneShot(fail);
+                break;
         }
     }
 }
