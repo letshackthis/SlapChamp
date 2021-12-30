@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78beffc7bd9c50641ad2ce6cc1cc51ea, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  Levels:
+  - levelType: 0
+    playerPositions:
+    - {x: 8.98, y: 0.064, z: 2.96}
+    - {x: 6.11, y: 0.272, z: -8.72}
+    - {x: 6.11, y: 0.272, z: -8.72}
+    - {x: -2.8500009, y: 0.272, z: -19.800001}
+    - {x: -2.8000007, y: 0.272, z: 3.0199993}
+    enemyPositions:
+    - {x: 8.88, y: 0.13, z: 3.89}
+    - {x: 6.0100007, y: 0.318, z: -7.79}
+    - {x: 6.0100007, y: 0.318, z: -7.79}
+    - {x: -2.95, y: 0.318, z: -18.87}
+    - {x: -2.9, y: 0.318, z: 3.95}
+    birdsPositions:
+    - positionPerchOne: {x: 5.2552147, y: 1.3670996, z: -0.21680963}
+      positionPerchTwo: {x: 3.0722914, y: 2.2219, z: 8.224307}
+      positionGround: {x: 4.800079, y: -0.19000006, z: 4.8728514}
+    - positionPerchOne: {x: 0, y: 0, z: 0}
+      positionPerchTwo: {x: 0, y: 0, z: 0}
+      positionGround: {x: 0, y: 0, z: 0}
+    - positionPerchOne: {x: 0, y: 0, z: 0}
+      positionPerchTwo: {x: 0, y: 0, z: 0}
+      positionGround: {x: 0, y: 0, z: 0}
+    - positionPerchOne: {x: 0, y: 0, z: 0}
+      positionPerchTwo: {x: 0, y: 0, z: 0}
+      positionGround: {x: 0, y: 0, z: 0}
+    - positionPerchOne: {x: 0, y: 0, z: 0}
+      positionPerchTwo: {x: 0, y: 0, z: 0}
+      positionGround: {x: 0, y: 0, z: 0}

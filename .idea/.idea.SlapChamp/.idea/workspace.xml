@@ -2190,19 +2190,22 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Text.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/GameAnalyticsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StompyRobot/SRF/Scripts/Service/SRDependencyServiceBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/CGIncludes/VS_indirect.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SlapController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HitPower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Editor/BEditorUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_PolygonCollider2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/living birds/scripts/lb_BirdController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyShaders/Shaders/LowPolyPBRShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StompyRobot/SRDebugger/Scripts/UI/Controls/Profiler/ProfilerMemoryBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StompyRobot/SRDebugger/Scripts/UI/Controls/ConsoleLogControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationItems.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///C# Console" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyBrickHouses/Editor/ModelCustomizerInspector.cs" root0="FORCE_HIGHLIGHTING" />
@@ -2211,7 +2214,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Drawers/Editor/BLayersEnumAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StompyRobot/SRDebugger/Scripts/UI/Other/BugReportSheetController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -2222,6 +2227,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Utils/Editor/BoxophobicUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_double.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyCustomBuildProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipRotation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -2234,6 +2240,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CoinSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" />
       </list>
     </option>
   </component>
@@ -2293,6 +2303,8 @@
       <workItem from="1640364305152" duration="3000" />
       <workItem from="1640364666453" duration="23000" />
       <workItem from="1640686314011" duration="12414000" />
+      <workItem from="1640865789324" duration="2586000" />
+      <workItem from="1640869271174" duration="9540000" />
     </task>
     <servers />
   </component>
