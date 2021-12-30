@@ -102,7 +102,6 @@ namespace Customisation
 
             ItemTypeData itemTypeData = new ItemTypeData();
             
-            itemTypeData.name = characterPart;
             
             targetList.Add(itemTypeData);
             itemTypeData.itemDataList.Clear();

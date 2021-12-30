@@ -8,9 +8,9 @@ namespace Customisation
 {
     public class CharacterLoadSave : MonoBehaviour
     {
-        [SerializeField] private CharacterSaveData characterSaveData;
         [SerializeField] private CharacterCustomisationItems customisationItems;
 
+        private CharacterSaveData characterSaveData = new CharacterSaveData();
         private List<ItemTypeData> currentItemType = new List<ItemTypeData>();
 
         private void Awake()
@@ -23,31 +23,30 @@ namespace Customisation
             DisableAllElements();
             
             characterSaveData = ES3.Load(SaveKeys.CharacterCustomisation, characterSaveData);
-
-            currentItemType = characterSaveData.gender == Gender.Female
-                ? customisationItems.FemaleItemTypeDataList
-                : customisationItems.MaleItemTypeDataList;
+            currentItemType = characterSaveData.gender == Gender.Female ? customisationItems.FemaleItemTypeDataList : customisationItems.MaleItemTypeDataList;
             
          
             foreach (ItemTypeData itemTypeData in currentItemType)
             {
-                ItemDataList(currentItemType, itemTypeData.itemType)[CurrentIndex(itemTypeData.itemType)].item.SetActive(true);
+                Debug.Log(itemTypeData.itemType);
+                Debug.Log(CurrentIndex(itemTypeData.itemType));
+                ItemDataFromList(currentItemType, itemTypeData.itemType)[CurrentIndex(itemTypeData.itemType)].item.SetActive(true);
             }
             
             foreach (ItemTypeData itemTypeData in customisationItems.AllGenderItemTypeDataList)
             {
-                ItemDataList(customisationItems.AllGenderItemTypeDataList, itemTypeData.itemType)[CurrentIndex(itemTypeData.itemType)].item.SetActive(true);
+                ItemDataFromList(customisationItems.AllGenderItemTypeDataList, itemTypeData.itemType)[CurrentIndex(itemTypeData.itemType)].item.SetActive(true);
             }
 
             if (characterSaveData.elements == Elements.No)
             {
-                ItemDataList(currentItemType, ItemType.All_Elements)[CurrentIndex(ItemType.All_Elements)].item.SetActive(false);
-                ItemDataList(currentItemType, ItemType.No_Elements)[CurrentIndex(ItemType.No_Elements)].item.SetActive(true);
+                ItemDataFromList(currentItemType, ItemType.All_Elements)[CurrentIndex(ItemType.All_Elements)].item.SetActive(false);
+                ItemDataFromList(currentItemType, ItemType.No_Elements)[CurrentIndex(ItemType.No_Elements)].item.SetActive(true);
             }
             else
             {
-                ItemDataList(currentItemType, ItemType.All_Elements)[CurrentIndex(ItemType.All_Elements)].item.SetActive(true);
-                ItemDataList(currentItemType, ItemType.No_Elements)[CurrentIndex(ItemType.No_Elements)].item.SetActive(false);
+                ItemDataFromList(currentItemType, ItemType.All_Elements)[CurrentIndex(ItemType.All_Elements)].item.SetActive(true);
+                ItemDataFromList(currentItemType, ItemType.No_Elements)[CurrentIndex(ItemType.No_Elements)].item.SetActive(false);
             }
         }
 
@@ -55,17 +54,16 @@ namespace Customisation
         {
             return characterSaveData.indexDataList.Find(e => e.itemType == itemType).currentIndex;
         }
-        private List<ItemData> ItemDataList(List<ItemTypeData>  itemTypeDataList,ItemType nameList)
+        private List<ItemData> ItemDataFromList(List<ItemTypeData>  itemTypeDataList,ItemType itemType)
         {
             foreach (ItemTypeData itemTypeData in itemTypeDataList)
             {
-                if (itemTypeData.itemType == nameList)
+                if (itemTypeData.itemType == itemType)
                 {
                     return itemTypeData.itemDataList;
                 }
             }
             
-            Debug.Log(nameList);
             return null;
             
         }
@@ -93,6 +91,7 @@ namespace Customisation
 
         public void Save()
         {
+            
         }
     }
 }

@@ -16,7 +16,6 @@ namespace PolygonFantasyHeroCharacters.Scripts
     [Serializable]
     public class ItemTypeData
     {
-        public string name;
         public ItemType itemType;
         public List<ItemData> itemDataList= new List<ItemData>();
     }
@@ -24,7 +23,6 @@ namespace PolygonFantasyHeroCharacters.Scripts
     [Serializable]
     public class ItemData
     {
-        public string name;
         public GameObject item;
 
         public Elements elements;
