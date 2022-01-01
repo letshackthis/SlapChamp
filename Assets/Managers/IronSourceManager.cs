@@ -6,8 +6,7 @@ namespace Managers
 {
     public enum RewardPlacement
     {
-        GAMEPLAY_CONTINUE,
-        MENU_MONEY_REWARD
+        REWARD_COINS
     }
 
     public enum InterstitialPlacement

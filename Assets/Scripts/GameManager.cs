@@ -55,20 +55,7 @@ public class GameManager : Singleton<GameManager>
 
     private void NextLevel()
     {
-        while (true)
-        {
-            int randomSceneIndex = Random.Range(0, SceneManager.sceneCountInBuildSettings - 1);
-            if (randomSceneIndex != SceneManager.GetActiveScene().buildIndex)
-            {
-                SceneManager.LoadScene(randomSceneIndex);
-            }
-            else
-            {
-                continue;
-            }
-
-            break;
-        }
+        SceneManager.LoadScene(1);
     }
 
     private void RetryLevel()
