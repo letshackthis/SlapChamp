@@ -11,6 +11,7 @@ namespace PolygonFantasyHeroCharacters.Scripts
     public enum SkinColor { White, Brown, Black, Elf }
     public enum Elements {  Yes, No }
     public enum HeadCovering { HeadCoveringsBaseHair, HeadCoveringsNoFacialHair, HeadCoveringsNoHair,None }
+    public enum ItemCategory { None, One, Two, Three, Four, Five }
     public enum FacialHair { Yes, No }
     
     [Serializable]
@@ -26,16 +27,9 @@ namespace PolygonFantasyHeroCharacters.Scripts
         public GameObject item;
 
         public Elements elements;
-        public HeadCovering headCovering= HeadCovering.None; 
-            
-        public bool openDefault;
-        public bool gamePurchase;
-        public bool blueprint;
-        public bool realPurchase;
-
-        public string iapKey;
-        public int moneyAmount;
-        public int blueprintAmount;
+        public HeadCovering headCovering= HeadCovering.None;
+        public ItemCategory itemCategory = ItemCategory.None;
+        public BuyOption[] BuyOptions;
     }
 
    

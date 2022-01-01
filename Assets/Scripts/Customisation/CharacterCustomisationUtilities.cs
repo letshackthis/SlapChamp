@@ -113,7 +113,6 @@ namespace Customisation
                 ItemData currentItemData = new ItemData();
 
                 currentItemData.item = item;
-                currentItemData.openDefault = true;
 
                 SetItemCondition(currentItemData, characterPart);
 

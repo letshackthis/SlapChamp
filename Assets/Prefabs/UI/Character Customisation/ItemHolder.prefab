@@ -285,7 +285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba4565dd9efe7f44b628c6ec2414ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 0
+  equipItemType: 0
+  editItemType: 0
+  uiChannel: {fileID: 11400000, guid: 6bc76221ffc11fa4d98d35e81653ee9e, type: 2}
   glowImage: {fileID: 2616713054684115253}
   itemIcon: {fileID: 740771018291234783}
   itemButtonHolder: {fileID: 5598916384548847577}
