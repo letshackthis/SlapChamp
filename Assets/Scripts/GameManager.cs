@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GameAnalyticsSDK;
+using Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -37,9 +39,12 @@ public class GameManager : Singleton<GameManager>
             vsTextUI.text = "VS";
             vsTextUI.fontSize = 100;
         }
+        
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
+            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (coinSystem.playerWin)
         {
@@ -55,11 +60,16 @@ public class GameManager : Singleton<GameManager>
 
     private void NextLevel()
     {
+        if (PlayerPrefs.GetInt(StringKeys.level, 1) % 3 == 0)
+        {
+            IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
+        }
         SceneManager.LoadScene(1);
     }
 
     private void RetryLevel()
     {
+        IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         var sceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
@@ -78,6 +88,8 @@ public class GameManager : Singleton<GameManager>
         win.SetActive(true);
         SoundManager.Instance.PlaySound("win");
         PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(25));
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
+            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
     }
 
     private void Fail()
@@ -86,6 +98,8 @@ public class GameManager : Singleton<GameManager>
         fail.SetActive(true);
         SoundManager.Instance.PlaySound("fail");
         PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(10));
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
+            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
     }
 
     private int GetCoinsToAdd(int multiplier)

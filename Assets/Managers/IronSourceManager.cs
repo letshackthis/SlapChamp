@@ -11,7 +11,7 @@ namespace Managers
 
     public enum InterstitialPlacement
     {
-        NEXT_LEVEL
+        LEVEL_FINISHED
     }
 
     public class IronSourceManager : MonoBehaviour

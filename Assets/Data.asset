@@ -30,15 +30,15 @@ MonoBehaviour:
     - positionPerchOne: {x: 5.2552147, y: 1.3670996, z: -0.21680963}
       positionPerchTwo: {x: 3.0722914, y: 2.2219, z: 8.224307}
       positionGround: {x: 4.800079, y: -0.19000006, z: 4.8728514}
-    - positionPerchOne: {x: 0, y: 0, z: 0}
-      positionPerchTwo: {x: 0, y: 0, z: 0}
-      positionGround: {x: 0, y: 0, z: 0}
-    - positionPerchOne: {x: 0, y: 0, z: 0}
-      positionPerchTwo: {x: 0, y: 0, z: 0}
-      positionGround: {x: 0, y: 0, z: 0}
-    - positionPerchOne: {x: 0, y: 0, z: 0}
-      positionPerchTwo: {x: 0, y: 0, z: 0}
-      positionGround: {x: 0, y: 0, z: 0}
-    - positionPerchOne: {x: 0, y: 0, z: 0}
-      positionPerchTwo: {x: 0, y: 0, z: 0}
-      positionGround: {x: 0, y: 0, z: 0}
+    - positionPerchOne: {x: 0.67, y: 1.3670996, z: -5.3143}
+      positionPerchTwo: {x: -4.878, y: 2.652, z: -5.61}
+      positionGround: {x: 2.16, y: -0.19000006, z: -6.47}
+    - positionPerchOne: {x: 9.6957, y: 0.9117, z: -6.251}
+      positionPerchTwo: {x: 10.7885, y: 2.5109, z: -8.25}
+      positionGround: {x: 8.51, y: -0.19000006, z: -6.47}
+    - positionPerchOne: {x: 0.868, y: 2.917, z: -15.779}
+      positionPerchTwo: {x: 0.8081, y: 2.9346, z: -19.070318}
+      positionGround: {x: 0.02, y: -0.19000006, z: -16.68}
+    - positionPerchOne: {x: -6.486144, y: 2.7274, z: 4.8737}
+      positionPerchTwo: {x: -6.5594, y: 2.285, z: 4.0868177}
+      positionGround: {x: -9.94, y: -0.19000006, z: 5.67}
