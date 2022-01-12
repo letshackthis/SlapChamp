@@ -7,6 +7,7 @@ public class SlapController : MonoBehaviour
     [SerializeField] private GameObject enemy, powerBtn, healthBtn, hitIndicator;
     [SerializeField] private HitPower hitPower;
     [SerializeField] private CoinSystem coinSystem;
+    [SerializeField] private CameraMove cameraMove;
 
     private Animator playerAnimator;
     private Animator enemyAnimator;
@@ -27,6 +28,7 @@ public class SlapController : MonoBehaviour
         enemyAnimator = enemy.GetComponent<Animator>();
         playerTurn = true;
         canclick = true;
+        cameraMove.CameraPlayerTurn();
 
         powerBtn.SetActive(true);
         healthBtn.SetActive(true);
@@ -102,6 +104,7 @@ public class SlapController : MonoBehaviour
             DOVirtual.DelayedCall(0.2f, () =>
             {
                 playerTurn = true;
+                cameraMove.CameraPlayerTurn();
                 coinSystem.strongHit = false;
             });
         }
@@ -118,7 +121,11 @@ public class SlapController : MonoBehaviour
                 LowSlap(enemyAnimator);    
             }
             
-            DOVirtual.DelayedCall(0.2f, () => {             playerTurn = false;});
+            DOVirtual.DelayedCall(0.2f, () =>
+            {
+                playerTurn = false;
+                cameraMove.CameraEnemyTurn();
+            });
         }
         
         SoundManager.Instance.PlaySound("slap");

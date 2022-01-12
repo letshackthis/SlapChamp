@@ -17,7 +17,7 @@ public class HitPower : MonoBehaviour
     private void Start()
     {
         sequence = DOTween.Sequence();
-        this.transform.position = startPos.transform.position;
+        transform.position = startPos.transform.position;
         targetPos = endPos.transform.position;
         MoveFunction();
     }

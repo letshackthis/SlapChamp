@@ -1131,6 +1131,7 @@ MonoBehaviour:
   hitIndicator: {fileID: 8219286705741260077}
   hitPower: {fileID: 8219286707401252333}
   coinSystem: {fileID: 101226395}
+  cameraMove: {fileID: 1904402339}
   playerTurn: 0
   canclick: 0
 --- !u!1001 &381984261
@@ -11699,7 +11700,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraPositionOne: {fileID: 1305150437}
   cameraPositionTwo: {fileID: 2046422750}
-  player: {fileID: 360408735}
 --- !u!114 &1904402340
 MonoBehaviour:
   m_ObjectHideFlags: 0

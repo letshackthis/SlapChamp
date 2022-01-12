@@ -1,22 +1,26 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
     [SerializeField] private GameObject cameraPositionOne, cameraPositionTwo;
-    [SerializeField] private SlapController player;
+    private Transform camTransform;
 
-    void FixedUpdate()
+    private void Awake()
     {
-        if (player.playerTurn)
-        {
-            Camera.main.transform.DOMove(cameraPositionTwo.transform.position, 2f).SetDelay(1.5f);
-            Camera.main.transform.DORotateQuaternion(cameraPositionTwo.transform.rotation, 2f).SetDelay(1.5f);
-        }
-        else
-        {
-            Camera.main.transform.DOMove(cameraPositionOne.transform.position, 2f).SetDelay(1.5f);
-            Camera.main.transform.DORotateQuaternion(cameraPositionOne.transform.rotation, 2f).SetDelay(1.5f);
-        }
+        camTransform = Camera.main.transform;
+    }
+    
+    public void CameraPlayerTurn()
+    {
+        camTransform.DOMove(cameraPositionTwo.transform.position, 2f).SetDelay(1.5f);
+        camTransform.DORotateQuaternion(cameraPositionTwo.transform.rotation, 2f).SetDelay(1.5f);
+    }
+
+    public void CameraEnemyTurn()
+    {
+        camTransform.DOMove(cameraPositionOne.transform.position, 2f).SetDelay(1.5f);
+        camTransform.DORotateQuaternion(cameraPositionOne.transform.rotation, 2f).SetDelay(1.5f);
     }
 }

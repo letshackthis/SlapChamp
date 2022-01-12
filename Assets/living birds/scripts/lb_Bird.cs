@@ -121,11 +121,11 @@ public class lb_Bird : MonoBehaviour {
 	}
 	
 	IEnumerator FlyToTarget(Vector3 target){
-		if(Random.value < .5){
-			GetComponent<AudioSource>().PlayOneShot (flyAway1,.1f);
-		}else{
-			GetComponent<AudioSource>().PlayOneShot (flyAway2,.1f);
+		if (flyAway1 && flyAway2)
+		{
+			GetComponent<AudioSource>().PlayOneShot(Random.value < .5 ? flyAway1 : flyAway2, .1f);
 		}
+
 		flying = true;
 		landing = false;
 		onGround = false;
@@ -137,7 +137,7 @@ public class lb_Bird : MonoBehaviour {
 		anim.SetBool(landingBoolHash, false);
 
 		//Wait to apply velocity until the bird is entering the flying animation
-		while(anim.GetCurrentAnimatorStateInfo(0).nameHash != flyAnimationHash){
+		while(anim.GetCurrentAnimatorStateInfo(0).fullPathHash != flyAnimationHash){
 			yield return 0;
 		}
 
@@ -316,7 +316,7 @@ public class lb_Bird : MonoBehaviour {
 		//tell any birds that are in the way to move their butts
 		Collider[] hitColliders = Physics.OverlapSphere(target,0.05f*controller.birdScale);
 		for(int i=0;i<hitColliders.Length;i++){
-			if (hitColliders[i].tag == "lb_bird" && hitColliders[i].transform != transform){
+			if (hitColliders[i].CompareTag("lb_bird") && hitColliders[i].transform != transform){
 				hitColliders[i].SendMessage ("FlyAway");
 			}
 		}
@@ -356,7 +356,7 @@ public class lb_Bird : MonoBehaviour {
 	}
 	
 	void OnGroundBehaviors(){
-		idle = anim.GetCurrentAnimatorStateInfo(0).nameHash == idleAnimationHash;
+		idle = anim.GetCurrentAnimatorStateInfo(0).fullPathHash == idleAnimationHash;
 		if(!GetComponent<Rigidbody>().isKinematic){
 			GetComponent<Rigidbody>().isKinematic = true;
 		}
@@ -433,7 +433,7 @@ public class lb_Bird : MonoBehaviour {
 
 	void OnTriggerExit(Collider col){
 		//if bird has hopped out of the target area lets fly
-		if (onGround && (col.tag == "lb_groundTarget" || col.tag == "lb_perchTarget")){
+		if (onGround && (col.CompareTag("lb_groundTarget") || col.CompareTag("lb_perchTarget"))){
 			FlyAway ();
 		}
 	}
@@ -552,12 +552,9 @@ public class lb_Bird : MonoBehaviour {
 	}
 
 	void PlaySong(){
-		if (!dead){
-			if(Random.value < .5){
-				GetComponent<AudioSource>().PlayOneShot (song1,1);
-			}else{
-				GetComponent<AudioSource>().PlayOneShot (song2,1);
-			}
+		if (!dead && song1 && song2)
+		{
+			GetComponent<AudioSource>().PlayOneShot(Random.value < .5 ? song1 : song2, 1);
 		}
 	}
 

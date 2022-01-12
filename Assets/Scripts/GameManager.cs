@@ -84,6 +84,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Win()
     {
+        if (fail.activeInHierarchy) return;
         game.SetActive(false);
         win.SetActive(true);
         SoundManager.Instance.PlaySound("win");
@@ -94,6 +95,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Fail()
     {
+        if (win.activeInHierarchy) return;
         game.SetActive(false);
         fail.SetActive(true);
         SoundManager.Instance.PlaySound("fail");

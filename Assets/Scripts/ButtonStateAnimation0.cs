@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -12,9 +13,12 @@ namespace Ramen_Repair.Scripts.UI
 		private void OnEnable()
 		{
 			transform.localScale = Vector3.one * initScale;
-			tween.Kill(true);
-			
 			PlayAnimation();
+		}
+
+		private void OnDestroy()
+		{
+			tween?.Kill();
 		}
 
 		private void PlayAnimation()
