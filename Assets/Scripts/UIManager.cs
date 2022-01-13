@@ -83,13 +83,11 @@ public class UIManager : MonoBehaviour
         {
             vibroOff.SetActive(true);
             PlayerPrefs.SetInt("vibro", 0);
-            Debug.Log("Vibro off");
         }
         else
         {
             vibroOff.SetActive(false);
             PlayerPrefs.SetInt("vibro", 1);
-            Debug.Log("Vibro on");
         }
 
     }

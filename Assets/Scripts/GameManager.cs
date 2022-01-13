@@ -15,7 +15,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private Text levelTextUI, vsTextUI;
     [SerializeField] private Button nextLevelButton, retryLevelButton;
 
-    public static bool bonusLevel, wasReseted;
+    public static bool bonusLevel;
 
     protected override void Awake()
     {
@@ -64,7 +64,7 @@ public class GameManager : Singleton<GameManager>
         {
             IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         }
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(Random.Range(1,3));
     }
 
     private void RetryLevel()
@@ -72,14 +72,6 @@ public class GameManager : Singleton<GameManager>
         IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         var sceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-    }
-
-    public void Vibration()
-    {
-        if(PlayerPrefs.GetInt("vibro", 1) == 1)
-        {
-            Handheld.Vibrate();
-        }
     }
 
     private void Win()

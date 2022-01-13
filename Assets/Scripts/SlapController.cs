@@ -15,11 +15,13 @@ public class SlapController : MonoBehaviour
     public bool canclick;
 
     #region AnimatorStrings
+
     private static readonly int Preparing = Animator.StringToHash("preparing");
     private static readonly int Knocked = Animator.StringToHash("knocked");
     private static readonly int StandUp = Animator.StringToHash("standUp");
     private static readonly int IsUp = Animator.StringToHash("isUp");
     private static readonly int Lowslap = Animator.StringToHash("lowslap");
+
     #endregion
 
     private void Start()
@@ -98,9 +100,9 @@ public class SlapController : MonoBehaviour
             }
             else
             {
-                LowSlap(playerAnimator);   
+                LowSlap(playerAnimator);
             }
-            
+
             DOVirtual.DelayedCall(0.2f, () =>
             {
                 playerTurn = true;
@@ -118,21 +120,25 @@ public class SlapController : MonoBehaviour
             }
             else
             {
-                LowSlap(enemyAnimator);    
+                LowSlap(enemyAnimator);
             }
-            
+
             DOVirtual.DelayedCall(0.2f, () =>
             {
                 playerTurn = false;
                 cameraMove.CameraEnemyTurn();
             });
         }
-        
+
         SoundManager.Instance.PlaySound("slap");
-        GameManager.Instance.Vibration();
+
+        if (PlayerPrefs.GetInt("vibro", 1) == 1)
+        {
+            Handheld.Vibrate();
+        }
     }
 
-    
+
     private void StrongSlap(Animator animator)
     {
         animator.SetTrigger(Knocked);

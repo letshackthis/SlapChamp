@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Loader : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class Loader : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return null;
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(1);
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(Random.Range(1,3));
 
         while (!asyncOperation.isDone)
         {

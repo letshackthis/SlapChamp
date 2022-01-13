@@ -42,3 +42,32 @@ MonoBehaviour:
     - positionPerchOne: {x: -6.486144, y: 2.7274, z: 4.8737}
       positionPerchTwo: {x: -6.5594, y: 2.285, z: 4.0868177}
       positionGround: {x: -9.94, y: -0.19000006, z: 5.67}
+  - levelType: 1
+    playerPositions:
+    - {x: 103.49, y: -17.575, z: -16.879002}
+    - {x: 105.67899, y: -17.414001, z: -45.555}
+    - {x: 121.31, y: -9.986002, z: -6.849999}
+    - {x: 101.42999, y: -25.994001, z: 39.132175}
+    - {x: 85.60199, y: -13.271002, z: 21.624174}
+    enemyPositions:
+    - {x: 103.39, y: -17.509, z: -15.949}
+    - {x: 105.578995, y: -17.348, z: -44.625}
+    - {x: 121.21, y: -9.92, z: -5.92}
+    - {x: 101.329994, y: -25.928, z: 40.062176}
+    - {x: 85.50199, y: -13.205, z: 22.554174}
+    birdsPositions:
+    - positionPerchOne: {x: 98.8221, y: -15.4, z: -14.6583}
+      positionPerchTwo: {x: 98.0572, y: -14.5414, z: -13.6432}
+      positionGround: {x: 101.78608, y: -17.961, z: -15.181177}
+    - positionPerchOne: {x: 101.01109, y: -15.0855, z: -41.0319}
+      positionPerchTwo: {x: 100.482, y: -16.5485, z: -41.961}
+      positionGround: {x: 103.975075, y: -17.8, z: -43.857174}
+    - positionPerchOne: {x: 119.767, y: -8.6096, z: -7.3877}
+      positionPerchTwo: {x: 119.767, y: -8.6096, z: -5.6}
+      positionGround: {x: 118.65, y: -10.372, z: -5.1521735}
+    - positionPerchOne: {x: 95.0878, y: -24.149, z: 37.631}
+      positionPerchTwo: {x: 95.0665, y: -24.129, z: 38.6933}
+      positionGround: {x: 98.01, y: -26.38, z: 40.83}
+    - positionPerchOne: {x: 80.712, y: -11.3667, z: 20.433}
+      positionPerchTwo: {x: 80.4333, y: -12.4077, z: 23.7909}
+      positionGround: {x: 82.182, y: -13.657, z: 23.322}
