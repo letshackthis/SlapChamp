@@ -4,12 +4,13 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: FX_CandleFlame
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -73,6 +74,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.99264705, g: 0.97049874, b: 0.84666955, a: 1}
-    - _EmissionColor: {r: 5, g: 3.6911764, b: 1.727941, a: 1}
+    - _Color: {r: 0.8867924, g: 0.3730092, b: 0.21333212, a: 1}
+    - _EmissionColor: {r: 3.9024954, g: 0.22672063, b: 0, a: 1}
     - _EmissionColorUI: {r: 1, g: 0.7382353, b: 0.3455882, a: 1}
+  m_BuildTextureStacks: []

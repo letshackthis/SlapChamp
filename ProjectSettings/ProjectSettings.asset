@@ -247,7 +247,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: G:/Publishing/Slap Warriors/user.keystore
+  AndroidKeystoreName: '{inproject}: Assets/Keystore/user.keystore'
   AndroidKeyaliasName: slapwarriors
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
