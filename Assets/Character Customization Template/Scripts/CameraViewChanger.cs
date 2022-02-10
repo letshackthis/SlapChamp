@@ -20,6 +20,7 @@ public class CameraViewChanger : MonoBehaviour
     [SerializeField] private SmoothOrbitCam smoothOrbitCam;
     [SerializeField] private CameraSmoothTarget[] cameraSmoothTargets;
     [SerializeField] private float durationAnimation;
+    [SerializeField] private float firstDurationAnimation;
     [SerializeField] private float waitTime;
 
     private CameraSmoothTarget currentOrbitView;
@@ -32,6 +33,9 @@ public class CameraViewChanger : MonoBehaviour
     public void Awake()
     {
         OnCameraViewChange += CameraChangeView;
+
+        CameraSmoothTarget orbitView = Array.Find(cameraSmoothTargets, e => e.ItemType1 == ItemType.None);
+        DOVirtual.DelayedCall(1f, ()=>MoveInit(orbitView));
     }
 
     private void CameraChangeView(ItemType itemType)
@@ -46,6 +50,36 @@ public class CameraViewChanger : MonoBehaviour
         {
             MoveToTriggerPoint(orbitView);
         }
+    }
+    
+    
+    private void MoveInit(CameraSmoothTarget orbitView)
+    {
+        currentOrbitView = orbitView;
+        distanceT?.Kill();
+        rotationYT.Kill();
+        rotationXT.Kill();
+        moveT.Kill();
+        waitT.Kill();
+        smoothOrbitCam.ResetValues();
+        smoothOrbitCam.useable = false;
+        SmoothOrbitViewchanger viewChanger = currentOrbitView.SmoothOrbitViewChanger;
+        Quaternion currentQ= Quaternion.identity;
+        currentQ.eulerAngles= viewChanger.CamRotation;
+        distanceT = DOTween.To(() => smoothOrbitCam.distance, x => smoothOrbitCam.distance = x, viewChanger.CamDistance, firstDurationAnimation);
+        
+        rotationYT = DOTween.To(() => smoothOrbitCam.rotation, x => smoothOrbitCam.rotation=  x, viewChanger.CamRotation, firstDurationAnimation);
+        
+        moveT = DOTween.To(() => smoothOrbitCam.target.position, x => smoothOrbitCam.target.position = x,
+            viewChanger.transform.position, firstDurationAnimation).OnComplete(
+            () =>
+            {
+                waitT = DOVirtual.DelayedCall(waitTime, () =>
+                {
+                    smoothOrbitCam.ResetValues();
+                    smoothOrbitCam.useable = true;
+                });
+            });
     }
 
     private void MoveToTriggerPoint(CameraSmoothTarget orbitView)
