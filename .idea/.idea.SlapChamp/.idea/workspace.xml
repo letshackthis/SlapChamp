@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/DOTween.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/DOTween.XML.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/DOTween.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/DOTween.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/DOTweenEditor.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/DOTweenEditor.XML.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/DOTweenEditor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/DOTweenEditor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/DOTweenIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/DOTweenIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/Footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/Footer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/Footer_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/Footer_dark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/Header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Editor/Imgs/Header.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleAudio.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleAudio.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModulePhysics.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModulePhysics.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModulePhysics2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModulePhysics2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleSprite.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleSprite.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DOTween/readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/Character edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/Character edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/Character edit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/Character edit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization item selected.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization item selected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization item selected.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization item selected.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization main.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization main.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization main.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization unlock item.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization unlock item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization unlock item.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI Character Customisation/personalization unlock item.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MobileColorGrading/Resources/ColorGrading.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MobileColorGrading/Resources/ColorGrading.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Materials/FantasyHero.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Materials/FantasyHero.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Models/ModularCharacters.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Models/ModularCharacters.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/ItemData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/ItemData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/BuyItemOption.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/BuyItemOption.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ContentHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ContentHolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemCell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemCell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemHolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character Customisation.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character Customisation.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/BuyOption.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/BuyOption.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/Channels.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/Channels/UI Channel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/Channels/UI Channel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationItems.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationItems.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationUtilities.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationUtilities.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterLoadSave.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterLoadSave.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterSaveData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterSaveData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CustomisationManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/CustomisationManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/Icon Items Container.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/Icon Items Container.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/ItemType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/ItemType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/SO.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/SO/IconItemsContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/SO/IconItemsContainer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/SO/UIChannel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/SO/UIChannel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/HeaderManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/HeaderManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemCell.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemCell.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemHolder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemHolder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemHolderManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemHolderManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemListController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemListController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemListManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Customisation/UI/ItemListManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +126,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Shaders/SimpleLit Prototype Terrain.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgrBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Drawers/Editor/BLayersEnumAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModulePhysics.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleSprite.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MobileColorGrading/Shaders/MobileColorGrading.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/CGIncludes/VS_indirect.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LayerMask.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,7 +137,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Camera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Customisation/CharacterCustomisationItems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Shaders/Unlit Prototype Ground.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_PolygonCollider2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3Reader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,6 +159,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Utils/Editor/BoxophobicUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Utilities/GameWallet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Magic Light Probes/MLPQuickEditing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIIconLoopRotateAnimation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -93,6 +189,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/RainController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/CameraViewChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Utilities/GameWallet.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -169,7 +267,7 @@
       <workItem from="1641141790045" duration="2774000" />
       <workItem from="1641151191779" duration="1385000" />
       <workItem from="1642082803082" duration="949000" />
-      <workItem from="1644498450369" duration="1835000" />
+      <workItem from="1644498450369" duration="4065000" />
     </task>
     <servers />
   </component>
@@ -192,15 +290,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="415" y="164" width="706" height="536" key="find.popup" timestamp="1642083035695">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="415" y="164" width="706" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1642083035695" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1640955240678">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1640955240678" />
   </component>
 </project>

@@ -135,13 +135,13 @@ namespace PsychoticLab
         }
 
 
-        // private void Update()
-        // {
-        //     if (Input.GetKeyDown(KeyCode.T))
-        //     {
-        //         Randomize();                
-        //     }
-        // }
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                Randomize();                
+            }
+        }
 
         // character randomization method
         void Randomize()

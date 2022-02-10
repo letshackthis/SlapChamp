@@ -1,0 +1,32 @@
+﻿namespace Customisation
+{
+    public enum ItemType
+    {
+        Head,
+        Helmet,
+        Eyebrows,
+        FacialHair,
+        Torso,
+        ArmUpperRight,
+        ArmUpperLeft,
+        ArmLowerRight,
+        ArmLowerLeft,
+        HandRight,
+        HandLeft,
+        Hips,
+        LegRight,
+        LegLeft,
+        Hair,
+        HeadAttachment,
+        BackAttachment,
+        ShoulderRight,
+        ShoulderLeft,
+        ElbowRight,
+        ElbowLeft,
+        HipsAttachment,
+        KneeRight,
+        KneeLeft,
+        ElfEar,
+        None,
+    }
+}

@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 28.352417, y: -42.4}
+  m_AnchoredPosition: {x: 22.8, y: -49.5}
   m_SizeDelta: {x: 390.606, y: 120.2215}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5578996354401164423
@@ -67,18 +67,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b9e72d663d9e319418c8d58b4ffea2de, type: 3}
-    m_FontSize: 48
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 52
     m_Alignment: 3
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CRAFT FROM BLUEPRINT
+  m_Text: 'BUYFOR
+
+    BLUEPRINT'
 --- !u!1 &5578996354433566959
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,8 +190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 28.352417, y: -168.41968}
-  m_SizeDelta: {x: 390.606, y: 83.1522}
+  m_AnchoredPosition: {x: 24, y: -170.6}
+  m_SizeDelta: {x: 390.61, y: 90.3839}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5578996354614129112
 CanvasRenderer:
@@ -212,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -221,18 +223,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b9e72d663d9e319418c8d58b4ffea2de, type: 3}
-    m_FontSize: 34
+    m_FontSize: 73
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 52
-    m_Alignment: 0
+    m_MaxSize: 73
+    m_Alignment: 3
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You don't have the \nnecessary blueprint."
+  m_Text: 20
 --- !u!1 &5578996355176474309
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 0}
+  m_AnchoredPosition: {x: 56, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &5578996355176474306
@@ -320,6 +322,7 @@ GameObject:
   - component: {fileID: 5578996355273997302}
   - component: {fileID: 5578996355273997300}
   - component: {fileID: 5578996355273997301}
+  - component: {fileID: 1987423952147467272}
   m_Layer: 5
   m_Name: BuyButton
   m_TagString: Untagged
@@ -345,7 +348,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.000030517578, y: 0}
-  m_SizeDelta: {x: 236.5836, y: 0}
+  m_SizeDelta: {x: 246, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &5578996355273997300
 CanvasRenderer:
@@ -362,7 +365,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5578996355273997303}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -375,7 +378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 693d264d453b4a04eb479034c35c24f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b5cf69a35073374d975cf3cf0cdefed, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -385,6 +388,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1987423952147467272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578996355273997303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 5578996355273997301}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5578996355286031536
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +443,7 @@ GameObject:
   - component: {fileID: 5578996355286031551}
   - component: {fileID: 5578996355286031549}
   - component: {fileID: 5578996355286031550}
+  - component: {fileID: 5492182855978818560}
   m_Layer: 5
   m_Name: BuyItemOption
   m_TagString: Untagged
@@ -447,15 +495,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.41960785}
+  m_Color: {r: 0.574, g: 0.47322136, b: 0.40749615, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d25c0e2d0b4700944a5301c13b0df4f2, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8ae3f55348e74c64a987924ef3906459, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -463,7 +511,24 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.55
+--- !u!114 &5492182855978818560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578996355286031536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93d1a9f7577a9c44816d1264c713611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceText: {fileID: 5578996354614129113}
+  unlockName: {fileID: 5578996354401162104}
+  unlockButtonText: {fileID: 5578996355408076390}
+  unlockImage: {fileID: 5578996354433566957}
+  unlockButton: {fileID: 1987423952147467272}
 --- !u!1 &5578996355408076376
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +603,7 @@ MonoBehaviour:
     m_MaxSize: 45
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1

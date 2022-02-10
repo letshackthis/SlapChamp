@@ -11,13 +11,14 @@ namespace PolygonFantasyHeroCharacters.Scripts
     public enum SkinColor { White, Brown, Black, Elf }
     public enum Elements {  Yes, No }
     public enum HeadCovering { HeadCoveringsBaseHair, HeadCoveringsNoFacialHair, HeadCoveringsNoHair,None }
-    public enum ItemCategory { None, One, Two, Three, Four, Five }
+    public enum ItemCategory { One, Two, Three, Four, Five }
     public enum FacialHair { Yes, No }
     
     [Serializable]
     public class ItemTypeData
     {
         public ItemType itemType;
+     
         public List<ItemData> itemDataList= new List<ItemData>();
     }
 
@@ -25,11 +26,10 @@ namespace PolygonFantasyHeroCharacters.Scripts
     public class ItemData
     {
         public GameObject item;
-
-        public Elements elements;
-        public HeadCovering headCovering= HeadCovering.None;
-        public ItemCategory itemCategory = ItemCategory.None;
-        public BuyOption[] BuyOptions;
+        public List<ItemType> itemTypesHideList;
+        public ItemCategory itemCategory;
+        public ItemType itemTypeRequirementList;
+        public UnlockItem[] buyOptions;
     }
 
    

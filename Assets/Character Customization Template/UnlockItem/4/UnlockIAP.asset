@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f920bc475c46145b4bf433ecc0be6a, type: 3}
+  m_Name: UnlockIAP
+  m_EditorClassIdentifier: 
+  unlockImage: {fileID: 21300000, guid: a761dc4c77b251f47a51eef9fd12f8cd, type: 3}
+  unlockName: GET WITH CASH
+  unlockButtonText: GET
+  characterChannel: {fileID: 11400000, guid: 6bc76221ffc11fa4d98d35e81653ee9e, type: 2}
+  iapCustomisation: {fileID: 11400000, guid: 5db8f39c3e3cee24bb375964194a3c49, type: 2}

@@ -31,6 +31,11 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - LeanTouchPlus
+    - LeanTouch
+    - LeanCommon
+    - LeanCommonPlus
+    - Purchasing.Common
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

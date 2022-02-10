@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a51353c06de01429f15ad3d85f014b, type: 3}
+  m_Name: UI Channel
+  m_EditorClassIdentifier: 
+  defaultOpenItemHolderType: 0
+  categoryDatas:
+  - categoryColor: {r: 1, g: 1, b: 1, a: 0.69803923}
+    itemCategory: 0
+  - categoryColor: {r: 0.4669811, g: 1, b: 0.5489782, a: 0.69803923}
+    itemCategory: 1
+  - categoryColor: {r: 0.34509802, g: 0.42270812, b: 1, a: 0.69803923}
+    itemCategory: 2
+  - categoryColor: {r: 1, g: 0.7631891, b: 0.21226418, a: 0.69803923}
+    itemCategory: 3
+  - categoryColor: {r: 0.68340117, g: 0.120016046, b: 0.8773585, a: 0.69803923}
+    itemCategory: 4
