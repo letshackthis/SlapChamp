@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ColorGrading
   m_Shader: {fileID: 4800000, guid: 882e54c96926fba41a8f998a4d293b44, type: 3}
-  m_ShaderKeywords: ACES_OFF SaturN_OFF Vignette_ON
+  m_ShaderKeywords: ACES_OFF SaturN_OFF Vignette_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -75,7 +75,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _VignetteIntensity: 0.2
+    - _VignetteIntensity: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 1}
