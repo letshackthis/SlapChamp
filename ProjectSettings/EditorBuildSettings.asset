@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CharacterHouse.unity
     guid: be41e1b4ed5f99d439f3164d0d739e56
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Loader.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 5395a89c5b9f3644faa0302624015a33
   - enabled: 0

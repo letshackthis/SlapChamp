@@ -31,6 +31,10 @@ public class CustomizationUtilities : Editor
         {
             myTarget.SetBuyOption();
         }
+        if(GUILayout.Button("DestroyDisableObjects"))
+        {
+            myTarget.DestroyListObjects();
+        }
         
         
     }

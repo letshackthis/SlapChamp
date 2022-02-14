@@ -17,6 +17,7 @@ namespace Customisation
     }
     public class CharacterCustomisationUtilities : MonoBehaviour
     {
+        [SerializeField] private List<GameObject> currentList;
         [SerializeField] private CharacterCustomisationItems characterCustomisationItems;
         [SerializeField] private GameObject characterReferences;
         [SerializeField] private OptionBuy[] unlockItemList;
@@ -80,6 +81,17 @@ namespace Customisation
         };
 
         private int[] per =  {20, 25, 30, 15, 10};
+
+        public void DestroyListObjects()
+        {
+            foreach (GameObject o in currentList)
+            {
+                if (o.activeSelf == false)
+                {
+                    DestroyImmediate(o);
+                }
+            }
+        }
         
         public void SetBuyOption()
         {
