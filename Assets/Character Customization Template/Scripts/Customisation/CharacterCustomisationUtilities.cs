@@ -84,6 +84,7 @@ namespace Customisation
 
         public void DestroyListObjects()
         {
+            EditorUtility.SetDirty(this);
             foreach (GameObject o in currentList)
             {
                 if (o.activeSelf == false)
@@ -91,6 +92,9 @@ namespace Customisation
                     DestroyImmediate(o);
                 }
             }
+            currentList.Clear();
+            AssetDatabase.Refresh();
+            AssetDatabase.SaveAssets();
         }
         
         public void SetBuyOption()

@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Editor/CustomizationUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Editor/CustomizationUtilities.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Materials/FantasyHero.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Materials/FantasyHero.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +97,8 @@
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/CameraViewChanger.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/AnimationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Editor/CustomizationUtilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -183,7 +176,7 @@
       <workItem from="1641151191779" duration="1385000" />
       <workItem from="1642082803082" duration="949000" />
       <workItem from="1644498450369" duration="11065000" />
-      <workItem from="1644842861099" duration="375000" />
+      <workItem from="1644842861099" duration="679000" />
     </task>
     <servers />
   </component>
