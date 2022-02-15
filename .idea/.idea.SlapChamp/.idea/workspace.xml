@@ -6,116 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/CharacterHouse.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/CharacterHouse.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SitDown.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SitDown.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseFour.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseFour.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseOne.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseOne.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseThree.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseThree.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseTwo.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/SittingPoseTwo.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/StandUp.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/StandUp.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/Walk.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/Walk.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/erika_archer@Catwalk Idle 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationHouse/erika_archer@Catwalk Idle 01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EnemyAnimator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EnemyAnimator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/SpectateurAnimator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/SpectateurAnimator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/AnalyticsDependencies.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/AnalyticsDependencies.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/AppDependencies.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/AppDependencies.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/CrashlyticsDependencies.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/CrashlyticsDependencies.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/Firebase.Crashlytics.Editor.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/Firebase.Crashlytics.Editor.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/Firebase.Editor.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/Firebase.Editor.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseAnalytics_version-8.7.0_manifest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseAnalytics_version-8.7.0_manifest.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseCrashlytics_version-8.7.0_manifest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/FirebaseCrashlytics_version-8.7.0_manifest.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/generate_xml_from_google_services_json.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/generate_xml_from_google_services_json.exe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/generate_xml_from_google_services_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/generate_xml_from_google_services_json.py.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/network_request.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/network_request.exe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/network_request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Editor/network_request.py.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Crashlytics.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Crashlytics/link.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Crashlytics/link.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Analytics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Analytics.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.App.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.App.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Crashlytics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Crashlytics.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Platform.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.Platform.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.TaskExtension.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Firebase.TaskExtension.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Google.MiniJson.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/Google.MiniJson.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.bundle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.bundle.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.so.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-8_7_0.bundle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-8_7_0.bundle.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-8_7_0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-8_7_0.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/8.7.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/8.7.0/firebase-analytics-unity-8.7.0.pom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/8.7.0/firebase-analytics-unity-8.7.0.pom.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/8.7.0/firebase-analytics-unity-8.7.0.srcaar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/8.7.0/firebase-analytics-unity-8.7.0.srcaar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/8.7.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/8.7.0/firebase-app-unity-8.7.0.pom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/8.7.0/firebase-app-unity-8.7.0.pom.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/8.7.0/firebase-app-unity-8.7.0.srcaar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/8.7.0/firebase-app-unity-8.7.0.srcaar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/8.7.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/8.7.0/firebase-crashlytics-unity-8.7.0.pom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/8.7.0/firebase-crashlytics-unity-8.7.0.pom.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/8.7.0/firebase-crashlytics-unity-8.7.0.srcaar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/8.7.0/firebase-crashlytics-unity-8.7.0.srcaar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/AnimationHouse/CharacterHouse.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AnimationHouse/CharacterHouse.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/NPS/erika_archer@Wiping Sweat.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/NPS/erika_archer@Wiping Sweat.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Materials/FantasyHero.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Materials/FantasyHero.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPCController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPCController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgrBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Drawers/Editor/BLayersEnumAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPC.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MobileColorGrading/Shaders/MobileColorGrading.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/CGIncludes/VS_indirect.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LayerMask.cs" root0="FORCE_HIGHLIGHTING" />
@@ -213,6 +109,9 @@
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" />
       <option value="$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AI/AIUtilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPCState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNpcState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPC.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPCController.cs" />
     </changedPaths>
   </component>
@@ -292,7 +191,7 @@
       <workItem from="1642082803082" duration="949000" />
       <workItem from="1644498450369" duration="11065000" />
       <workItem from="1644842861099" duration="1991000" />
-      <workItem from="1644922669872" duration="2143000" />
+      <workItem from="1644922669872" duration="11816000" />
     </task>
     <servers />
   </component>
