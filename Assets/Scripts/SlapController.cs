@@ -6,7 +6,7 @@ public class SlapController : MonoBehaviour
 {
     [SerializeField] private GameObject enemy, powerBtn, healthBtn, hitIndicator;
     [SerializeField] private HitPower hitPower;
-    [SerializeField] private CoinSystem coinSystem;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private CameraMove cameraMove;
 
     private Animator playerAnimator;
@@ -91,10 +91,10 @@ public class SlapController : MonoBehaviour
     {
         if (character == "player")
         {
-            coinSystem.PlayerGetDamage();
+            gameManager.PlayerGetDamage();
             hitPower.sequence.Play();
 
-            if (coinSystem.strongHit)
+            if (gameManager.strongHit)
             {
                 StrongSlap(playerAnimator);
             }
@@ -107,12 +107,12 @@ public class SlapController : MonoBehaviour
             {
                 playerTurn = true;
                 cameraMove.CameraPlayerTurn();
-                coinSystem.strongHit = false;
+                gameManager.strongHit = false;
             });
         }
         else
         {
-            StartCoroutine(coinSystem.EnemyGetDamage());
+            StartCoroutine(gameManager.EnemyGetDamage());
 
             if (hitPower.CheckHitPowerSection() == 1f)
             {
@@ -156,14 +156,14 @@ public class SlapController : MonoBehaviour
     {
         if (character == "player")
         {
-            if (coinSystem.playerHealth <= 0)
+            if (gameManager.playerHealth <= 0)
             {
                 playerAnimator.enabled = false;
             }
         }
         else if (character == "enemy")
         {
-            if (coinSystem.enemyHealth <= 0)
+            if (gameManager.enemyHealth <= 0)
             {
                 enemyAnimator.enabled = false;
             }

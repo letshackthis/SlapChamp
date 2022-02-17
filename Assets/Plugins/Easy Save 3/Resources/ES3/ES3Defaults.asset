@@ -29,13 +29,34 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
+    - MoreMountains.Feedbacks
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - MoreMountains.NiceVibrations.Haptics
+    - MoreMountains.Feel.Demos
+    - MoreMountains.Tools
+    - MoreMountains.NiceVibrations.Demos
+    - LeanCommonPlus
+    - Cinemachine
+    - MoreMountains.Feedbacks.PostProcessing
+    - MoreMountains.Feedbacks.MMTools
+    - MoreMountains.Feedbacks.TextMeshPro
+    - LeanTouch
     - LeanCommon
     - LeanTouchPlus
-    - LeanCommonPlus
-    - LeanTouch
+    - MoreMountains.Feedbacks.Cinemachine
+    - MoreMountains.Tools.Feedbacks
+    - MoreMountains.Feel.Demos.URP
     - Purchasing.Common
+    - MoreMountains.Feel.Demos.HDRP
+    - MoreMountains.Tools.Cinemachine
+    - MoreMountains.NiceVibrations
+    - MoreMountains.Tools.TextMeshPro
+    - MoreMountains.Feedbacks.NiceVibrations
+    - MoreMountains.Tools.Editor
+    - MoreMountains.Feedbacks.Editor
+    - MoreMountains.Tools.Feedbacks.Editor
+    - MoreMountains.NiceVibrations.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

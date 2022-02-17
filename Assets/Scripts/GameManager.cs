@@ -1,103 +1,218 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameAnalyticsSDK;
-using Managers;
+﻿using System;
+using System.Collections;
+using MoreMountains.Tools;
+using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : MonoBehaviour
 {
-    public GameObject game;
-    [SerializeField] private GameObject win;
-    [SerializeField] private GameObject fail;
-    [SerializeField] private CoinSystem coinSystem;
-    [SerializeField] private Text levelTextUI, vsTextUI;
-    [SerializeField] private Button nextLevelButton, retryLevelButton;
+    [SerializeField] private Button buyHealthBtn, buyPowerBtn;
+    [SerializeField] private MMProgressBar playerHealthBar;
+    [SerializeField] private MMProgressBar enemyHealthBar;
 
-    public static bool bonusLevel;
 
-    protected override void Awake()
+    [SerializeField] private Text totalCoinsText,
+        healthPriceText,
+        powerPriceText,
+        bonusHealthText,
+        bonusPowerText,
+        playerHealthText,
+        enemyHealthText;
+
+    [SerializeField] private TextMeshProUGUI playerPowerText;
+
+    [SerializeField] private Image unableHealth, unablePower;
+
+    public int totalCoins,
+        healthPrice,
+        powerPrice,
+        bonusHealthValue,
+        bonusPowerValue,
+        playerPower,
+        playerHealth,
+        enemyHealth,
+        enemyPower,
+        currentLevel,
+        dmgPwr;
+    
+    [SerializeField] private HitPower hitPower;
+
+    public bool strongHit;
+    public bool playerWin, playerLoose;
+    private int maxHealhPlayer;
+    private int maxHealhEnemy;
+
+    private void Awake()
     {
-        base.Awake();
+        Initialization();
+        InitializeHealth();
+        CheckHealthButton();
+        CheckPowerButton();
+
+        buyHealthBtn.onClick.AddListener(BuyHealth);
+        buyPowerBtn.onClick.AddListener(BuyPower);
+
+        playerWin = false;
+        playerLoose = false;
+
+        dmgPwr = 0;
+
+        currentLevel = PlayerPrefs.GetInt(StringKeys.level, 1);
+        enemyHealth = Random.Range(5 * currentLevel + 95, 9 * currentLevel + 101);
+        enemyHealthText.text = enemyHealth.ToString();
+        playerHealthText.text = playerHealth.ToString();
     }
 
-    void Start()
+    private void InitializeHealth()
     {
-        nextLevelButton.onClick.AddListener(NextLevel);
-        retryLevelButton.onClick.AddListener(RetryLevel);
+        playerHealth= PlayerPrefs.GetInt("PlayerHealth", 100);
+        enemyHealth= PlayerPrefs.GetInt("EnemyHealth", 100);
+        maxHealhEnemy= enemyHealth;
+        maxHealhPlayer= playerHealth;
+        
+    }
 
-        if (bonusLevel)
+    private void EnemyAttackPower()
+    {
+        int lowestHit = 6 * currentLevel + 17;
+        int strongestHit = 7 * currentLevel + 21;
+        enemyPower = Random.Range(lowestHit, strongestHit);
+        dmgPwr = enemyPower;    
+        if (dmgPwr >= (strongestHit - (strongestHit - lowestHit)))
         {
-            vsTextUI.fontSize = 60;
-            vsTextUI.text = "BONUS";
-            levelTextUI.text = "LEVEL";
+            strongHit = true;
+        }
+    }
+
+    private bool CheckHealthButton()
+    {
+        if (int.Parse(totalCoinsText.text) < int.Parse(healthPriceText.text))
+        {
+            unableHealth.GetComponent<Image>().color = Color.gray;
+            unableHealth.GetComponent<Button>().enabled = false;
+            return false;
+        }
+
+        return true;
+    }
+
+    private bool CheckPowerButton()
+    {
+        if (int.Parse(totalCoinsText.text) < int.Parse(powerPriceText.text))
+        {
+            unablePower.GetComponent<Image>().color = Color.gray;
+            unablePower.GetComponent<Button>().enabled = false;
+            return false;
+        }
+
+        return true;
+    }
+
+    public void PlayerGetDamage()
+    {
+        EnemyAttackPower();
+        if (dmgPwr >= playerHealth)
+        {
+            playerHealth -= dmgPwr;
+            playerHealthText.text = "0";
+            playerHealthBar.UpdateBar(maxHealhPlayer,0,maxHealhPlayer);
+            playerHealth = 0;
+            playerLoose = true;
         }
         else
         {
-            levelTextUI.text = "LEVEL " + PlayerPrefs.GetInt(StringKeys.level, 1).ToString();
-            vsTextUI.text = "VS";
-            vsTextUI.fontSize = 100;
+            playerHealth -= dmgPwr;
+            playerHealthBar.UpdateBar(dmgPwr,0,maxHealhPlayer);
+            playerHealthText.text = playerHealth.ToString();
         }
+    }
+
+    public IEnumerator EnemyGetDamage()
+    {
+        var playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
+
+        if (playerHit >= enemyHealth)
+        {
+            enemyHealthText.text = "0";
+            enemyHealthBar.UpdateBar(maxHealhEnemy,0,maxHealhEnemy);
+            enemyHealth = 0;
+            playerWin = true;
+            var nextLevel = 1 + PlayerPrefs.GetInt(StringKeys.level, 1);
+            PlayerPrefs.SetInt(StringKeys.level, nextLevel);
+        }
+        else
+        {
+            playerPowerText.text = playerHit.ToString();
+            enemyHealth -= playerHit;
+            enemyHealthBar.UpdateBar(playerHit,0,maxHealhEnemy);
+            enemyHealthText.text = enemyHealth.ToString();
+            yield return new WaitForSeconds(5);
+            playerPowerText.text = playerPower.ToString();
+        }
+    }
+
+    private void Initialization()
+    {
+        totalCoins = PlayerPrefs.GetInt(StringKeys.totalCoins, 51);
+        totalCoinsText.text = totalCoins.ToString();
+
+        healthPrice = PlayerPrefs.GetInt(StringKeys.healthPrice, 25);
+        healthPriceText.text = healthPrice.ToString();
+
+        powerPrice = PlayerPrefs.GetInt(StringKeys.powerPrice, 25);
+        powerPriceText.text = powerPrice.ToString();
+
+        playerHealth = PlayerPrefs.GetInt(StringKeys.playerMaxHealth, 100);
         
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
-            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
+        playerPower = PlayerPrefs.GetInt(StringKeys.playerMaxPower, 35);
+        playerPowerText.text = playerPower.ToString();
+
+        bonusHealthValue = PlayerPrefs.GetInt(StringKeys.bonusHealth, 5);
+        bonusHealthText.text = "HEALTH(" + bonusHealthValue.ToString() + ")";
+
+        bonusPowerValue = PlayerPrefs.GetInt(StringKeys.bonusPower, 10);
+        bonusPowerText.text = "POWER(" + bonusPowerValue.ToString() + ")";
+        playerHealthText.text = playerHealth.ToString();
     }
 
-    private void FixedUpdate()
+    private void BuyHealth()
     {
-        if (coinSystem.playerWin)
+        if (CheckHealthButton())
         {
-            coinSystem.playerWin = false;
-            Win();
+            totalCoins -= healthPrice;
+            PlayerPrefs.SetInt(StringKeys.totalCoins, totalCoins);
+            playerHealth += bonusHealthValue;
+            PlayerPrefs.SetInt(StringKeys.playerMaxHealth, playerHealth);
+            bonusHealthValue += 1;
+            PlayerPrefs.SetInt(StringKeys.bonusHealth, bonusHealthValue);
+            healthPrice += 50;
+            PlayerPrefs.SetInt(StringKeys.healthPrice, healthPrice);
+            Initialization();
+            CheckHealthButton();
         }
-        else if (coinSystem.playerLoose)
+    }
+
+    private void BuyPower()
+    {
+        if (CheckPowerButton())
         {
-            coinSystem.playerLoose = false;
-            Fail();
+            totalCoins -= powerPrice;
+            PlayerPrefs.SetInt(StringKeys.totalCoins, totalCoins);
+            playerPower += bonusPowerValue;
+            PlayerPrefs.SetInt(StringKeys.playerMaxPower, playerPower);
+            bonusHealthValue += 1;
+            PlayerPrefs.SetInt(StringKeys.bonusPower, bonusPowerValue);
+            powerPrice += 50;
+            PlayerPrefs.SetInt(StringKeys.powerPrice, powerPrice);
+            Initialization();
+            CheckPowerButton();
         }
     }
 
-    private void NextLevel()
+    private int GetDamagePercent(int max,int input)
     {
-        if (PlayerPrefs.GetInt(StringKeys.level, 1) % 3 == 0)
-        {
-            IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
-        }
-        SceneManager.LoadScene(Random.Range(1,3));
-    }
-
-    private void RetryLevel()
-    {
-        IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
-        var sceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-    }
-
-    private void Win()
-    {
-        if (fail.activeInHierarchy) return;
-        game.SetActive(false);
-        win.SetActive(true);
-        SoundManager.Instance.PlaySound("win");
-        PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(25));
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
-            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
-    }
-
-    private void Fail()
-    {
-        if (win.activeInHierarchy) return;
-        game.SetActive(false);
-        fail.SetActive(true);
-        SoundManager.Instance.PlaySound("fail");
-        PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(10));
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
-            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
-    }
-
-    private int GetCoinsToAdd(int multiplier)
-    {
-        return coinSystem.totalCoins + multiplier * PlayerPrefs.GetInt(StringKeys.level, 1);
+        return  (input * 100) / max;
     }
 }

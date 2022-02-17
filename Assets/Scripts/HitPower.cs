@@ -1,11 +1,12 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class HitPower : MonoBehaviour
 {
     [SerializeField] private GameObject startPos, endPos;
-    [SerializeField] private CoinSystem coinSystem;
+    [FormerlySerializedAs("coinSystem")] [SerializeField] private GameManager gameManager;
     [SerializeField] private SlapController slapController;
 
     private Vector3 targetPos;
