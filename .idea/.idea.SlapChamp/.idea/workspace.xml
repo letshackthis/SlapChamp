@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/NPS/erika_archer@Dwarf Idle (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/NPS/erika_archer@Dwarf Idle (1).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Assets/Scenes/ProgressBar and Sliders.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Assets/Scenes/ProgressBar and Sliders.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Feel/FeelDemos/Tactical/Prefabs/FeelTacticalSimpleFloatingText.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Feel/FeelDemos/Tactical/Prefabs/FeelTacticalSimpleFloatingText.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoinSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoinSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HitPower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HitPower.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +129,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -222,7 +210,7 @@
       <workItem from="1644498450369" duration="11065000" />
       <workItem from="1644842861099" duration="1991000" />
       <workItem from="1644922669872" duration="16820000" />
-      <workItem from="1645112336079" duration="2496000" />
+      <workItem from="1645112336079" duration="5897000" />
     </task>
     <servers />
   </component>

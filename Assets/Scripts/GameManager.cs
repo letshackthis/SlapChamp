@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using TMPro;
 using UnityEngine;
@@ -11,8 +12,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button buyHealthBtn, buyPowerBtn;
     [SerializeField] private MMProgressBar playerHealthBar;
     [SerializeField] private MMProgressBar enemyHealthBar;
-
-
+    [SerializeField] private Transform enemyTransform;
+    [SerializeField] private Transform playerTransform;
+    public MMFeedbacks slapFeedbackEnemy;
+    public MMFeedbacks slapFeedbackPlayer;
     [SerializeField] private Text totalCoinsText,
         healthPriceText,
         powerPriceText,
@@ -113,6 +116,7 @@ public class GameManager : MonoBehaviour
     public void PlayerGetDamage()
     {
         EnemyAttackPower();
+        slapFeedbackPlayer?.PlayFeedbacks(playerTransform.position, dmgPwr);
         if (dmgPwr >= playerHealth)
         {
             playerHealth -= dmgPwr;
@@ -124,7 +128,7 @@ public class GameManager : MonoBehaviour
         else
         {
             playerHealth -= dmgPwr;
-            playerHealthBar.UpdateBar(dmgPwr,0,maxHealhPlayer);
+            playerHealthBar.UpdateBar(playerHealth,0,maxHealhPlayer);
             playerHealthText.text = playerHealth.ToString();
         }
     }
@@ -132,7 +136,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator EnemyGetDamage()
     {
         var playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
-
+        slapFeedbackEnemy?.PlayFeedbacks(enemyTransform.position, playerHit);
         if (playerHit >= enemyHealth)
         {
             enemyHealthText.text = "0";
@@ -146,7 +150,7 @@ public class GameManager : MonoBehaviour
         {
             playerPowerText.text = playerHit.ToString();
             enemyHealth -= playerHit;
-            enemyHealthBar.UpdateBar(playerHit,0,maxHealhEnemy);
+            enemyHealthBar.UpdateBar(enemyHealth,0,maxHealhEnemy);
             enemyHealthText.text = enemyHealth.ToString();
             yield return new WaitForSeconds(5);
             playerPowerText.text = playerPower.ToString();

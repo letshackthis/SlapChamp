@@ -9,9 +9,16 @@ public class CameraMove : MonoBehaviour
 
     private void Awake()
     {
-        camTransform = Camera.main.transform;
+        camTransform = transform;
+       
     }
-    
+
+    private void Start()
+    {
+        camTransform.position = cameraPositionTwo.transform.position;
+        camTransform.rotation = cameraPositionTwo.transform.rotation;
+    }
+
     public void CameraPlayerTurn()
     {
         camTransform.DOMove(cameraPositionTwo.transform.position, 2f).SetDelay(1.5f);

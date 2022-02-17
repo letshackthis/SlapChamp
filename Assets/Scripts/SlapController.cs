@@ -30,8 +30,7 @@ public class SlapController : MonoBehaviour
         enemyAnimator = enemy.GetComponent<Animator>();
         playerTurn = true;
         canclick = true;
-        cameraMove.CameraPlayerTurn();
-
+    
         powerBtn.SetActive(true);
         healthBtn.SetActive(true);
     }
