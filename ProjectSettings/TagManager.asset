@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
+  - lb_perchTarget
+  - lb_groundTarget
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -12,7 +16,7 @@ TagManager:
   - Water
   - UI
   - PostProcess
-  - 
+  - Player
   - 
   - 
   - 
