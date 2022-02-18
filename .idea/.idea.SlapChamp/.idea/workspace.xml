@@ -8,10 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/EnemyAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/EnemyAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyKingdom/Models/FX_Sphere_03.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyKingdom/Models/FX_Sphere_03.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +214,7 @@
       <workItem from="1644922669872" duration="16820000" />
       <workItem from="1645112336079" duration="7161000" />
       <workItem from="1645176585718" duration="35000" />
-      <workItem from="1645176703714" duration="8668000" />
+      <workItem from="1645176703714" duration="10530000" />
     </task>
     <servers />
   </component>

@@ -85,11 +85,12 @@ public class SlapController : MonoBehaviour
 
     public void Hit(string character)
     {
+        int randomValueSlap = Random.Range(0, 7);
         if (character == "player")
         {
-            playerAnimator.SetTrigger("slap");
+            playerAnimator.SetTrigger("Slap"+randomValueSlap);
         }
-        else enemyAnimator.SetTrigger("slap");
+        else enemyAnimator.SetTrigger("Slap"+randomValueSlap);
     }
 
     public void GetHit(string character)
