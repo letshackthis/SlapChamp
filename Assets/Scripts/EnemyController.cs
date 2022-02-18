@@ -1,18 +1,12 @@
-﻿using System.Collections;
-using DG.Tweening;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] private SlapController player;
     [SerializeField] private GameManager gameManager;
-    void Start()
-    {
-       
-    }
-
     public void EnemySlap()
     {
+        Debug.Log("EnemySlap");
         StartCoroutine(player.EnemySlapping());
     }
 

@@ -8,7 +8,8 @@ public class SlapController : MonoBehaviour
     [SerializeField] private HitPower hitPower;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private CameraMove cameraMove;
-
+    [SerializeField] private ParticleSystem playerParticles;
+    [SerializeField] private ParticleSystem enemyParticles;
     private Animator playerAnimator;
     private Animator enemyAnimator;
     public bool playerTurn;
@@ -21,6 +22,8 @@ public class SlapController : MonoBehaviour
     private static readonly int StandUp = Animator.StringToHash("standUp");
     private static readonly int IsUp = Animator.StringToHash("isUp");
     private static readonly int Lowslap = Animator.StringToHash("lowslap");
+    private static readonly int mediumslap = Animator.StringToHash("mediumSlap");
+    private static readonly int mediumslap2 = Animator.StringToHash("mediumSlap2");
 
     #endregion
 
@@ -70,6 +73,9 @@ public class SlapController : MonoBehaviour
 
     public IEnumerator EnemySlapping()
     {
+        enemyParticles.Clear();
+        enemyParticles.Pause();
+        enemyParticles.Stop();
         yield return new WaitForSeconds(2);
         enemyAnimator.SetBool(Preparing, false);
 
@@ -93,14 +99,7 @@ public class SlapController : MonoBehaviour
             gameManager.PlayerGetDamage();
             hitPower.sequence.Play();
 
-            if (gameManager.strongHit)
-            {
-                StrongSlap(playerAnimator);
-            }
-            else
-            {
-                LowSlap(playerAnimator);
-            }
+            SetAnimationPlayerSlap(playerAnimator, gameManager.dmgPwr, gameManager.enemyPower, playerParticles);
 
             DOVirtual.DelayedCall(0.2f, () =>
             {
@@ -113,15 +112,8 @@ public class SlapController : MonoBehaviour
         {
             StartCoroutine(gameManager.EnemyGetDamage());
 
-            if (hitPower.CheckHitPowerSection() == 1f)
-            {
-                StrongSlap(enemyAnimator);
-            }
-            else
-            {
-                LowSlap(enemyAnimator);
-            }
-
+            SetAnimationPlayerSlap(enemyAnimator, gameManager.playerHit, gameManager.playerPower, enemyParticles);
+            
             DOVirtual.DelayedCall(0.2f, () =>
             {
                 playerTurn = false;
@@ -136,6 +128,44 @@ public class SlapController : MonoBehaviour
             Handheld.Vibrate();
         }
     }
+
+    private void SetAnimationPlayerSlap(Animator animator,int hitCurrentPower, int maxPower, ParticleSystem particleSystem)
+    {
+        float percentage =(float) hitCurrentPower  / maxPower;
+        
+        if (percentage <= 0.3f)
+        {
+            Debug.Log("Low");
+            animator.SetTrigger(Lowslap);
+        }
+        else if (percentage > 0.3f && percentage <= 0.9f)
+        {
+            Debug.Log("Medium");
+
+            bool randomValue = Random.value > 0.3f;
+
+            if (randomValue)
+            {
+                animator.SetTrigger(mediumslap);
+                particleSystem.Play();
+            }
+            else
+            {
+                animator.SetTrigger(mediumslap2);
+            }
+        }
+        else
+        {
+            Debug.Log("High");
+
+            animator.SetTrigger(Knocked);
+            animator.SetTrigger(StandUp);
+            animator.SetTrigger(IsUp);
+            SoundManager.Instance.PlaySound("wow");
+        }
+
+    }
+    
 
 
     private void StrongSlap(Animator animator)
@@ -173,6 +203,7 @@ public class SlapController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
         canclick = true;
+        playerParticles.Stop();
     }
 
     IEnumerator DisableIndicator(bool activeState, float time)

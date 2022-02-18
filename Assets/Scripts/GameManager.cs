@@ -45,7 +45,8 @@ public class GameManager : MonoBehaviour
         enemyHealth,
         enemyPower,
         currentLevel,
-        dmgPwr;
+        dmgPwr,
+        playerHit;
     
     [SerializeField] private HitPower hitPower;
 
@@ -89,7 +90,7 @@ public class GameManager : MonoBehaviour
         int lowestHit = 6 * currentLevel + 17;
         int strongestHit = 7 * currentLevel + 21;
         enemyPower = Random.Range(lowestHit, strongestHit);
-        dmgPwr = enemyPower;    
+        dmgPwr = enemyPower;
         if (dmgPwr >= (strongestHit - (strongestHit - lowestHit)))
         {
             strongHit = true;
@@ -144,7 +145,7 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator EnemyGetDamage()
     {
-        var playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
+         playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
         slapFeedbackEnemy?.PlayFeedbacks(enemyTransform.position, playerHit);
         ActivateSlapParticles(playerHit, playerPower, playerHand);
         if (playerHit >= enemyHealth)

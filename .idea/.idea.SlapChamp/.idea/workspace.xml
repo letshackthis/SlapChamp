@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/EnemyAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/EnemyAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonFantasyKingdom/Models/FX_Sphere_03.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonFantasyKingdom/Models/FX_Sphere_03.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +98,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/living birds/scripts/lb_Bird.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Window.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Unity Editors/2020.3.22f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/AIUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Managers/GameAnalyticsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -123,11 +130,12 @@
       <option value="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" />
       <option value="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo.cs" />
       <option value="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -209,7 +217,7 @@
       <workItem from="1644922669872" duration="16820000" />
       <workItem from="1645112336079" duration="7161000" />
       <workItem from="1645176585718" duration="35000" />
-      <workItem from="1645176703714" duration="4378000" />
+      <workItem from="1645176703714" duration="8668000" />
     </task>
     <servers />
   </component>
