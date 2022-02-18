@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
     {
         EnemyAttackPower();
         slapFeedbackPlayer?.PlayFeedbacks(playerTransform.position, dmgPwr);
-        ActivateSlapParticles(dmgPwr, maxHealhPlayer, enemyHand);
+        ActivateSlapParticles(dmgPwr, enemyPower, enemyHand);
         if (dmgPwr >= playerHealth)
         {
             playerHealth -= dmgPwr;
@@ -139,13 +139,14 @@ public class GameManager : MonoBehaviour
             playerHealthBar.UpdateBar(playerHealth,0,maxHealhPlayer);
             playerHealthText.text = playerHealth.ToString();
         }
+        
     }
 
     public IEnumerator EnemyGetDamage()
     {
         var playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
         slapFeedbackEnemy?.PlayFeedbacks(enemyTransform.position, playerHit);
-        ActivateSlapParticles(playerHit, maxHealhEnemy, playerHand);
+        ActivateSlapParticles(playerHit, playerPower, playerHand);
         if (playerHit >= enemyHealth)
         {
             enemyHealthText.text = "0";
@@ -161,9 +162,12 @@ public class GameManager : MonoBehaviour
             enemyHealth -= playerHit;
             enemyHealthBar.UpdateBar(enemyHealth,0,maxHealhEnemy);
             enemyHealthText.text = enemyHealth.ToString();
+            
             yield return new WaitForSeconds(5);
             playerPowerText.text = playerPower.ToString();
         }
+        
+
     }
 
     private void Initialization()
@@ -227,7 +231,7 @@ public class GameManager : MonoBehaviour
     private void ActivateSlapParticles(int currentHit, int maxHit,Transform targetPosition)
     {
         ParticleSystem currentParticles;
-        float percentage = (currentHit * 100) / maxHit;
+        float percentage =(float) currentHit  / maxHit;
         if (percentage <= 0.3f)
         {
             currentParticles = lowSlapList[Random.Range(0, lowSlapList.Count)];
