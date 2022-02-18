@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using TMPro;
@@ -9,11 +10,17 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private List<ParticleSystem> lowSlapList;
+    [SerializeField] private List<ParticleSystem> mediumSlapList;
+    [SerializeField] private List<ParticleSystem> highSlapList;
     [SerializeField] private Button buyHealthBtn, buyPowerBtn;
     [SerializeField] private MMProgressBar playerHealthBar;
     [SerializeField] private MMProgressBar enemyHealthBar;
     [SerializeField] private Transform enemyTransform;
     [SerializeField] private Transform playerTransform;
+    [SerializeField] private Transform playerHand;
+    [SerializeField] private Transform enemyHand;
+    
     public MMFeedbacks slapFeedbackEnemy;
     public MMFeedbacks slapFeedbackPlayer;
     [SerializeField] private Text totalCoinsText,
@@ -117,6 +124,7 @@ public class GameManager : MonoBehaviour
     {
         EnemyAttackPower();
         slapFeedbackPlayer?.PlayFeedbacks(playerTransform.position, dmgPwr);
+        ActivateSlapParticles(dmgPwr, maxHealhPlayer, enemyHand);
         if (dmgPwr >= playerHealth)
         {
             playerHealth -= dmgPwr;
@@ -137,6 +145,7 @@ public class GameManager : MonoBehaviour
     {
         var playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
         slapFeedbackEnemy?.PlayFeedbacks(enemyTransform.position, playerHit);
+        ActivateSlapParticles(playerHit, maxHealhEnemy, playerHand);
         if (playerHit >= enemyHealth)
         {
             enemyHealthText.text = "0";
@@ -213,6 +222,27 @@ public class GameManager : MonoBehaviour
             Initialization();
             CheckPowerButton();
         }
+    }
+
+    private void ActivateSlapParticles(int currentHit, int maxHit,Transform targetPosition)
+    {
+        ParticleSystem currentParticles;
+        float percentage = (currentHit * 100) / maxHit;
+        if (percentage <= 0.3f)
+        {
+            currentParticles = lowSlapList[Random.Range(0, lowSlapList.Count)];
+        }
+        else if (percentage > 0.3f && percentage <= 0.9f)
+        {
+            currentParticles = mediumSlapList[Random.Range(0, mediumSlapList.Count)];
+        }
+        else
+        {
+            currentParticles = highSlapList[Random.Range(0, highSlapList.Count)];
+        }
+
+        currentParticles.transform.position = targetPosition.position;
+        currentParticles.Play();
     }
 
     private int GetDamagePercent(int max,int input)

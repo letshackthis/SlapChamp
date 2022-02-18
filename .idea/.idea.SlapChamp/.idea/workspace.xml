@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Feel/FeelDemos/Tactical/Prefabs/FeelTacticalSimpleFloatingText.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Feel/FeelDemos/Tactical/Prefabs/FeelTacticalSimpleFloatingText.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,9 +126,11 @@
       <option value="$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HealthManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo.cs" />
+      <option value="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -210,7 +210,9 @@
       <workItem from="1644498450369" duration="11065000" />
       <workItem from="1644842861099" duration="1991000" />
       <workItem from="1644922669872" duration="16820000" />
-      <workItem from="1645112336079" duration="5897000" />
+      <workItem from="1645112336079" duration="7161000" />
+      <workItem from="1645176585718" duration="35000" />
+      <workItem from="1645176703714" duration="2479000" />
     </task>
     <servers />
   </component>
