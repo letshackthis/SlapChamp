@@ -5,6 +5,7 @@ using UnityEngine;
 public class SlapController : MonoBehaviour
 {
     [SerializeField] private GameObject enemy, powerBtn, healthBtn, hitIndicator;
+    [SerializeField] private GamePlayPlace gamePlayPlace;
     [SerializeField] private HitPower hitPower;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private CameraMove cameraMove;
@@ -138,6 +139,7 @@ public class SlapController : MonoBehaviour
         {
             Debug.Log("Low");
             animator.SetTrigger(Lowslap);
+            gamePlayPlace.Bad();
         }
         else if (percentage > 0.3f && percentage <= 0.9f)
         {
@@ -154,6 +156,15 @@ public class SlapController : MonoBehaviour
             {
                 animator.SetTrigger(mediumslap2);
             }
+
+            if (Random.value > 0.3f)
+            {
+                gamePlayPlace.Good();
+            }
+            else
+            {
+                gamePlayPlace.Bad();
+            }
         }
         else
         {
@@ -163,6 +174,8 @@ public class SlapController : MonoBehaviour
             animator.SetTrigger(StandUp);
             animator.SetTrigger(IsUp);
             SoundManager.Instance.PlaySound("wow");
+            
+            gamePlayPlace.Good();
         }
 
     }
