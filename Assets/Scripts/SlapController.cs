@@ -125,10 +125,7 @@ public class SlapController : MonoBehaviour
 
         SoundManager.Instance.PlaySound("slap");
 
-        if (PlayerPrefs.GetInt("vibro", 1) == 1)
-        {
-            Handheld.Vibrate();
-        }
+      
     }
 
     private void SetAnimationPlayerSlap(Animator animator,int hitCurrentPower, int maxPower, ParticleSystem particleSystem)

@@ -1,6 +1,7 @@
 using System;
 using Customisation.SO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Customisation.UI
@@ -11,6 +12,7 @@ namespace Customisation.UI
         [SerializeField] private Text textButton;
         [SerializeField] private Image imageButton;
         [SerializeField] private Button currentButton;
+      
 
         public Image ImageButton => imageButton;
 
@@ -24,7 +26,7 @@ namespace Customisation.UI
         [SerializeField] private ButtonHeaderData[] buttonList;
         [SerializeField] private Color inactiveColor;
         [SerializeField] private Color activeColor;
-        
+        [SerializeField] private Button game ;
         private void Awake()
         {
             ChangeActiveButton(0);
@@ -39,6 +41,11 @@ namespace Customisation.UI
                 ChangeActiveButton(1);
                 CameraViewChanger.OnCameraViewChange?.Invoke(ItemType.None);
                 characterChannel.OnItemHolderChange?.Invoke(ItemHolderType.EditHolder);
+            });
+            
+            game.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene("Level1");
             });
         }
 

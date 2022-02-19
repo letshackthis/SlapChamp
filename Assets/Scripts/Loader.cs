@@ -17,7 +17,7 @@ public class Loader : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return null;
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(Random.Range(1,3));
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(1);
 
         while (!asyncOperation.isDone)
         {

@@ -17,11 +17,15 @@ public class RewardManager : MonoBehaviour
     [SerializeField] private LoopType loopType = LoopType.Yoyo;
     
     [SerializeField] private Vector3 animTarget = new Vector3(1.1f, 1.1f, 1.1f);
+
+    private int level;
     private void Start()
     {
+        level=PlayerPrefs.GetInt(StringKeys.level, 1);
+        
         GetComponent<Button>().onClick.AddListener(AddCoins);
         GetComponentInChildren<Text>().text =
-            "GET +" + (basicReward * PlayerPrefs.GetInt(StringKeys.level, 1)).ToString() + "COINS";
+            "GET +" + (basicReward * level) + "COINS";
 
         transform.DOScale(animTarget, animDuration).SetLoops(-1, loopType);
     }
@@ -30,8 +34,8 @@ public class RewardManager : MonoBehaviour
     {
         IronSourceManager.Instance.CallReward(RewardPlacement.REWARD_COINS.ToString(), () =>
         {
-            PlayerPrefs.SetInt(StringKeys.totalCoins,
-                PlayerPrefs.GetInt(StringKeys.totalCoins) + 50 * PlayerPrefs.GetInt(StringKeys.level, 1));
+            gameObject.SetActive(false);
+            GameWallet.Money += (50 * level);
         });
     }
 }

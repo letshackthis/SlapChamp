@@ -15,7 +15,7 @@ public class LevelManager : Singleton<LevelManager>
     [FormerlySerializedAs("coinSystem")] [SerializeField] private GameManager gameManager;
     [SerializeField] private Text levelTextUI, vsTextUI;
     [SerializeField] private Button nextLevelButton, retryLevelButton;
-
+    [SerializeField] private AddBluePrint addBluePrint;
     public static bool bonusLevel;
 
     protected override void Awake()
@@ -42,7 +42,7 @@ public class LevelManager : Singleton<LevelManager>
         }
         
         GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
-            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
+            "COINS_" +  GameWallet.Money);
     }
 
     private void FixedUpdate()
@@ -65,25 +65,30 @@ public class LevelManager : Singleton<LevelManager>
         {
             IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         }
-        SceneManager.LoadScene(Random.Range(1,3));
+        SceneManager.LoadScene("Level1");
     }
 
     private void RetryLevel()
     {
         IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         var sceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        SceneManager.LoadScene(sceneName);
     }
 
     private void Win()
     {
+        if (Random.value >= 0.7f)
+        {
+            addBluePrint.Add();
+        }
+        
         if (fail.activeInHierarchy) return;
         game.SetActive(false);
         win.SetActive(true);
         SoundManager.Instance.PlaySound("win");
-        PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(25));
+        GameWallet.Money += GetCoinsToAdd(25);
         GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
-            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
+            "COINS_" +  GameWallet.Money);
     }
 
     private void Fail()
@@ -92,13 +97,13 @@ public class LevelManager : Singleton<LevelManager>
         game.SetActive(false);
         fail.SetActive(true);
         SoundManager.Instance.PlaySound("fail");
-        PlayerPrefs.SetInt(StringKeys.totalCoins, GetCoinsToAdd(10));
+        GameWallet.Money += GetCoinsToAdd(10);
         GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
-            "COINS_" +  PlayerPrefs.GetInt(StringKeys.totalCoins).ToString());
+            "COINS_" +  GameWallet.Money);
     }
 
     private int GetCoinsToAdd(int multiplier)
     {
-        return gameManager.totalCoins + multiplier * PlayerPrefs.GetInt(StringKeys.level, 1);
+        return multiplier * PlayerPrefs.GetInt(StringKeys.level, 1);
     }
 }

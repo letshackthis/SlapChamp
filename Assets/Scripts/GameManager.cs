@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform playerHand;
     [SerializeField] private Transform enemyHand;
-    
+    [SerializeField] private RagdollState enemyRagdoll;
+    [SerializeField] private RagdollState playerRagdoll;
     public MMFeedbacks slapFeedbackEnemy;
     public MMFeedbacks slapFeedbackPlayer;
     [SerializeField] private Text totalCoinsText,
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
         enemyHealthText;
 
     [SerializeField] private TextMeshProUGUI playerPowerText;
+  
 
     [SerializeField] private Image unableHealth, unablePower;
 
@@ -131,6 +133,7 @@ public class GameManager : MonoBehaviour
             playerHealth -= dmgPwr;
             playerHealthText.text = "0";
             playerHealthBar.UpdateBar(maxHealhPlayer,0,maxHealhPlayer);
+            playerRagdoll.Attack(enemyHand);
             playerHealth = 0;
             playerLoose = true;
         }
@@ -152,6 +155,7 @@ public class GameManager : MonoBehaviour
         {
             enemyHealthText.text = "0";
             enemyHealthBar.UpdateBar(maxHealhEnemy,0,maxHealhEnemy);
+            enemyRagdoll.Attack(playerHand);
             enemyHealth = 0;
             playerWin = true;
             var nextLevel = 1 + PlayerPrefs.GetInt(StringKeys.level, 1);
@@ -173,7 +177,7 @@ public class GameManager : MonoBehaviour
 
     private void Initialization()
     {
-        totalCoins = PlayerPrefs.GetInt(StringKeys.totalCoins, 51);
+        totalCoins = GameWallet.Money;
         totalCoinsText.text = totalCoins.ToString();
 
         healthPrice = PlayerPrefs.GetInt(StringKeys.healthPrice, 25);
@@ -200,7 +204,7 @@ public class GameManager : MonoBehaviour
         if (CheckHealthButton())
         {
             totalCoins -= healthPrice;
-            PlayerPrefs.SetInt(StringKeys.totalCoins, totalCoins);
+            GameWallet.Money -= healthPrice;
             playerHealth += bonusHealthValue;
             PlayerPrefs.SetInt(StringKeys.playerMaxHealth, playerHealth);
             bonusHealthValue += 1;
@@ -217,7 +221,7 @@ public class GameManager : MonoBehaviour
         if (CheckPowerButton())
         {
             totalCoins -= powerPrice;
-            PlayerPrefs.SetInt(StringKeys.totalCoins, totalCoins);
+            GameWallet.Money -= powerPrice;
             playerPower += bonusPowerValue;
             PlayerPrefs.SetInt(StringKeys.playerMaxPower, playerPower);
             bonusHealthValue += 1;

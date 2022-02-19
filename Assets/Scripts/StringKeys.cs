@@ -4,7 +4,6 @@ using UnityEngine;
 
 public static class StringKeys
 {
-    public const string totalCoins = "TC";
     public const string healthPrice = "HP";
     public const string powerPrice = "PP";
     public const string bonusHealth = "BH";
