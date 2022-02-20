@@ -8,7 +8,7 @@ public class SoundManager : Singleton<SoundManager>
     public AudioClip[] slap;
     public AudioClip[] wow;
     public AudioClip win;
-    public AudioClip fail;
+    public AudioClip[] fail;
 
     protected override void Awake()
     {
@@ -44,7 +44,7 @@ public class SoundManager : Singleton<SoundManager>
                 aSource.PlayOneShot(win);
                 break;
             case "fail":
-                aSource.PlayOneShot(fail);
+                aSource.PlayOneShot(fail[Random.Range(0, fail.Length)]);
                 break;
         }
     }

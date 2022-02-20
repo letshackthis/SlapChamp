@@ -240,6 +240,7 @@ public class GameManager : MonoBehaviour
         if (percentage <= 0.3f)
         {
             currentParticles = lowSlapList[Random.Range(0, lowSlapList.Count)];
+
         }
         else if (percentage > 0.3f && percentage <= 0.9f)
         {

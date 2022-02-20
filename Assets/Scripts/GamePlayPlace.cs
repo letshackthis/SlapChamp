@@ -19,6 +19,7 @@ public class GamePlayPlace : MonoBehaviour
 
     public void Good()
     {
+        SoundManager.Instance.PlaySound("wow");
         foreach (HumanController human in peopleList)
         {
             human.SetRandomGood();
@@ -27,6 +28,7 @@ public class GamePlayPlace : MonoBehaviour
 
     public void Bad()
     {
+        SoundManager.Instance.PlaySound("fail");
         foreach (HumanController human in peopleList)
         {
             human.SetRandomBad();

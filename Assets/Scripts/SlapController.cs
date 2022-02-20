@@ -170,28 +170,12 @@ public class SlapController : MonoBehaviour
             animator.SetTrigger(Knocked);
             animator.SetTrigger(StandUp);
             animator.SetTrigger(IsUp);
-            SoundManager.Instance.PlaySound("wow");
-            
+
             gamePlayPlace.Good();
         }
 
     }
     
-
-
-    private void StrongSlap(Animator animator)
-    {
-        animator.SetTrigger(Knocked);
-        animator.SetTrigger(StandUp);
-        animator.SetTrigger(IsUp);
-        SoundManager.Instance.PlaySound("wow");
-    }
-
-    private void LowSlap(Animator animator)
-    {
-        animator.SetTrigger(Lowslap);
-    }
-
     public void StayDown(string character)
     {
         if (character == "player")
