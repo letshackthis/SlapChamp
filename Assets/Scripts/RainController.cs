@@ -8,17 +8,17 @@ public class RainController : MonoBehaviour
     [SerializeField] private Vector2 randomWaitTime;
     [SerializeField] private float thunderTime;
 
-    private void Awake()
-    {
-        StartTimer();
-    }
-
-    private void StartTimer()
+    public void StartTimer()
     {
         float randomWait = Random.Range(randomWaitTime.x, randomWaitTime.y);
         DOVirtual.DelayedCall(randomWait, MakeThunder);
     }
 
+    public void Stop()
+    {
+        rainSource.Stop();
+        thunderSource.Stop();
+    }
     private void MakeThunder()
     {
         thunderSource.Play();

@@ -9,14 +9,14 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private RectTransform settings, soundVibroWindow;
-    [SerializeField] private GameObject soundOff, vibroOff;
+    [SerializeField] private GameObject soundOff, vibroOff, musicOff;
     [SerializeField] private Text moneyText;
     [SerializeField] private Text bluePrintText;
     [SerializeField] private RectTransform bluePrintImage;
     [SerializeField] private RectTransform moneyImage;
     void Start()
     {
-        if (PlayerPrefs.GetInt("sound", 1) == 1)
+        if (ES3.Load("sound", true) == false)
         {
             soundOff.SetActive(false);
         }
@@ -24,8 +24,17 @@ public class UIManager : MonoBehaviour
         {
             soundOff.SetActive(true);
         }
+        
+        if (ES3.Load("music", true) == false)
+        {
+            musicOff.SetActive(false);
+        }
+        else
+        {
+            musicOff.SetActive(true);
+        }
 
-        if (PlayerPrefs.GetInt("vibro", 1) == 1)
+        if (ES3.Load("vibro", true) == false)
         {
             vibroOff.SetActive(false);
 
@@ -40,6 +49,8 @@ public class UIManager : MonoBehaviour
         
         GameWallet.OnChangeMoney+= OnChangeMoney;
         GameWallet.OnChangeBlueprint+= OnChangeBlueprint;
+        
+        SoundManager.Instance.CheckSounds();
     }
 
     private void OnDestroy()
@@ -85,33 +96,39 @@ public class UIManager : MonoBehaviour
 
     public void SoundOnOff()
     {
-        if (PlayerPrefs.GetInt("sound", 1) == 1)
+        if (ES3.Load("sound", true))
         {
-            PlayerPrefs.SetInt("sound", 0);
+            ES3.Save("sound", false);
+            soundOff.SetActive(false);
             Debug.Log("Sound off");
-            if (soundOff.activeSelf)
-            {
-                soundOff.SetActive(false);
-            }
-            else
-            {
-                soundOff.SetActive(true);
-            }
-    }
+        }
         else
         {
-            PlayerPrefs.SetInt("sound", 1);
+            ES3.Save("sound", true);
+            soundOff.SetActive(true);
             Debug.Log("Sound on");
-            if (!soundOff.activeSelf)
-            {
-                soundOff.SetActive(true);
-            }
-            else
-            {
-                soundOff.SetActive(false);
-            }
+        }
+        
+        SoundManager.Instance.CheckSounds();
+    }
+    
+    public void MusicOnOff()
+    {
+        if (ES3.Load("music", true))
+        {
+            ES3.Save("music", false);
+            musicOff.SetActive(false);
+            Debug.Log("Sound off");
+        }
+        else
+        {
+            ES3.Save("music", true);
+            musicOff.SetActive(true);
+            Debug.Log("Sound on");
+         
         }
 
+        SoundManager.Instance.CheckSounds();
     }
 
     public void VibrationOnOff()

@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : Singleton<SoundManager>
 {
@@ -9,25 +8,70 @@ public class SoundManager : Singleton<SoundManager>
     public AudioClip[] wow;
     public AudioClip win;
     public AudioClip[] fail;
+    [SerializeField] private AudioSource city;
+    [SerializeField] private AudioSource music;
+    [SerializeField] private AudioSource fire;
+    [SerializeField] private RainController rainController;
 
     protected override void Awake()
     {
         base.Awake();
+        DontDestroyOnLoad(this);
+        CheckSounds();
+    }
+
+    public void CheckSounds()
+    {
+        bool sound = ES3.Load("sound", true);
+        bool musicStatus = ES3.Load("music", true);
+
+        if (SceneManager.GetActiveScene().name == "CharacterHouse")
+        {
+            if (sound)
+            {
+                fire.Play();
+                rainController.StartTimer();
+            }
+            else
+            {
+                fire.Stop();
+                rainController.Stop();
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            if (sound)
+            {
+                city.Play();
+            }
+            else
+            {
+                city.Stop();
+            }
+
+            fire.Stop();
+            rainController.Stop();
+        }
+
+        if (musicStatus)
+        {
+            if(!music.isPlaying)
+                music.Play();
+        }
+        else
+        {
+            music.Stop();
+        }
     }
 
     void Start()
     {
         aSource = GetComponent<AudioSource>();
-
-        if (PlayerPrefs.GetInt("sound", 1) == 1)
-        {
-            PlaySound(name);
-        }
     }
 
     public void PlaySound(string name)
     {
-        if (PlayerPrefs.GetInt("sound", 1) == 0)
+        if (ES3.Load("sound", true) == false)
         {
             return;
         }

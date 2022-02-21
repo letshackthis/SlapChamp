@@ -19,6 +19,7 @@ public class GamePlayPlace : MonoBehaviour
 
     public void Good()
     {
+        Debug.Log(SoundManager.Instance.gameObject.name);
         SoundManager.Instance.PlaySound("wow");
         foreach (HumanController human in peopleList)
         {
@@ -28,6 +29,7 @@ public class GamePlayPlace : MonoBehaviour
 
     public void Bad()
     {
+        Debug.Log(SoundManager.Instance.gameObject.name);
         SoundManager.Instance.PlaySound("fail");
         foreach (HumanController human in peopleList)
         {
