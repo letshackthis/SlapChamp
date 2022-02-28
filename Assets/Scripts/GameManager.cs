@@ -60,7 +60,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Initialization();
-        InitializeHealth();
         CheckHealthButton();
         CheckPowerButton();
 
@@ -76,15 +75,8 @@ public class GameManager : MonoBehaviour
         enemyHealth = Random.Range(5 * currentLevel + 95, 9 * currentLevel + 101);
         enemyHealthText.text = enemyHealth.ToString();
         playerHealthText.text = playerHealth.ToString();
-    }
-
-    private void InitializeHealth()
-    {
-        playerHealth= PlayerPrefs.GetInt("PlayerHealth", 100);
-        enemyHealth= PlayerPrefs.GetInt("EnemyHealth", 100);
         maxHealhEnemy= enemyHealth;
         maxHealhPlayer= playerHealth;
-        
     }
 
     private void EnemyAttackPower()
@@ -132,7 +124,7 @@ public class GameManager : MonoBehaviour
         {
             playerHealth -= dmgPwr;
             playerHealthText.text = "0";
-            playerHealthBar.UpdateBar(maxHealhPlayer,0,maxHealhPlayer);
+            DecreaseProgressBar(playerHealthBar, maxHealhPlayer, maxHealhPlayer);
             playerRagdoll.Attack(enemyHand);
             playerHealth = 0;
             playerLoose = true;
@@ -140,7 +132,7 @@ public class GameManager : MonoBehaviour
         else
         {
             playerHealth -= dmgPwr;
-            playerHealthBar.UpdateBar(playerHealth,0,maxHealhPlayer);
+            DecreaseProgressBar(playerHealthBar, dmgPwr, maxHealhPlayer);
             playerHealthText.text = playerHealth.ToString();
         }
         
@@ -154,7 +146,7 @@ public class GameManager : MonoBehaviour
         if (playerHit >= enemyHealth)
         {
             enemyHealthText.text = "0";
-            enemyHealthBar.UpdateBar(maxHealhEnemy,0,maxHealhEnemy);
+            DecreaseProgressBar(enemyHealthBar, maxHealhEnemy, maxHealhEnemy);
             enemyRagdoll.Attack(playerHand);
             enemyHealth = 0;
             playerWin = true;
@@ -165,14 +157,19 @@ public class GameManager : MonoBehaviour
         {
             playerPowerText.text = playerHit.ToString();
             enemyHealth -= playerHit;
-            enemyHealthBar.UpdateBar(enemyHealth,0,maxHealhEnemy);
+            DecreaseProgressBar(enemyHealthBar, playerHit, maxHealhEnemy);
             enemyHealthText.text = enemyHealth.ToString();
             
             yield return new WaitForSeconds(5);
             playerPowerText.text = playerPower.ToString();
         }
-        
+    }
 
+    private void DecreaseProgressBar(MMProgressBar progressBar,int currentPower, int max)
+    {
+        float newProgress =progressBar.BarTarget- GetDamagePercent(max,currentPower);
+        progressBar.UpdateBar(newProgress,0,1);
+    
     }
 
     private void Initialization()
@@ -255,8 +252,8 @@ public class GameManager : MonoBehaviour
         currentParticles.Play();
     }
 
-    private int GetDamagePercent(int max,int input)
+    private float GetDamagePercent(int max,int input)
     {
-        return  (input * 100) / max;
+        return  (float) input  / max;
     }
 }

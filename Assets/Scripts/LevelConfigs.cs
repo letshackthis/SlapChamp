@@ -29,13 +29,17 @@ public class LevelConfigs : MonoBehaviour
     [SerializeField] private Transform perch1, perch2;
     
     [Header("Data container")]
-    [SerializeField] public SpawnManagerScriptableObject spawnManagerValues;
+    [SerializeField] public SpawnManagerSO spawnManagerValues;
+
+    private int randomNumber;
+    private SpawnManagerSO.Level level;
 
     void Awake()
     {
         int levelTypeIndex = GetEnumLevelTypeIndex();
-        SpawnManagerScriptableObject.Level level = spawnManagerValues.Levels[levelTypeIndex];
-        int randomNumber = Random.Range(0, level.playerPositions.Length);
+         level = spawnManagerValues.Levels[levelTypeIndex];
+         randomNumber = Random.Range(0, level.playerPositions.Length);
+
 
         #region Load Position from Scriptable
         player.position = level.playerPositions[randomNumber];
@@ -59,6 +63,16 @@ public class LevelConfigs : MonoBehaviour
         hitIndicator.position = hitIndicatorTarget[randomNumber].position;
         hitIndicator.rotation = hitIndicatorTarget[randomNumber].rotation;
         #endregion
+    }
+
+    private void Start()
+    {
+        bool isChangePosition = level.isChangeUIPosition[randomNumber];
+
+        if (isChangePosition)
+        {
+            UIObjectPlacement.OnChangePosition?.Invoke();
+        }
     }
 
     private int GetEnumLevelTypeIndex()

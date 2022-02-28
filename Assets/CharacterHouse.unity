@@ -66899,7 +66899,7 @@ PrefabInstance:
     - target: {fileID: 6400786834697330527, guid: 194d4fa6ac1aa934a98b2ff837420e09,
         type: 3}
       propertyPath: attachmentList.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6400786834697330527, guid: 194d4fa6ac1aa934a98b2ff837420e09,
         type: 3}
@@ -78364,6 +78364,10 @@ PrefabInstance:
       value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4028456588922094, guid: 965791a6a06b9ef459fb58c8a0ce2d30, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0183394
+      objectReference: {fileID: 0}
+    - target: {fileID: 4028456588922094, guid: 965791a6a06b9ef459fb58c8a0ce2d30, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.25
       objectReference: {fileID: 0}
@@ -89542,6 +89546,276 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4012735683603160898, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683603160898, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683603160898, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683603160898, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683603160898, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683603160898, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683876327104, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683876327104, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683876327104, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683876327104, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683876327104, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735683876327104, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684265262041, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684265262041, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684265262041, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684265262041, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684265262041, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684265262041, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684288489710, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684288489710, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684288489710, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684288489710, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684288489710, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684288489710, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684296302589, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684296302589, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684296302589, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684296302589, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684296302589, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684296302589, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684342803525, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684342803525, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684342803525, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684342803525, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684342803525, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684342803525, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684407970342, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684407970342, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684407970342, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684407970342, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684407970342, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684407970342, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684469660842, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684469660842, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684469660842, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684469660842, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684469660842, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684469660842, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684666116241, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684666116241, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684666116241, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684666116241, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684666116241, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735684666116241, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4012735684904122259, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
         type: 3}
       propertyPath: m_Name
@@ -89617,6 +89891,131 @@ PrefabInstance:
       propertyPath: standPosition
       value: 
       objectReference: {fileID: 2080978698}
+    - target: {fileID: 4012735685106997929, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685106997929, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685106997929, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685106997929, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685106997929, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685106997929, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685106997929, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_CapsuleColliders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685265531685, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685265531685, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685265531685, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685265531685, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685265531685, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685265531685, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685306662679, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685306662679, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685306662679, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685306662679, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685306662679, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685306662679, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685425688063, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685425688063, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_Friction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685425688063, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685425688063, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldVelocityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685425688063, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_StretchingStiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012735685425688063, guid: 3133bd398d467ab4bbd5a96ff62f8f8f,
+        type: 3}
+      propertyPath: m_WorldAccelerationScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3133bd398d467ab4bbd5a96ff62f8f8f, type: 3}
 --- !u!4 &5622195278469725631

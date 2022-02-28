@@ -42,6 +42,7 @@ MonoBehaviour:
     - positionPerchOne: {x: -6.486144, y: 2.7274, z: 4.8737}
       positionPerchTwo: {x: -6.5594, y: 2.285, z: 4.0868177}
       positionGround: {x: -9.94, y: -0.19000006, z: 5.67}
+    isChangeUIPosition: 0000010100
   - levelType: 1
     playerPositions:
     - {x: 103.49, y: -17.575, z: -16.879002}
@@ -71,3 +72,4 @@ MonoBehaviour:
     - positionPerchOne: {x: 80.712, y: -11.3667, z: 20.433}
       positionPerchTwo: {x: 80.4333, y: -12.4077, z: 23.7909}
       positionGround: {x: 82.182, y: -13.657, z: 23.322}
+    isChangeUIPosition: 0000000000
