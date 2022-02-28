@@ -6,16 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/Pointer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/Pointer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManagerSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManagerSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +236,7 @@
       <workItem from="1645176703714" duration="27774000" />
       <workItem from="1645359907142" duration="12986000" />
       <workItem from="1645544910078" duration="609000" />
-      <workItem from="1646043580155" duration="3936000" />
+      <workItem from="1646043580155" duration="5903000" />
     </task>
     <servers />
   </component>
