@@ -36,6 +36,7 @@ namespace Customisation.UI
 
         public void Initialize(int itemIndex, List<ItemData> itemDataList, Sprite[] iconDataListValue)
         {
+            
             selectedItemIndex = itemIndex;
             itemList = itemDataList;
             iconDataList = iconDataListValue;

@@ -48,7 +48,19 @@ namespace Customisation
             characterChannel.OnItemListOpen += OnItemListOpen;
             characterChannel.OnItemListClose += OnItemListClose;
             characterChannel.OnItemHolderChange += OnItemHolderChange;
+            characterChannel.OnChangeGender += OnChangeGender;
+            characterChannel.OnSaveCharacter += OnSaveCharacter;
         }
+
+        private void OnSaveCharacter()
+        {
+            Debug.Log("SaveLoad");
+            AddDefaultSelectedItems();
+            ES3.Save(SaveKeys.OpenedItems, openedElementList);
+            ES3.Save(SaveKeys.SelectedItems, selectedItemList);
+            ES3.Save(SaveKeys.CharacterCustomisation, characterSaveData);
+        }
+
 
         private void OnItemHolderChange(ItemHolderType obj)
         {
@@ -67,6 +79,8 @@ namespace Customisation
             characterChannel.OnItemListOpen -= OnItemListOpen;
             characterChannel.OnItemListClose -= OnItemListClose;
             characterChannel.OnItemHolderChange -= OnItemHolderChange;
+            characterChannel.OnChangeGender -= OnChangeGender;
+            characterChannel.OnSaveCharacter -= OnSaveCharacter;
         }
 
 
@@ -76,6 +90,23 @@ namespace Customisation
             characterChannel.OnLoadCharacterData?.Invoke(this);
         }
 
+        private void OnChangeGender(bool isMale)
+        {
+            characterSaveData.gender = isMale ? Gender.Male : Gender.Female;
+            characterCustomization.DisableAllElements();
+            
+            currentItemType = characterSaveData.gender == Gender.Female
+                ? customisationItems.FemaleItemTypeDataList
+                : customisationItems.MaleItemTypeDataList;
+
+            characterCustomization.currentItems = currentItemType;
+
+            foreach (IndexData selectedItem in selectedItemList)
+            {
+                characterCustomization.ActivateItem(selectedItem.itemType, selectedItem.currentIndex);
+            }
+            characterChannel.OnLoadCharacterData?.Invoke(this);
+        }
 
         public void ChangeItem(ItemType itemType, int indexItem)
         {

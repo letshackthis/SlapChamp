@@ -131,7 +131,7 @@ namespace Customisation
         }
 
         
-        private void DisableAllElements()
+        public void DisableAllElements()
         {
             foreach (ItemData itemData in characterCustomisationItems.FemaleItemTypeDataList.SelectMany(itemTypeData =>
                 itemTypeData.itemDataList))

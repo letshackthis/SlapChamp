@@ -30,6 +30,8 @@ namespace Customisation.SO
         public Action<ItemHolder> OnItemHolderSelect;
         public Action<ItemHolderType> OnItemHolderChange;
         public Action<bool> OnUnlockOptionState;
+        public Action<bool> OnChangeGender;
+        public Action OnSaveCharacter;
 
         public Action OnOpenItem;
         public Action OnSelectItem;
