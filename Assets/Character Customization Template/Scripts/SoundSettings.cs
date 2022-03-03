@@ -66,9 +66,6 @@ namespace Character_Customization_Template.Scripts
                 backText.text = "HOUSE";
                 backButton.onClick.AddListener(BackToHouse);
             }
-            
-            bg.SetActive(false);
-            backGround.SetActive(false);
         }
 
         private void Select(SettingsData settingsData, bool isOn)
