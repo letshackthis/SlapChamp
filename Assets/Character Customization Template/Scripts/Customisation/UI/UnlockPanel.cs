@@ -13,8 +13,7 @@ namespace Customisation.UI
         [SerializeField] private Transform content;
         [SerializeField] private UnlockItemOption unlockItemOptionPrefab;
         [SerializeField] private GameObject panel;
-        [SerializeField] private Text moneyText;
-        [SerializeField] private Text bluePrintText;
+       
 
         private List<UnlockItemOption> unlockItemOptionList = new List<UnlockItemOption>();
         private ItemData currentItemData;
@@ -26,20 +25,6 @@ namespace Customisation.UI
             });
             characterChannel.OnUnlockOptionState+= OnUnlockOptionState;
             characterChannel.OnChangeItem+= OnChangeItem;
-            
-            GameWallet.OnChangeBlueprint+= OnChangeBlueprint;
-            GameWallet.OnChangeMoney+= OnChangeMoney;
-            OnChangeMoney();
-            OnChangeBlueprint();
-        }
-
-        private void OnChangeMoney()
-        {
-            moneyText.text = GameWallet.Money.ToString();
-        }
-        private void OnChangeBlueprint()
-        {
-            bluePrintText.text = GameWallet.Blueprint.ToString();
         }
 
         private void OnChangeItem(ItemData itemData)
@@ -72,13 +57,6 @@ namespace Customisation.UI
                 unlockItem.ShowBuyOption(currentItemOption);
                 unlockItemOptionList.Add(currentItemOption);
             }
-        }
-        
-        private void OnDestroy()
-        {
-            characterChannel.OnUnlockOptionState-= OnUnlockOptionState;
-            GameWallet.OnChangeBlueprint-= OnChangeBlueprint;
-            GameWallet.OnChangeMoney-= OnChangeMoney;
         }
     }
 }

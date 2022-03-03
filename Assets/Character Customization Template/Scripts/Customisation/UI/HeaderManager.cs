@@ -26,6 +26,8 @@ namespace Customisation.UI
         [SerializeField] private ButtonHeaderData[] buttonList;
         [SerializeField] private Color inactiveColor;
         [SerializeField] private Color activeColor;
+        [SerializeField] private Sprite activeSprite;
+        [SerializeField] private Sprite inactiveSprite;
         [SerializeField] private Button game ;
         private void Awake()
         {
@@ -55,11 +57,11 @@ namespace Customisation.UI
         {
             for (var i = 0; i < buttonList.Length; i++)
             {
-                buttonList[i].ImageButton.color = inactiveColor;
+                buttonList[i].ImageButton.sprite = inactiveSprite;
                 buttonList[i].TextButton.color = activeColor;
             }
             
-            buttonList[index].ImageButton.color = activeColor;
+            buttonList[index].ImageButton.sprite = activeSprite;
             buttonList[index].TextButton.color = inactiveColor;
         }
 

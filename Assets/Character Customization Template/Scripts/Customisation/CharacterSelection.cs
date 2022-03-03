@@ -33,6 +33,7 @@ namespace Character_Customization_Template.Scripts.Customisation
         [SerializeField] private List<GenderData> genderDataList;
         [SerializeField] private RectTransform selector;
         [SerializeField] private Button confirmButton;
+        [SerializeField] private InputField inputField;
         [SerializeField] private Color selectedColor;
         [SerializeField] private Color unselectedColor;
         
@@ -45,8 +46,7 @@ namespace Character_Customization_Template.Scripts.Customisation
             ButtonInitialization();
            
         }
-
-
+        
         private void OnDestroy()
         {
             characterChannel.OnLoadCharacterData-= OnLoadCharacterData;
@@ -65,7 +65,6 @@ namespace Character_Customization_Template.Scripts.Customisation
         }
 
       
-
         private void ButtonInitialization()
         {
             foreach (GenderData genderData in genderDataList)
@@ -78,8 +77,9 @@ namespace Character_Customization_Template.Scripts.Customisation
         }
         private void Confirm()
         {
-            Debug.Log("Save");
-           characterChannel.OnSaveCharacter?.Invoke(); 
+            string nickname = inputField.text;
+            characterLoadSave.CharacterSaveData.nickName = nickname;
+            characterChannel.OnSaveCharacter?.Invoke(); 
         }
 
         private void ChooseGender(GenderData genderData)
@@ -88,14 +88,8 @@ namespace Character_Customization_Template.Scripts.Customisation
             
             if (currentGenderData == null || currentGenderData != genderData)
             {
-                if (currentGenderData != null)
-                {
-                    SetDefaultConfigGenderData(currentGenderData);
-                }
-                
-                
-                Debug.Log("data");
-                Debug.Log("genderData"+genderData.IsMale);
+               
+                SetDefaultConfigGenderData();
                 
                 currentGenderData = genderData;
                 
@@ -103,9 +97,8 @@ namespace Character_Customization_Template.Scripts.Customisation
                 selector.SetParent(genderData.Target);
                 selector.anchoredPosition=Vector2.zero;
                 selector.localScale=Vector3.one;
-                genderData.Target.localScale=Vector3.one*1.2f;
+                selector.GetComponent<Image>().SetNativeSize();
 
-                
                 for (var i = 0; i < genderData.Data.Count; i++)
                 {
                     IndexData currentData = characterLoadSave.SelectedItemList.Find(e => e.itemType == genderData.Data[i].itemType);
@@ -117,10 +110,12 @@ namespace Character_Customization_Template.Scripts.Customisation
             }
         }
 
-        private void SetDefaultConfigGenderData(GenderData genderData)
+        private void SetDefaultConfigGenderData()
         {
-            genderData.Image1.color = unselectedColor;
-            genderData.Target.localScale=Vector3.one;
+            foreach (GenderData data in genderDataList)
+            {
+                data.Image1.color = unselectedColor;
+            }
         }
     }
 }
