@@ -28,7 +28,6 @@ namespace Customisation.UI
         [SerializeField] private Color activeColor;
         [SerializeField] private Sprite activeSprite;
         [SerializeField] private Sprite inactiveSprite;
-        [SerializeField] private Button game ;
         private void Awake()
         {
             ChangeActiveButton(0);
@@ -44,12 +43,6 @@ namespace Customisation.UI
                 CameraViewChanger.OnCameraViewChange?.Invoke(ItemType.None);
                 characterChannel.OnItemHolderChange?.Invoke(ItemHolderType.EditHolder);
             });
-            
-            game.onClick.AddListener(() =>
-            {
-                SceneManager.LoadScene("Level1");
-            });
-            
         }
 
         private void ChangeActiveButton(int index)

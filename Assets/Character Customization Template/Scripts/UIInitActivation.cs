@@ -12,6 +12,10 @@ public class UIInitActivation : MonoBehaviour
     [SerializeField] private Button settingsButton;
     [SerializeField] private GameObject settingsPanel;
     [SerializeField] private GameObject settingBg;
+    
+    [SerializeField] private Button playButton;
+    [SerializeField] private GameObject playPanel;
+    [SerializeField] private GameObject playBg;
     private void Start()
     {
         settingsButton.onClick.AddListener(() =>
@@ -19,6 +23,13 @@ public class UIInitActivation : MonoBehaviour
             settingsPanel.SetActive(true);
             settingBg.SetActive(true);
         });
+        
+        playButton.onClick.AddListener(() =>
+        {
+            playPanel.SetActive(true);
+            playBg.SetActive(true);
+        });
+        
         if (ES3.Load(SaveKeys.IsCreated, false))
         {
             creation.SetActive(false);

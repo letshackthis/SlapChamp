@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private RagdollState playerRagdoll;
     public MMFeedbacks slapFeedbackEnemy;
     public MMFeedbacks slapFeedbackPlayer;
-    [SerializeField] private Text totalCoinsText,
+    [SerializeField] private Text 
         healthPriceText,
         powerPriceText,
         bonusHealthText,
@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
 
     private bool CheckHealthButton()
     {
-        if (int.Parse(totalCoinsText.text) < int.Parse(healthPriceText.text))
+        if (GameWallet.Money < int.Parse(healthPriceText.text))
         {
             unableHealth.GetComponent<Image>().color = Color.gray;
             unableHealth.GetComponent<Button>().enabled = false;
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
 
     private bool CheckPowerButton()
     {
-        if (int.Parse(totalCoinsText.text) < int.Parse(powerPriceText.text))
+        if (GameWallet.Money < int.Parse(powerPriceText.text))
         {
             unablePower.GetComponent<Image>().color = Color.gray;
             unablePower.GetComponent<Button>().enabled = false;
@@ -175,7 +175,6 @@ public class GameManager : MonoBehaviour
     private void Initialization()
     {
         totalCoins = GameWallet.Money;
-        totalCoinsText.text = totalCoins.ToString();
 
         healthPrice = PlayerPrefs.GetInt(StringKeys.healthPrice, 25);
         healthPriceText.text = healthPrice.ToString();

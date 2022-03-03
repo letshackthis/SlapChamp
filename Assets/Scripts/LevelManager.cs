@@ -13,7 +13,7 @@ public class LevelManager : Singleton<LevelManager>
     [SerializeField] private GameObject win;
     [SerializeField] private GameObject fail;
     [FormerlySerializedAs("coinSystem")] [SerializeField] private GameManager gameManager;
-    [SerializeField] private Text levelTextUI, vsTextUI;
+    [SerializeField] private Text levelTextUI;
     [SerializeField] private Button nextLevelButton, retryLevelButton;
     [SerializeField] private AddBluePrint addBluePrint;
     public static bool bonusLevel;
@@ -30,15 +30,15 @@ public class LevelManager : Singleton<LevelManager>
 
         if (bonusLevel)
         {
-            vsTextUI.fontSize = 60;
-            vsTextUI.text = "BONUS";
+           // vsTextUI.fontSize = 60;
+           // vsTextUI.text = "BONUS";
             levelTextUI.text = "LEVEL";
         }
         else
         {
             levelTextUI.text = "LEVEL " + PlayerPrefs.GetInt(StringKeys.level, 1).ToString();
-            vsTextUI.text = "VS";
-            vsTextUI.fontSize = 100;
+           // vsTextUI.text = "VS";
+           // vsTextUI.fontSize = 100;
         }
         
         GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 

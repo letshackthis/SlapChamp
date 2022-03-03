@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +102,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonStateAnimation0.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/living birds/scripts/lb_Bird.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Window.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTypes.cs" root0="FORCE_HIGHLIGHTING" />
@@ -143,7 +148,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AddBluePrint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RainController.cs" />
@@ -151,7 +155,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIObjectPlacement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomization.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/SO/CharacterChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterLoadSave.cs" />
@@ -159,11 +162,14 @@
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/UnlockPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterSelection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -249,7 +255,7 @@
       <workItem from="1645176703714" duration="27774000" />
       <workItem from="1645359907142" duration="12986000" />
       <workItem from="1645544910078" duration="609000" />
-      <workItem from="1646043580155" duration="25388000" />
+      <workItem from="1646043580155" duration="26191000" />
     </task>
     <servers />
   </component>
