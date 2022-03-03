@@ -30,6 +30,7 @@ namespace Character_Customization_Template.Scripts.Customisation
     public class CharacterSelection : MonoBehaviour
     {
         [SerializeField] private CharacterChannel characterChannel;
+        [SerializeField] private UIInitActivation uiInitActivation;
         [SerializeField] private List<GenderData> genderDataList;
         [SerializeField] private RectTransform selector;
         [SerializeField] private Button confirmButton;
@@ -37,8 +38,9 @@ namespace Character_Customization_Template.Scripts.Customisation
         [SerializeField] private Color selectedColor;
         [SerializeField] private Color unselectedColor;
         
-        private GenderData currentGenderData=null;
+        private GenderData currentGenderData;
         private CharacterLoadSave characterLoadSave;
+        private bool isInit;
         private void Awake()
         {
             confirmButton.onClick.AddListener(Confirm);
@@ -54,12 +56,12 @@ namespace Character_Customization_Template.Scripts.Customisation
 
         private void OnLoadCharacterData(CharacterLoadSave obj)
         {
-            
             if(characterLoadSave==null)
                 characterLoadSave = obj;
             
-            if (currentGenderData == null)
+            if (!isInit)
             {
+                isInit = true;
                 ChooseGender(genderDataList[0]);
             }
         }
@@ -80,18 +82,16 @@ namespace Character_Customization_Template.Scripts.Customisation
             string nickname = inputField.text;
             characterLoadSave.CharacterSaveData.nickName = nickname;
             characterChannel.OnSaveCharacter?.Invoke(); 
+            ES3.Save(SaveKeys.IsCreated, true);
+            uiInitActivation.ActivateGamePlayUI();
         }
 
         private void ChooseGender(GenderData genderData)
         {
-            
-            
             if (currentGenderData == null || currentGenderData != genderData)
             {
-               
-                SetDefaultConfigGenderData();
-                
-                currentGenderData = genderData;
+               SetDefaultConfigGenderData();
+               currentGenderData = genderData;
                 
                 genderData.Image1.color = selectedColor;
                 selector.SetParent(genderData.Target);

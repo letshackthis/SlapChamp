@@ -8,17 +8,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterSelection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/UnlockPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/UnlockPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/BuyItemOption.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/BuyItemOption.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemCell 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemCell 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/ItemHolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/Pointer 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/Pointer 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/Pointer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/Pointer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SomeLeve0.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SomeLeve1.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SomeLeve2.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +87,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -130,7 +127,6 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Utilities/GameWallet.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/CameraViewChanger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/AnimationController.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Editor/CustomizationUtilities.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" />
@@ -159,20 +155,22 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RainController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayPlace.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIObjectPlacement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomization.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/SO/CharacterChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterLoadSave.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/ItemHolder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterSelection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/UnlockPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterSelection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -188,6 +186,7 @@
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="do_not_show_Android_plugin_suggestion" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -257,7 +256,7 @@
       <workItem from="1645176703714" duration="27774000" />
       <workItem from="1645359907142" duration="12986000" />
       <workItem from="1645544910078" duration="609000" />
-      <workItem from="1646043580155" duration="17159000" />
+      <workItem from="1646043580155" duration="24966000" />
     </task>
     <servers />
   </component>

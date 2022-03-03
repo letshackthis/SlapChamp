@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class SoundManager : Singleton<SoundManager>
 {
+    public static Action OnSoundCheck;
     private AudioSource aSource;
     public AudioClip[] slap;
     public AudioClip[] wow;
@@ -18,9 +21,16 @@ public class SoundManager : Singleton<SoundManager>
         base.Awake();
         DontDestroyOnLoad(this);
         CheckSounds();
+        OnSoundCheck += CheckSounds;
     }
 
-    public void CheckSounds()
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        OnSoundCheck -= CheckSounds;
+    }
+
+    private void CheckSounds()
     {
         bool sound = ES3.Load("sound", true);
         bool musicStatus = ES3.Load("music", true);

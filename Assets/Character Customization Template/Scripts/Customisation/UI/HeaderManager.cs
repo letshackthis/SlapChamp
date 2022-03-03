@@ -50,7 +50,6 @@ namespace Customisation.UI
                 SceneManager.LoadScene("Level1");
             });
             
-            SoundManager.Instance.CheckSounds();
         }
 
         private void ChangeActiveButton(int index)
