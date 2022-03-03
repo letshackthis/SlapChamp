@@ -683,8 +683,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e2fce7c193962549a7268ac57e6c349, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8ae3f55348e74c64a987924ef3906459, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1287,6 +1287,9 @@ MonoBehaviour:
   activeColor: {r: 0.19215687, g: 0.17254902, b: 0.15686275, a: 1}
   activeSprite: {fileID: 21300000, guid: d3d0b77b5e2c12743a8ec8ed4e659c63, type: 3}
   inactiveSprite: {fileID: 21300000, guid: 3210aa09c247f5841ad28252c7ca832d, type: 3}
+  blueprintText: {fileID: 423512278}
+  moneyText: {fileID: 1050815583}
+  nickname: {fileID: 104361656}
 --- !u!1001 &49377777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15064,7 +15067,7 @@ MonoBehaviour:
   m_LineType: 0
   m_HideMobileInput: 0
   m_CharacterValidation: 0
-  m_CharacterLimit: 0
+  m_CharacterLimit: 13
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -41723,8 +41726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
+  m_AnchoredPosition: {x: -51.149963, y: -0.5}
+  m_SizeDelta: {x: -122.3, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &949316595
 MonoBehaviour:
@@ -41747,13 +41750,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: b9e72d663d9e319418c8d58b4ffea2de, type: 3}
+    m_FontSize: 51
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
+    m_MaxSize: 55
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -42446,7 +42449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25.900024, y: 55.900024}
+  m_AnchoredPosition: {x: -25.900024, y: 6}
   m_SizeDelta: {x: 123, y: 123}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &990350613
@@ -55385,7 +55388,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205610560}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -72146,8 +72149,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e2fce7c193962549a7268ac57e6c349, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8ae3f55348e74c64a987924ef3906459, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -74128,7 +74131,7 @@ MonoBehaviour:
   selector: {fileID: 1877210506}
   confirmButton: {fileID: 955102718}
   inputField: {fileID: 385078850}
-  selectedColor: {r: 0.27058825, g: 0.6039216, b: 0.8196079, a: 1}
+  selectedColor: {r: 0.38823533, g: 0.7176471, b: 0.882353, a: 1}
   unselectedColor: {r: 0.34109113, g: 0.53593355, b: 0.990566, a: 0}
 --- !u!1001 &1866282249
 PrefabInstance:
@@ -92556,8 +92559,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e2fce7c193962549a7268ac57e6c349, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8ae3f55348e74c64a987924ef3906459, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

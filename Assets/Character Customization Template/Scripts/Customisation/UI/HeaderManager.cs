@@ -28,6 +28,11 @@ namespace Customisation.UI
         [SerializeField] private Color activeColor;
         [SerializeField] private Sprite activeSprite;
         [SerializeField] private Sprite inactiveSprite;
+        [SerializeField] private Text blueprintText;
+        [SerializeField] private Text moneyText;
+        [SerializeField] private Text nickname;
+
+        private CharacterLoadSave characterLoadSave;
         private void Awake()
         {
             ChangeActiveButton(0);
@@ -43,6 +48,42 @@ namespace Customisation.UI
                 CameraViewChanger.OnCameraViewChange?.Invoke(ItemType.None);
                 characterChannel.OnItemHolderChange?.Invoke(ItemHolderType.EditHolder);
             });
+
+            GameWallet.OnChangeBlueprint+= OnChangeBlueprint;
+            GameWallet.OnChangeMoney += OnChangeMoney;
+            characterChannel.OnSaveCharacter += OnSaveCharacter;
+            characterChannel.OnLoadCharacterData += OnLoadCharacterData;
+            moneyText.text = GameWallet.Money.ToString();
+            blueprintText.text = GameWallet.Blueprint.ToString();
+        }
+
+        private void OnLoadCharacterData(CharacterLoadSave obj)
+        {
+            characterLoadSave = obj;
+            nickname.text = characterLoadSave.CharacterSaveData.nickName;
+        }
+
+        private void OnSaveCharacter()
+        {
+            nickname.text = characterLoadSave.CharacterSaveData.nickName;
+        }
+
+        private void OnChangeBlueprint()
+        {
+            blueprintText.text = GameWallet.Blueprint.ToString();
+        }
+
+        private void OnChangeMoney()
+        {
+            moneyText.text = GameWallet.Money.ToString();
+        }
+
+        private void OnDestroy()
+        {
+            GameWallet.OnChangeBlueprint-= OnChangeBlueprint;
+            GameWallet.OnChangeMoney -= OnChangeMoney;
+            characterChannel.OnSaveCharacter -= OnSaveCharacter;
+            characterChannel.OnLoadCharacterData -= OnLoadCharacterData;
         }
 
         private void ChangeActiveButton(int index)

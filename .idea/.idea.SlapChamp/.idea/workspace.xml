@@ -7,10 +7,11 @@
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/BuyItemOption.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Character Customisation/BuyItemOption.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SomeLeve0.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SomeLeve1.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SomeLeve2.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,8 +169,8 @@
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/UIInitActivation.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -255,7 +256,8 @@
       <workItem from="1645176703714" duration="27774000" />
       <workItem from="1645359907142" duration="12986000" />
       <workItem from="1645544910078" duration="609000" />
-      <workItem from="1646043580155" duration="26191000" />
+      <workItem from="1646043580155" duration="26428000" />
+      <workItem from="1646344285409" duration="2816000" />
     </task>
     <servers />
   </component>
