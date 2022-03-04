@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GameAnalyticsSDK;
+﻿using GameAnalyticsSDK;
 using Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -36,12 +34,13 @@ public class LevelManager : Singleton<LevelManager>
         }
         else
         {
-            levelTextUI.text = "LEVEL " + PlayerPrefs.GetInt(StringKeys.level, 1).ToString();
+            Debug.Log(ES3.Load(StringKeys.level, 1));
+            levelTextUI.text = "LEVEL " + ES3.Load(StringKeys.level, 1).ToString();
            // vsTextUI.text = "VS";
            // vsTextUI.fontSize = 100;
         }
         
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LEVEL_" + ES3.Load(StringKeys.level, 1).ToString(), 
             "COINS_" +  GameWallet.Money);
     }
 
@@ -61,49 +60,50 @@ public class LevelManager : Singleton<LevelManager>
 
     private void NextLevel()
     {
-        if (PlayerPrefs.GetInt(StringKeys.level, 1) % 3 == 0)
+        if (ES3.Load(StringKeys.level, 1) % 3 == 0)
         {
             IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         }
-        SceneManager.LoadScene("Level1");
+        Loader.OnLoadScene?.Invoke(ES3.Load(SaveKeys.IsOnline,false),"Level1");
     }
 
     private void RetryLevel()
     {
         IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         var sceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(sceneName);
+        
+        Loader.OnLoadScene?.Invoke(ES3.Load(SaveKeys.IsOnline,false),"Level1");
     }
 
     private void Win()
     {
-        if (Random.value >= 0.7f)
+        if (Random.value >= 0f)
         {
             addBluePrint.Add();
         }
         
         if (fail.activeInHierarchy) return;
-        game.SetActive(false);
+        //game.SetActive(false);
         win.SetActive(true);
         SoundManager.Instance.PlaySound("win");
         GameWallet.Money += GetCoinsToAdd(25);
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "LEVEL_" + ES3.Load(StringKeys.level, 1).ToString(), 
             "COINS_" +  GameWallet.Money);
     }
 
     private void Fail()
     {
         if (win.activeInHierarchy) return;
-        game.SetActive(false);
+        //game.SetActive(false);
         fail.SetActive(true);
         SoundManager.Instance.PlaySound("fail");
         GameWallet.Money += GetCoinsToAdd(10);
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "LEVEL_" + PlayerPrefs.GetInt(StringKeys.level, 1).ToString(), 
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "LEVEL_" + ES3.Load(StringKeys.level, 1).ToString(), 
             "COINS_" +  GameWallet.Money);
     }
 
     private int GetCoinsToAdd(int multiplier)
     {
-        return multiplier * PlayerPrefs.GetInt(StringKeys.level, 1);
+        return multiplier *ES3.Load(StringKeys.level, 1);
     }
 }

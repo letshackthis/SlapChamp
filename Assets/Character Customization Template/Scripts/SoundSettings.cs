@@ -51,7 +51,7 @@ namespace Character_Customization_Template.Scripts
             bool isSoundOff=   ES3.Load("music", true);
             Select(musicData, isSoundOff);
             
-            SoundManager.OnSoundCheck?.Invoke();
+       
 
             isInHouse = SceneManager.GetActiveScene().name.Equals("CharacterHouse");
             closeButton.onClick.AddListener(Close);
@@ -60,6 +60,7 @@ namespace Character_Customization_Template.Scripts
             {
                 backText.text = "RESUME";
                 backButton.onClick.AddListener(Close);
+                SoundManager.OnSoundCheck?.Invoke();
             }
             else
             {
@@ -120,7 +121,7 @@ namespace Character_Customization_Template.Scripts
 
         private void BackToHouse()
         {
-            SceneManager.LoadScene("CharacterHouse");
+            Loader.OnLoadScene?.Invoke(false,"CharacterHouse");
         }
 
         private void Close()

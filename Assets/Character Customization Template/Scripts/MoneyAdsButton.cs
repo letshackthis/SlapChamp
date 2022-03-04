@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,10 @@ public class MoneyAdsButton : MonoBehaviour
 
     private void GetMoney()
     {
-        GameWallet.Money += moneyAmount;
+        IronSourceManager.Instance.CallReward(RewardPlacement.REWARD_COINS.ToString(), () =>
+        {
+            GameWallet.Money += moneyAmount;
+        });
+
     }
 }

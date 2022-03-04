@@ -1,4 +1,5 @@
 using Customisation.UI;
+using Managers;
 using UnityEngine;
 
 namespace Customisation.Buy
@@ -19,8 +20,11 @@ namespace Customisation.Buy
 
         protected override void TryUnlock()
         {
-            //call from IronSourceManager
-            RewardAds();
+            IronSourceManager.Instance.CallReward(RewardPlacement.REWARD_COINS.ToString(), () =>
+            {
+                RewardAds();
+            });
+        
         }
 
         public override void Initialize(string keyValue)

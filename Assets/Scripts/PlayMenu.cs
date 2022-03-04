@@ -19,11 +19,13 @@ public class PlayMenu : MonoBehaviour
 
       playOnline.onClick.AddListener(() =>
       {
-         SceneManager.LoadScene("Level1");
+         ES3.Save(SaveKeys.IsOnline,true);
+         Loader.OnLoadScene?.Invoke(true,"Level1");
       });
       playOffline.onClick.AddListener(() =>
       {
-         SceneManager.LoadScene("Level1");
+         ES3.Save(SaveKeys.IsOnline,false);
+         Loader.OnLoadScene?.Invoke(false,"Level1");
       });
    }
 }

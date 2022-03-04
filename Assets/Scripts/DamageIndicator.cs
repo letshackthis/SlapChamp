@@ -8,7 +8,7 @@ public class DamageIndicator : MonoBehaviour
 
     void Start()
     {
-        int currentPower = 25 + PlayerPrefs.GetInt("PlayerDamage", 0);
+        int currentPower = 25 + ES3.Load("PlayerDamage", 0);
         this.GetComponent<Text>().text = currentPower.ToString();
         if (int.Parse(this.GetComponent<Text>().text) > 999) 
         {

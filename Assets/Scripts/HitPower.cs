@@ -25,7 +25,7 @@ public class HitPower : MonoBehaviour
 
     private void MoveFunction()
     {
-        int currentLevel = PlayerPrefs.GetInt(StringKeys.level, 1);
+        int currentLevel = ES3.Load(StringKeys.level, 1);
         float duration = 1 - 0.01f*currentLevel;
         if (duration < 0.25f)
         {

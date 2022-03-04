@@ -56,6 +56,8 @@ public class GameManager : MonoBehaviour
     public bool playerWin, playerLoose;
     private int maxHealhPlayer;
     private int maxHealhEnemy;
+    [SerializeField] private ParticleSystem hpParticles;
+    [SerializeField] private ParticleSystem powerParticles;
 
     private void Awake()
     {
@@ -71,7 +73,7 @@ public class GameManager : MonoBehaviour
 
         dmgPwr = 0;
 
-        currentLevel = PlayerPrefs.GetInt(StringKeys.level, 1);
+        currentLevel = ES3.Load(StringKeys.level, 1);
         enemyHealth = Random.Range(5 * currentLevel + 95, 9 * currentLevel + 101);
         enemyHealthText.text = enemyHealth.ToString();
         playerHealthText.text = playerHealth.ToString();
@@ -79,7 +81,7 @@ public class GameManager : MonoBehaviour
         maxHealhPlayer= playerHealth;
     }
 
-    private void EnemyAttackPower()
+    public void EnemyAttackPower()
     {
         int lowestHit = 6 * currentLevel + 17;
         int strongestHit = 7 * currentLevel + 21;
@@ -117,7 +119,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayerGetDamage()
     {
-        EnemyAttackPower();
+      
         slapFeedbackPlayer?.PlayFeedbacks(playerTransform.position, dmgPwr);
         ActivateSlapParticles(dmgPwr, enemyPower, enemyHand);
         if (dmgPwr >= playerHealth)
@@ -126,7 +128,6 @@ public class GameManager : MonoBehaviour
             playerHealthText.text = "0";
             DecreaseProgressBar(playerHealthBar, maxHealhPlayer, maxHealhPlayer);
             playerRagdoll.Attack(enemyHand);
-            playerHealth = 0;
             playerLoose = true;
         }
         else
@@ -138,9 +139,13 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void SetPlayerPower()
+    {
+        playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
+    }
+
     public IEnumerator EnemyGetDamage()
     {
-         playerHit = (int) Math.Round(playerPower * hitPower.CheckHitPowerSection(), 0);
         slapFeedbackEnemy?.PlayFeedbacks(enemyTransform.position, playerHit);
         ActivateSlapParticles(playerHit, playerPower, playerHand);
         if (playerHit >= enemyHealth)
@@ -148,10 +153,15 @@ public class GameManager : MonoBehaviour
             enemyHealthText.text = "0";
             DecreaseProgressBar(enemyHealthBar, maxHealhEnemy, maxHealhEnemy);
             enemyRagdoll.Attack(playerHand);
-            enemyHealth = 0;
             playerWin = true;
-            var nextLevel = 1 + PlayerPrefs.GetInt(StringKeys.level, 1);
-            PlayerPrefs.SetInt(StringKeys.level, nextLevel);
+            
+            if (ES3.Load(SaveKeys.IsOnline, false) == false)
+            {
+                Debug.Log("NewLevel");
+                int nextLevel = 1 + ES3.Load(StringKeys.level, 1);
+                ES3.Save(StringKeys.level, nextLevel);
+            }
+          
         }
         else
         {
@@ -176,21 +186,21 @@ public class GameManager : MonoBehaviour
     {
         totalCoins = GameWallet.Money;
 
-        healthPrice = PlayerPrefs.GetInt(StringKeys.healthPrice, 25);
+        healthPrice = ES3.Load(StringKeys.healthPrice, 25);
         healthPriceText.text = healthPrice.ToString();
 
-        powerPrice = PlayerPrefs.GetInt(StringKeys.powerPrice, 25);
+        powerPrice = ES3.Load(StringKeys.powerPrice, 25);
         powerPriceText.text = powerPrice.ToString();
 
-        playerHealth = PlayerPrefs.GetInt(StringKeys.playerMaxHealth, 100);
+        playerHealth = ES3.Load(StringKeys.playerMaxHealth, 100);
         
-        playerPower = PlayerPrefs.GetInt(StringKeys.playerMaxPower, 35);
+        playerPower = ES3.Load(StringKeys.playerMaxPower, 35);
         playerPowerText.text = playerPower.ToString();
 
-        bonusHealthValue = PlayerPrefs.GetInt(StringKeys.bonusHealth, 5);
+        bonusHealthValue = ES3.Load(StringKeys.bonusHealth, 5);
         bonusHealthText.text = "HEALTH(" + bonusHealthValue.ToString() + ")";
 
-        bonusPowerValue = PlayerPrefs.GetInt(StringKeys.bonusPower, 10);
+        bonusPowerValue = ES3.Load(StringKeys.bonusPower, 10);
         bonusPowerText.text = "POWER(" + bonusPowerValue.ToString() + ")";
         playerHealthText.text = playerHealth.ToString();
     }
@@ -202,13 +212,15 @@ public class GameManager : MonoBehaviour
             totalCoins -= healthPrice;
             GameWallet.Money -= healthPrice;
             playerHealth += bonusHealthValue;
-            PlayerPrefs.SetInt(StringKeys.playerMaxHealth, playerHealth);
+            ES3.Save(StringKeys.playerMaxHealth, playerHealth);
             bonusHealthValue += 1;
-            PlayerPrefs.SetInt(StringKeys.bonusHealth, bonusHealthValue);
+            ES3.Save(StringKeys.bonusHealth, bonusHealthValue);
             healthPrice += 50;
-            PlayerPrefs.SetInt(StringKeys.healthPrice, healthPrice);
+            ES3.Save(StringKeys.healthPrice, healthPrice);
             Initialization();
             CheckHealthButton();
+            hpParticles.Play();
+            
         }
     }
 
@@ -219,13 +231,14 @@ public class GameManager : MonoBehaviour
             totalCoins -= powerPrice;
             GameWallet.Money -= powerPrice;
             playerPower += bonusPowerValue;
-            PlayerPrefs.SetInt(StringKeys.playerMaxPower, playerPower);
+            ES3.Save(StringKeys.playerMaxPower, playerPower);
             bonusHealthValue += 1;
-            PlayerPrefs.SetInt(StringKeys.bonusPower, bonusPowerValue);
+            ES3.Save(StringKeys.bonusPower, bonusPowerValue);
             powerPrice += 50;
-            PlayerPrefs.SetInt(StringKeys.powerPrice, powerPrice);
+            ES3.Save(StringKeys.powerPrice, powerPrice);
             Initialization();
             CheckPowerButton();
+            powerParticles.Play();
         }
     }
 

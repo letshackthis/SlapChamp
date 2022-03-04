@@ -9,8 +9,8 @@ public class CharacterParams : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int playerBonusHealth = PlayerPrefs.GetInt("PlayerHealth", 0);
-        int playerBonusDamage = PlayerPrefs.GetInt("PlayerDamage", 0);
+        int playerBonusHealth = ES3.Load("PlayerHealth", 0);
+        int playerBonusDamage = ES3.Load("PlayerDamage", 0);
         playerHealth += playerBonusHealth;
         playerDamage += playerBonusDamage;
 
@@ -19,8 +19,8 @@ public class CharacterParams : MonoBehaviour
     private void OnApplicationPause(bool pause)
     {
 
-        PlayerPrefs.SetInt("PlayerHealth", PlayerPrefs.GetInt("PlayerHealth", 0));
-        PlayerPrefs.SetInt("PlayerDamage", PlayerPrefs.GetInt("PlayerDamage", 0));
+        ES3.Save("PlayerHealth", ES3.Load("PlayerHealth", 0));
+        ES3.Save("PlayerDamage", ES3.Load("PlayerDamage", 0));
     }
 
     // Update is called once per frame

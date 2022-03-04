@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
         moneyText.text = GameWallet.Money.ToString();
         GameWallet.OnChangeMoney+= OnChangeMoney;
         GameWallet.OnChangeBlueprint+= OnChangeBlueprint;
+        SoundManager.OnSoundCheck?.Invoke();
     }
 
     private void OnDestroy()

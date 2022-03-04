@@ -21,7 +21,7 @@ public class RewardManager : MonoBehaviour
     private int level;
     private void Start()
     {
-        level=PlayerPrefs.GetInt(StringKeys.level, 1);
+        level=ES3.Load(StringKeys.level, 1);
         
         GetComponent<Button>().onClick.AddListener(AddCoins);
         GetComponentInChildren<Text>().text =
@@ -32,8 +32,10 @@ public class RewardManager : MonoBehaviour
 
     private void AddCoins()
     {
+        Debug.Log("AddCoins");
         IronSourceManager.Instance.CallReward(RewardPlacement.REWARD_COINS.ToString(), () =>
         {
+            Debug.Log("Added");
             gameObject.SetActive(false);
             GameWallet.Money += (50 * level);
         });

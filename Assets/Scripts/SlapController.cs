@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SlapController : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class SlapController : MonoBehaviour
         enemyAnimator = enemy.GetComponent<Animator>();
         playerTurn = true;
         canclick = true;
-    
+
         powerBtn.SetActive(true);
         healthBtn.SetActive(true);
     }
@@ -47,7 +48,8 @@ public class SlapController : MonoBehaviour
             playerAnimator.SetBool(Preparing, true);
             enemyAnimator.SetBool(Preparing, false);
 
-            if (Input.GetMouseButtonDown(0) && !CheckUIClick.IsPointerOverUIObject() && canclick)
+            if (Input.GetMouseButtonDown(0) && !CheckUIClick.IsPointerOverUIObject() &&
+                !EventSystem.current.IsPointerOverGameObject() && canclick)
             {
                 PlayerSlapping();
                 hitPower.sequence.Pause();
@@ -87,11 +89,35 @@ public class SlapController : MonoBehaviour
     public void Hit(string character)
     {
         int randomValueSlap = Random.Range(0, 7);
-        if (character == "player")
-        {
-            playerAnimator.SetTrigger("Slap"+randomValueSlap);
-        }
-        else enemyAnimator.SetTrigger("Slap"+randomValueSlap);
+            if (character == "player")
+            {
+                gameManager.SetPlayerPower();
+                float percentage = (float) gameManager.playerHit / gameManager.playerPower;
+                Debug.Log(gameManager.playerHit);
+                Debug.Log(gameManager.playerPower);
+                if (percentage >= 0.9f)
+                {
+      
+                    playerAnimator.SetTrigger("Slap" + randomValueSlap);
+                }
+                else
+                {
+                    playerAnimator.SetTrigger("Slap" + 8);
+                }
+            }
+            else
+            {
+                gameManager.EnemyAttackPower();
+                float percentage = (float) gameManager.dmgPwr / gameManager.enemyPower;
+                if (percentage >= 0.9f)
+                {
+                    enemyAnimator.SetTrigger("Slap" + randomValueSlap);
+                }
+                else
+                {
+                    enemyAnimator.SetTrigger("Slap" + 8);
+                }
+            }
     }
 
     public void GetHit(string character)
@@ -115,7 +141,7 @@ public class SlapController : MonoBehaviour
             StartCoroutine(gameManager.EnemyGetDamage());
 
             SetAnimationPlayerSlap(enemyAnimator, gameManager.playerHit, gameManager.playerPower, enemyParticles);
-            
+
             DOVirtual.DelayedCall(0.2f, () =>
             {
                 playerTurn = false;
@@ -124,14 +150,13 @@ public class SlapController : MonoBehaviour
         }
 
         SoundManager.Instance.PlaySound("slap");
-
-      
     }
 
-    private void SetAnimationPlayerSlap(Animator animator,int hitCurrentPower, int maxPower, ParticleSystem particleSystem)
+    private void SetAnimationPlayerSlap(Animator animator, int hitCurrentPower, int maxPower,
+        ParticleSystem particleSystem)
     {
-        float percentage =(float) hitCurrentPower  / maxPower;
-        
+        float percentage = (float) hitCurrentPower / maxPower;
+
         if (percentage <= 0.3f)
         {
             Debug.Log("Low");
@@ -173,9 +198,8 @@ public class SlapController : MonoBehaviour
 
             gamePlayPlace.Good();
         }
-
     }
-    
+
     public void StayDown(string character)
     {
         if (character == "player")

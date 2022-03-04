@@ -1,18 +1,20 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 [Serializable]
 public class UIData
 {
     [SerializeField] private RectTransform hpBar;
-    [SerializeField] private RectTransform icon;
+    [SerializeField] private RectTransform nickname;
     [SerializeField] private RectTransform hp;
 
     public RectTransform HpBar => hpBar;
 
-    public RectTransform Icon => icon;
 
     public RectTransform Hp => hp;
+
+    public RectTransform Nickname => nickname;
 }
 public class UIObjectPlacement : MonoBehaviour
 {
@@ -30,11 +32,17 @@ public class UIObjectPlacement : MonoBehaviour
     private void ChangePosition()
     {
         ObjectPosition(player.Hp, enemy.Hp);
-        ObjectPosition(player.Icon, enemy.Icon);
+        ObjectPosition(player.Nickname, enemy.Nickname);
         player.HpBar.anchoredPosition =secondPosition ;
         enemy.HpBar.anchoredPosition = firstPosition;
-        enemy.HpBar.eulerAngles=Vector3.one;
+        enemy.HpBar.eulerAngles=Vector3.zero;
         player.HpBar.eulerAngles = new Vector3(0, 0, 180);
+
+        player.Nickname.GetComponent<Text>().alignment = TextAnchor.MiddleRight;
+        enemy.Nickname.GetComponent<Text>().alignment = TextAnchor.LowerLeft;
+        
+        player.Hp.GetComponent<Text>().alignment = TextAnchor.LowerLeft;
+        enemy.Hp.GetComponent<Text>().alignment = TextAnchor.MiddleRight;
     }
 
     private void ObjectPosition(Transform first, Transform second)
