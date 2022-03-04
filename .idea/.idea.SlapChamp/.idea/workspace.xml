@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/EnemyAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/EnemyAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/MoneyAdsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/MoneyAdsButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/UI Character Customisation/UI Version 2/Group 38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/UI Character Customisation/UI Version 2/Group 38.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RewardAdsButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RewardAdsButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Loader.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Loader.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterParams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DamageIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DamageIndicator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HitPower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HitPower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIObjectPlacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIObjectPlacement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SomeLeve0.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/Music.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/Music.mp3.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +162,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AddBluePrint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/RainController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayPlace.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManagerScriptableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" />
@@ -210,13 +187,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SlapController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/MoneyAdsButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OnlineOptions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RainController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -304,7 +282,7 @@
       <workItem from="1645544910078" duration="609000" />
       <workItem from="1646043580155" duration="26428000" />
       <workItem from="1646344285409" duration="3703000" />
-      <workItem from="1646351091807" duration="19104000" />
+      <workItem from="1646351091807" duration="19961000" />
     </task>
     <servers />
   </component>

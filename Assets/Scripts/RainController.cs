@@ -12,6 +12,7 @@ public class RainController : MonoBehaviour
     {
         float randomWait = Random.Range(randomWaitTime.x, randomWaitTime.y);
         DOVirtual.DelayedCall(randomWait, MakeThunder);
+        rainSource.Play();
     }
 
     public void Stop()

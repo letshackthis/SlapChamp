@@ -55,6 +55,8 @@ namespace Customisation.UI
             characterChannel.OnLoadCharacterData += OnLoadCharacterData;
             moneyText.text = GameWallet.Money.ToString();
             blueprintText.text = GameWallet.Blueprint.ToString();
+            
+            SoundManager.OnSoundCheck?.Invoke();
         }
 
         private void OnLoadCharacterData(CharacterLoadSave obj)

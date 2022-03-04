@@ -60,7 +60,6 @@ namespace Character_Customization_Template.Scripts
             {
                 backText.text = "RESUME";
                 backButton.onClick.AddListener(Close);
-                SoundManager.OnSoundCheck?.Invoke();
             }
             else
             {
