@@ -1,5 +1,5 @@
 <dependencies>
-    <unityversion>4.3.15.1</unityversion>
+    <unityversion>4.3.15.3</unityversion>
   <androidPackages>
     <androidPackage spec="com.adcolony:sdk:4.6.5">
       <repositories>
@@ -17,7 +17,7 @@
   </androidPackages>
 
   <iosPods>
-    <iosPod name="IronSourceAdColonyAdapter" version="4.3.12.1">
+    <iosPod name="IronSourceAdColonyAdapter" version="4.3.12.3">
       <sources>
         <source>https://github.com/CocoaPods/Specs</source>
       </sources>

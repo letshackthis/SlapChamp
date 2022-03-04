@@ -5,20 +5,109 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/IAPSystem/IAPManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/IAPSystem/IAPManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Loader.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Loader.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RagdollState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RagdollState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SomeLeve0.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SomeLeve1.png" beforeDir="false" afterPath="$PROJECT_DIR$/SomeLeve1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_analytics.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_analytics.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_analytics_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_analytics_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_auth.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_auth.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_auth_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_auth_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_cloud_messaging.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_cloud_messaging.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_cloud_messaging_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_cloud_messaging_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_config.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_config.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_config_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_config_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_crashlytics.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_crashlytics.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_crashlytics_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_crashlytics_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_database.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_database.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_database_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_database_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_dynamic_links.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_dynamic_links.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_dynamic_links_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_dynamic_links_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_functions.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_functions.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_functions_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_functions_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_storage.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_storage.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_storage_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/fb_storage_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/firebase_lockup.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/firebase_lockup.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/firebase_lockup_dark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/Firebase/firebase_lockup_dark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AccessTokenMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AccessTokenMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AccessTokenMenu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AccessTokenMenu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppEvents.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppEvents.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppEvents.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppEvents.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppLinks.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppLinks.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppLinks.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppLinks.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppRequests.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppRequests.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppRequests.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/AppRequests.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/DialogShare.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/DialogShare.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/DialogShare.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/DialogShare.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/GraphRequest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/GraphRequest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/GraphRequest.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/GraphRequest.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/LogView.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/LogView.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/LogView.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/LogView.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/MainMenu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/MainMenu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Pay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Pay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Pay.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Pay.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/LogView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/LogView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/LogView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/LogView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/MenuBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/MenuBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/MenuBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/MenuBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AccessTokenMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AccessTokenMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AccessTokenMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AccessTokenMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppEvents.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppLinks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppLinks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppLinks.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppLinks.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppRequests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppRequests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppRequests.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/AppRequests.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/DialogShare.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/GraphRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/GraphRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/GraphRequest.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/GraphRequest.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/MainMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/MainMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/Pay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/Pay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/Pay.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/SubMenus/Pay.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Textures/White.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Examples/Textures/White.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-11.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-11.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Canvas/CanvasJSSDKBindings.jslib.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Canvas/Facebook.Unity.Canvas.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Canvas/Facebook.Unity.Canvas.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Editor/Dependencies.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Editor/Dependencies.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Facebook.Unity.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Facebook.Unity.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/link.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/link.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FacebookSDK/link.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FacebookSDK/link.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Compat.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Compat.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Compat.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Compat.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Tasks.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Tasks.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Tasks.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parse/Plugins/Unity.Tasks.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libCrashlyticsiOSWrapper.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libCrashlyticsiOSWrapper.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppCrashlytics.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppCrashlytics.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppCrashlytics.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/iOS/Firebase/libFirebaseCppCrashlytics.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +243,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPCState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNpcState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPC.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AI/DynamicNPCController.cs" />
@@ -205,6 +293,7 @@
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/SoundSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -292,7 +381,7 @@
       <workItem from="1645544910078" duration="609000" />
       <workItem from="1646043580155" duration="26428000" />
       <workItem from="1646344285409" duration="3703000" />
-      <workItem from="1646351091807" duration="23557000" />
+      <workItem from="1646351091807" duration="24169000" />
     </task>
     <servers />
   </component>
