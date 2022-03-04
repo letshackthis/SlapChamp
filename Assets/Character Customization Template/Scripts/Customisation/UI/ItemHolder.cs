@@ -117,7 +117,7 @@ namespace Customisation.UI
             if (holderDataList.Count > 1)
             {
                 InstantiatePointerList();
-                swiper.OnSwipeVertical += ChangeItemType;
+                swiper.OnSwipeVertical = ChangeItemType;
                 SetPointerListState();
             }
             else
@@ -130,6 +130,12 @@ namespace Customisation.UI
         
         private void InstantiatePointerList()
         {
+            for (var i = 0; i < pointerSelectionList.Count; i++)
+            {
+                Destroy(pointerSelectionList[i].gameObject);
+            }
+            
+            pointerSelectionList.Clear();
             foreach (PointerSelection currentPointer in holderDataList.Select(holderData => Instantiate(pointerPrefab, contentPointerSelection)))
             {
                 pointerSelectionList.Add(currentPointer);
