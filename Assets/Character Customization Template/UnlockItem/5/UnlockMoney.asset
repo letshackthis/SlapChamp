@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c5fc0dd284bcc4ba4b5ddadb9ba463, type: 3}
   m_Name: UnlockMoney
   m_EditorClassIdentifier: 
-  unlockImage: {fileID: 21300000, guid: 7b25799558afacf429800c96974fe5e3, type: 3}
+  unlockImage: {fileID: 21300000, guid: ba52b610ff29e9447b6c7bb4d64bdb60, type: 3}
   unlockName: BUY FOR COINS
   unlockButtonText: BUY
   characterChannel: {fileID: 11400000, guid: 6bc76221ffc11fa4d98d35e81653ee9e, type: 2}

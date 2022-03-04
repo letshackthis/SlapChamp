@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d4658be1f6c704f9fd7c5874a4f00e, type: 3}
   m_Name: UnlockBlueprint
   m_EditorClassIdentifier: 
-  unlockImage: {fileID: 21300000, guid: f613827a3c667ec40b5b739c13f5524c, type: 3}
+  unlockImage: {fileID: 21300000, guid: b8c623259ecc46c43ad2932b1109180d, type: 3}
   unlockName: BUY FOR BLUEPRINT
   unlockButtonText: BUY
   characterChannel: {fileID: 11400000, guid: 6bc76221ffc11fa4d98d35e81653ee9e, type: 2}

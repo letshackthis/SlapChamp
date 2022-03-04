@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f920bc475c46145b4bf433ecc0be6a, type: 3}
   m_Name: UnlockIAP
   m_EditorClassIdentifier: 
-  unlockImage: {fileID: 21300000, guid: a761dc4c77b251f47a51eef9fd12f8cd, type: 3}
+  unlockImage: {fileID: 21300000, guid: fa399b45dc4f1f7439fbe5eb64a567af, type: 3}
   unlockName: GET WITH CASH
   unlockButtonText: GET
   characterChannel: {fileID: 11400000, guid: 6bc76221ffc11fa4d98d35e81653ee9e, type: 2}
