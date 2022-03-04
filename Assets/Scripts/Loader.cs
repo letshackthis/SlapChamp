@@ -41,11 +41,11 @@ public class Loader : MonoBehaviour
         loadingImage.fillAmount = 0.2f;
         if (isOnline)
         {
-            textLoad.text = "Searching..";
+            textLoad.text = "Searching...";
         }
         else
         {
-            textLoad.text = "Loading..";
+            textLoad.text = "Loading...";
         }
         StartCoroutine(LoadScene(sceneName));
     }
