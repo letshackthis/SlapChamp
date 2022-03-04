@@ -16,7 +16,7 @@ namespace Character_Customization_Template.Scripts.Customisation
         [SerializeField] private Image image;
         [SerializeField] private Button genderButton;
         [SerializeField] private bool isMale;
-        
+
         public RectTransform Target => target;
 
         public Image Image1 => image;
@@ -27,6 +27,7 @@ namespace Character_Customization_Template.Scripts.Customisation
 
         public List<IndexData> Data => indexData;
     }
+
     public class CharacterSelection : MonoBehaviour
     {
         [SerializeField] private CharacterChannel characterChannel;
@@ -37,51 +38,50 @@ namespace Character_Customization_Template.Scripts.Customisation
         [SerializeField] private InputField inputField;
         [SerializeField] private Color selectedColor;
         [SerializeField] private Color unselectedColor;
-        
+
         private GenderData currentGenderData;
         private CharacterLoadSave characterLoadSave;
         private bool isInit;
+
         private void Awake()
         {
-            confirmButton.onClick.AddListener(Confirm);
-            characterChannel.OnLoadCharacterData+= OnLoadCharacterData;
-            ButtonInitialization();
-           
+            if (ES3.Load(SaveKeys.IsCreated, false) == false)
+            {
+                confirmButton.onClick.AddListener(Confirm);
+                characterChannel.OnLoadCharacterData += OnLoadCharacterData;
+                ButtonInitialization();
+            }
         }
-        
+
         private void OnDestroy()
         {
-            characterChannel.OnLoadCharacterData-= OnLoadCharacterData;
+            characterChannel.OnLoadCharacterData -= OnLoadCharacterData;
         }
 
         private void OnLoadCharacterData(CharacterLoadSave obj)
         {
-            if(characterLoadSave==null)
-                characterLoadSave = obj;
-            
             if (!isInit)
             {
+                characterLoadSave = obj;
                 isInit = true;
                 ChooseGender(genderDataList[0]);
             }
         }
 
-      
+
         private void ButtonInitialization()
         {
             foreach (GenderData genderData in genderDataList)
             {
-                genderData.GenderButton.onClick.AddListener(()=>
-                {
-                    ChooseGender(genderData);
-                });
+                genderData.GenderButton.onClick.AddListener(() => { ChooseGender(genderData); });
             }
         }
+
         private void Confirm()
         {
             string nickname = inputField.text;
             characterLoadSave.CharacterSaveData.nickName = nickname;
-            characterChannel.OnSaveCharacter?.Invoke(); 
+            characterChannel.OnSaveCharacter?.Invoke();
             ES3.Save(SaveKeys.IsCreated, true);
             uiInitActivation.ActivateGamePlayUI();
         }
@@ -90,23 +90,23 @@ namespace Character_Customization_Template.Scripts.Customisation
         {
             if (currentGenderData == null || currentGenderData != genderData)
             {
-               SetDefaultConfigGenderData();
-               currentGenderData = genderData;
-                
+                SetDefaultConfigGenderData();
+                currentGenderData = genderData;
+
                 genderData.Image1.color = selectedColor;
                 selector.SetParent(genderData.Target);
-                selector.anchoredPosition=Vector2.zero;
-                selector.localScale=Vector3.one;
+                selector.anchoredPosition = Vector2.zero;
+                selector.localScale = Vector3.one;
                 selector.GetComponent<Image>().SetNativeSize();
 
                 for (var i = 0; i < genderData.Data.Count; i++)
                 {
-                    IndexData currentData = characterLoadSave.SelectedItemList.Find(e => e.itemType == genderData.Data[i].itemType);
+                    IndexData currentData =
+                        characterLoadSave.SelectedItemList.Find(e => e.itemType == genderData.Data[i].itemType);
                     currentData.currentIndex = genderData.Data[i].currentIndex;
                 }
-                
+
                 characterChannel.OnChangeGender?.Invoke(genderData.IsMale);
-       
             }
         }
 

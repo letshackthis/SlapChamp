@@ -64,6 +64,7 @@ namespace Customisation.UI
             characterChannel.OnItemListOpen -= OnItemListOpen;
             characterChannel.OnChangeItem -= OnChangeItem;
             characterChannel.OnItemHolderChange -= OnItemHolderChange;
+            characterChannel.OnUnlockOptionState -= OnUnlockOptionState;
         }
 
         private void OnItemHolderChange(ItemHolderType obj)

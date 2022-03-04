@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Customisation.SO;
 using PolygonFantasyHeroCharacters.Scripts;
@@ -27,6 +28,12 @@ namespace Customisation.UI
             characterChannel.OnChangeItem+= OnChangeItem;
         }
 
+        private void OnDestroy()
+        {
+            characterChannel.OnUnlockOptionState-= OnUnlockOptionState;
+            characterChannel.OnChangeItem-= OnChangeItem;
+        }
+
         private void OnChangeItem(ItemData itemData)
         {
             currentItemData = itemData;
@@ -44,11 +51,15 @@ namespace Customisation.UI
 
         private void Open()
         {
-            foreach (UnlockItemOption unlockItemOption in unlockItemOptionList)
+            if (unlockItemOptionList.Count > 0)
             {
-                Destroy(unlockItemOption.gameObject);
+                foreach (UnlockItemOption unlockItemOption in unlockItemOptionList)
+                {
+                    Destroy(unlockItemOption.gameObject);
+                }
+                unlockItemOptionList.Clear(); 
             }
-            unlockItemOptionList.Clear();
+          
 
             foreach (UnlockItem unlockItem in currentItemData.buyOptions)
             {

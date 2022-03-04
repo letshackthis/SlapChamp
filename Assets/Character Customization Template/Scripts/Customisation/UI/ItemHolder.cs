@@ -168,6 +168,7 @@ namespace Customisation.UI
 
         private void ShowItemList()
         {
+            Debug.Log("ShowItemList");
             characterChannel.OnItemListClose?.Invoke();
             characterChannel.OnItemHolderSelect?.Invoke(this);
             CameraViewChanger.OnCameraViewChange?.Invoke(currentHolderData.CurrentItemType);

@@ -38,7 +38,7 @@ namespace Customisation.UI
             characterChannel.OnItemHolderChange += ChangeItemHolder;
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             characterChannel.OnLoadCharacterData -= LoadCharacterData;
             characterChannel.OnItemHolderChange -= ChangeItemHolder;

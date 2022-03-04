@@ -79,7 +79,7 @@ namespace Customisation.UI
             }
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             swiper.OnSwipeHorizontal -= OnSwipeHorizontal;
             characterChannel.OnItemListOpen -= OnItemListOpen;

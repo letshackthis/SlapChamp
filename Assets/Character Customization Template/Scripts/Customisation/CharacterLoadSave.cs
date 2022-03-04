@@ -59,6 +59,7 @@ namespace Customisation
             ES3.Save(SaveKeys.OpenedItems, openedElementList);
             ES3.Save(SaveKeys.SelectedItems, selectedItemList);
             ES3.Save(SaveKeys.CharacterCustomisation, characterSaveData);
+            Debug.Log(characterSaveData.gender);
         }
 
 
@@ -95,6 +96,7 @@ namespace Customisation
             characterSaveData.gender = isMale ? Gender.Male : Gender.Female;
             characterCustomization.DisableAllElements();
             
+            Debug.Log(characterSaveData.gender);
             currentItemType = characterSaveData.gender == Gender.Female
                 ? customisationItems.FemaleItemTypeDataList
                 : customisationItems.MaleItemTypeDataList;

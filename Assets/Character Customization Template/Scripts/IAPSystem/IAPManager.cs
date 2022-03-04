@@ -5,7 +5,7 @@ using Utilities;
 
 namespace IAPSystem
 {
-    public class IAPManager : MonoBehaviour, IStoreListener
+    public class IAPManager : Singleton<IAPManager>, IStoreListener
     {
         public static Action<ProductIdentifier> OnBuyIapItem;
         private static IStoreController m_StoreController;
@@ -13,13 +13,16 @@ namespace IAPSystem
         private IAPItem[] iapItems;
 
         private ProductIdentifier currentProductIdentifier;
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+            DontDestroyOnLoad(this);
             OnBuyIapItem += BuyIapItem;
         }
 
-        private void OnDestroy()
+        protected override void OnDestroy()
         {
+            base.OnDestroy();
             OnBuyIapItem -= BuyIapItem;
         }
 
@@ -56,6 +59,11 @@ namespace IAPSystem
         private void BuyIapItem(ProductIdentifier productIdentifier)
         {
 #if UNITY_EDITOR
+            Debug.Log("Come: "+productIdentifier);
+            foreach (var item in iapItems)
+            {
+                Debug.Log("item: "+item.Identifier);
+            }
             IAPItem iapItem = Array.Find(iapItems, e => e.Identifier == productIdentifier);
             currentProductIdentifier = productIdentifier;
             iapItem.GetReward();
