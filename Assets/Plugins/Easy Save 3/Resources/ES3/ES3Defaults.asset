@@ -53,10 +53,14 @@ MonoBehaviour:
     - MoreMountains.NiceVibrations
     - MoreMountains.Tools.TextMeshPro
     - MoreMountains.Feedbacks.NiceVibrations
+    - StompyRobot.SRF
+    - StompyRobot.SRDebugger
     - MoreMountains.Tools.Editor
     - MoreMountains.Feedbacks.Editor
     - MoreMountains.Tools.Feedbacks.Editor
     - MoreMountains.NiceVibrations.Editor
+    - StompyRobot.SRDebugger.Editor
+    - StompyRobot.SRF.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

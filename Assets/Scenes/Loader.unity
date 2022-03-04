@@ -235,6 +235,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f88a45b32cfce4eadae1169ee70d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iapItems:
+  - {fileID: 11400000, guid: 5c55b8466a80cf64ab34d6bd4240f286, type: 2}
+  - {fileID: 11400000, guid: 5db8f39c3e3cee24bb375964194a3c49, type: 2}
+  - {fileID: 11400000, guid: 6e5f55b8926d29b4395fd2b3a3b35628, type: 2}
 --- !u!4 &481584648
 Transform:
   m_ObjectHideFlags: 0

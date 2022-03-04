@@ -51,8 +51,11 @@ public class UIManager : MonoBehaviour
             target.DOScale(Vector3.one, 0.3f);
         });
     }
-   
 
+    public void GoHome()
+    {
+        Loader.OnLoadScene?.Invoke(false,"CharacterHouse");
+    }
     
 
   

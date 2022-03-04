@@ -37,16 +37,28 @@ public class Loader : MonoBehaviour
 
     private void OnLoad(bool isOnline,string sceneName)
     {
-        panel.SetActive(true);
-        loadingImage.fillAmount = 0.2f;
-        if (isOnline)
+        if (panel != null)
         {
-            textLoad.text = "Searching...";
+            panel.SetActive(true);
         }
-        else
+        if (loadingImage != null)
         {
-            textLoad.text = "Loading...";
+            loadingImage.fillAmount = 0.2f;
         }
+
+        if (textLoad != null)
+        {
+            if (isOnline)
+            {
+                textLoad.text = "Searching...";
+            }
+            else
+            {
+                textLoad.text = "Loading...";
+            }
+        }
+       
+      
         StartCoroutine(LoadScene(sceneName));
     }
     
@@ -57,9 +69,12 @@ public class Loader : MonoBehaviour
 
         while (!asyncOperation.isDone)
         {
-            loadingImage.fillAmount = asyncOperation.progress;
+            if(loadingImage!=null)
+                loadingImage.fillAmount = asyncOperation.progress;
             yield return null;
         }
-        panel.SetActive(false);
+        
+        if(panel!=null)
+            panel.SetActive(false);
     }
 }

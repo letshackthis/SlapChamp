@@ -10,7 +10,7 @@ namespace IAPSystem
         public static Action<ProductIdentifier> OnBuyIapItem;
         private static IStoreController m_StoreController;
         private static IExtensionProvider m_StoreExtensionProvider;
-        private IAPItem[] iapItems;
+       [SerializeField] private IAPItem[] iapItems;
 
         private ProductIdentifier currentProductIdentifier;
         protected override void Awake()
@@ -43,7 +43,6 @@ namespace IAPSystem
 
             ConfigurationBuilder builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
             
-            iapItems = Resources.LoadAll<IAPItem>(KeysLocation.IapItems);
             foreach (IAPItem iapItem in iapItems)
             {
                 builder.AddProduct(iapItem.Key, iapItem.Type);

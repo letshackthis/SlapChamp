@@ -63,7 +63,7 @@ namespace Character_Customization_Template.Scripts
             }
             else
             {
-                backText.text = "HOUSE";
+                backText.text = "HOME";
                 backButton.onClick.AddListener(BackToHouse);
             }
         }
