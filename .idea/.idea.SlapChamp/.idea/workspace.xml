@@ -6,23 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Resources/IAPItems/Customisation 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Resources/IAPItems/Customisation 3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Resources/IAPItems/Customisation 4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Resources/IAPItems/Customisation 4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Resources/IAPItems/Customisation 5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Resources/IAPItems/Customisation 5.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockBlueprint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockBlueprint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockMoney.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockMoney.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterLoadSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterLoadSave.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/SO/CharacterChannel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/SO/CharacterChannel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/IAPSystem/IAPCustomisation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/IAPSystem/IAPCustomisation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/IAPSystem/IAPItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/IAPSystem/IAPItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_SpecialEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_SpecialEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Editor/CustomizationUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Editor/CustomizationUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/CustomisationEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CustomisationEditor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,9 +146,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/SampleScenes/Scripts/ParticleSceneControls.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HumanController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" />
@@ -205,12 +188,15 @@
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/SO/CharacterChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_SpecialEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterLoadSave.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockBlueprint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/CharacterCustomisationUtilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Character Customization Template/Editor/CustomizationUtilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/CustomisationEditor.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
@@ -298,7 +284,7 @@
       <workItem from="1645544910078" duration="609000" />
       <workItem from="1646043580155" duration="26428000" />
       <workItem from="1646344285409" duration="3703000" />
-      <workItem from="1646351091807" duration="37304000" />
+      <workItem from="1646351091807" duration="38308000" />
     </task>
     <servers />
   </component>

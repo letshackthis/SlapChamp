@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Customisation.SO;
+using DG.Tweening;
 using PolygonFantasyHeroCharacters.Scripts;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,6 +42,7 @@ namespace Customisation.UI
         private bool isAttachmentOpen;
         [SerializeField] private HandHelper handHelper;
         [SerializeField] private GameObject secondHand;
+        private bool isInit;
         private void Awake()
         {
             for (int index = 0; index < attachmentButtons.Length; index++)
@@ -67,11 +69,19 @@ namespace Customisation.UI
             if (value)
             {
                 if (indexList >= maxListIndexOrder) return;
-                
-                if (ES3.Load(handHelper.SaveKey, true) == false)
+                if (!isInit)
                 {
-                    secondHand.gameObject.SetActive(true);
+                    DOVirtual.DelayedCall(0.1f, () =>
+                    {
+                        if (ES3.Load(handHelper.SaveKey, true) == false)
+                        {
+                            isInit = true;
+                            secondHand.gameObject.SetActive(true);
+                        }
+                    });
                 }
+               
+              
               
                 indexList++;
                 ConfigCurrentList();
