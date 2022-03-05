@@ -39,7 +39,8 @@ namespace Customisation.UI
         private int indexList;
         private int maxListIndexOrder;
         private bool isAttachmentOpen;
-
+        [SerializeField] private HandHelper handHelper;
+        [SerializeField] private GameObject secondHand;
         private void Awake()
         {
             for (int index = 0; index < attachmentButtons.Length; index++)
@@ -66,6 +67,12 @@ namespace Customisation.UI
             if (value)
             {
                 if (indexList >= maxListIndexOrder) return;
+                
+                if (ES3.Load(handHelper.SaveKey, true) == false)
+                {
+                    secondHand.gameObject.SetActive(true);
+                }
+              
                 indexList++;
                 ConfigCurrentList();
                 pointerList.ActivateCurrentPointer(indexList);

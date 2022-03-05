@@ -13,7 +13,7 @@ namespace Customisation.UI
         [SerializeField] private float heightAttachment;
         [SerializeField] private float minHeight;
         [SerializeField] private Swiper swiper;
-
+      
         private bool isOpened;
         private bool isOpenedAttachment;
         public bool IsOpened => isOpened;
@@ -45,6 +45,7 @@ namespace Customisation.UI
 
         private void ShowLast()
         {
+            
             if (isOpenedAttachment)
             {
                 ShowAttachment();
@@ -81,7 +82,7 @@ namespace Customisation.UI
         
         public void Hide()
         {
-           
+          
             rectTransform.sizeDelta = Vector2.up*minHeight;
             foreach (GameObject uiObject in gameObjectList)
             {

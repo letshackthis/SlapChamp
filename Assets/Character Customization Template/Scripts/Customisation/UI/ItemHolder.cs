@@ -78,6 +78,7 @@ namespace Customisation.UI
         public List<HolderData> AttachmentList => attachmentList;
 
         public HolderData CurrentHolderData => currentHolderData;
+        private bool isInitielizedSwiper;
 
 
         public void Initialize()
@@ -117,7 +118,12 @@ namespace Customisation.UI
             if (holderDataList.Count > 1)
             {
                 InstantiatePointerList();
-                swiper.OnSwipeVertical = ChangeItemType;
+                if (!isInitielizedSwiper)
+                {
+                    isInitielizedSwiper = true;
+                    swiper.OnSwipeVertical += ChangeItemType;
+                }
+               
                 SetPointerListState();
             }
             else
