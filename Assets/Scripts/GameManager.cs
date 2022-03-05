@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameAnalyticsSDK;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using TMPro;
@@ -24,7 +25,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private RagdollState playerRagdoll;
     public MMFeedbacks slapFeedbackEnemy;
     public MMFeedbacks slapFeedbackPlayer;
-    [SerializeField] private Text 
+
+    [SerializeField] private Text
         healthPriceText,
         powerPriceText,
         bonusHealthText,
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
         enemyHealthText;
 
     [SerializeField] private TextMeshProUGUI playerPowerText;
-  
+
 
     [SerializeField] private Image unableHealth, unablePower;
 
@@ -49,7 +51,7 @@ public class GameManager : MonoBehaviour
         currentLevel,
         dmgPwr,
         playerHit;
-    
+
     [SerializeField] private HitPower hitPower;
 
     public bool strongHit;
@@ -77,8 +79,8 @@ public class GameManager : MonoBehaviour
         enemyHealth = Random.Range(5 * currentLevel + 95, 9 * currentLevel + 101);
         enemyHealthText.text = enemyHealth.ToString();
         playerHealthText.text = playerHealth.ToString();
-        maxHealhEnemy= enemyHealth;
-        maxHealhPlayer= playerHealth;
+        maxHealhEnemy = enemyHealth;
+        maxHealhPlayer = playerHealth;
     }
 
     public void EnemyAttackPower()
@@ -119,7 +121,6 @@ public class GameManager : MonoBehaviour
 
     public void PlayerGetDamage()
     {
-      
         slapFeedbackPlayer?.PlayFeedbacks(playerTransform.position, dmgPwr);
         ActivateSlapParticles(dmgPwr, enemyPower, enemyHand);
         if (dmgPwr >= playerHealth)
@@ -136,7 +137,6 @@ public class GameManager : MonoBehaviour
             DecreaseProgressBar(playerHealthBar, dmgPwr, maxHealhPlayer);
             playerHealthText.text = playerHealth.ToString();
         }
-        
     }
 
     public void SetPlayerPower()
@@ -154,14 +154,18 @@ public class GameManager : MonoBehaviour
             DecreaseProgressBar(enemyHealthBar, maxHealhEnemy, maxHealhEnemy);
             enemyRagdoll.Attack(playerHand);
             playerWin = true;
-            
-            if (ES3.Load(SaveKeys.IsOnline, false) == false)
+
+            var isOnline = ES3.Load(SaveKeys.IsOnline, false);
+
+            if (isOnline == false)
             {
-                Debug.Log("NewLevel");
                 int nextLevel = 1 + ES3.Load(StringKeys.level, 1);
                 ES3.Save(StringKeys.level, nextLevel);
             }
-          
+
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Map0",
+                "LEVEL_" + ES3.Load(StringKeys.level, 1),
+                isOnline ? "ONLINE" : "OFFLINE", GameWallet.Money);
         }
         else
         {
@@ -169,17 +173,16 @@ public class GameManager : MonoBehaviour
             enemyHealth -= playerHit;
             DecreaseProgressBar(enemyHealthBar, playerHit, maxHealhEnemy);
             enemyHealthText.text = enemyHealth.ToString();
-            
+
             yield return new WaitForSeconds(5);
             playerPowerText.text = playerPower.ToString();
         }
     }
 
-    private void DecreaseProgressBar(MMProgressBar progressBar,int currentPower, int max)
+    private void DecreaseProgressBar(MMProgressBar progressBar, int currentPower, int max)
     {
-        float newProgress =progressBar.BarTarget- GetDamagePercent(max,currentPower);
-        progressBar.UpdateBar(newProgress,0,1);
-    
+        float newProgress = progressBar.BarTarget - GetDamagePercent(max, currentPower);
+        progressBar.UpdateBar(newProgress, 0, 1);
     }
 
     private void Initialization()
@@ -193,7 +196,7 @@ public class GameManager : MonoBehaviour
         powerPriceText.text = powerPrice.ToString();
 
         playerHealth = ES3.Load(StringKeys.playerMaxHealth, 100);
-        
+
         playerPower = ES3.Load(StringKeys.playerMaxPower, 35);
         playerPowerText.text = playerPower.ToString();
 
@@ -215,12 +218,12 @@ public class GameManager : MonoBehaviour
             ES3.Save(StringKeys.playerMaxHealth, playerHealth);
             bonusHealthValue += 1;
             ES3.Save(StringKeys.bonusHealth, bonusHealthValue);
+            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "coin", healthPrice, "Upgrade", "Health");
             healthPrice += 50;
             ES3.Save(StringKeys.healthPrice, healthPrice);
             Initialization();
             CheckHealthButton();
             hpParticles.Play();
-            
         }
     }
 
@@ -234,6 +237,7 @@ public class GameManager : MonoBehaviour
             ES3.Save(StringKeys.playerMaxPower, playerPower);
             bonusHealthValue += 1;
             ES3.Save(StringKeys.bonusPower, bonusPowerValue);
+            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "coin", powerPrice, "Upgrade", "Power");
             powerPrice += 50;
             ES3.Save(StringKeys.powerPrice, powerPrice);
             Initialization();
@@ -242,14 +246,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void ActivateSlapParticles(int currentHit, int maxHit,Transform targetPosition)
+    private void ActivateSlapParticles(int currentHit, int maxHit, Transform targetPosition)
     {
         ParticleSystem currentParticles;
-        float percentage =(float) currentHit  / maxHit;
+        float percentage = (float) currentHit / maxHit;
         if (percentage <= 0.3f)
         {
             currentParticles = lowSlapList[Random.Range(0, lowSlapList.Count)];
-
         }
         else if (percentage > 0.3f && percentage <= 0.9f)
         {
@@ -264,8 +267,8 @@ public class GameManager : MonoBehaviour
         currentParticles.Play();
     }
 
-    private float GetDamagePercent(int max,int input)
+    private float GetDamagePercent(int max, int input)
     {
-        return  (float) input  / max;
+        return (float) input / max;
     }
 }

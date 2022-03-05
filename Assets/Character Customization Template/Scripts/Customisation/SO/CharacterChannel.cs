@@ -35,7 +35,7 @@ namespace Customisation.SO
 
         public Action OnOpenItem;
         public Action OnSelectItem;
-
+        public IndexData temporaryIndexData;
         public ItemHolderType DefaultOpenItemHolderType => defaultOpenItemHolderType;
 
 

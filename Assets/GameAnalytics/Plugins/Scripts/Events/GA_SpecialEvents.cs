@@ -35,8 +35,11 @@ namespace GameAnalyticsSDK.Events
 
         public void Start ()
         {
+            DontDestroyOnLoad(this);
             StartCoroutine(SubmitFPSRoutine());
             StartCoroutine(CheckCriticalFPSRoutine());
+            
+            GameAnalyticsILRD.SubscribeIronSourceImpressions();
         }
 
         private IEnumerator SubmitFPSRoutine()

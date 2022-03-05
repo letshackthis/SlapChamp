@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using Customisation.SO;
 using Customisation.UI;
+using GameAnalyticsSDK;
+using GameAnalyticsSDK.Events;
 using PolygonFantasyHeroCharacters.Scripts;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace Customisation
 {
@@ -43,6 +44,7 @@ namespace Customisation
         private void Awake()
         {
             currentItemHolderType = characterChannel.DefaultOpenItemHolderType;
+          
             characterChannel.OnOpenItem += OnOpenItem;
             characterChannel.OnSelectItem += OnSelectItem;
             characterChannel.OnItemListOpen += OnItemListOpen;
@@ -115,6 +117,7 @@ namespace Customisation
             temporarySelectedItem ??= new IndexData();
             temporarySelectedItem.itemType = itemType;
             temporarySelectedItem.currentIndex = indexItem;
+            characterChannel.temporaryIndexData = temporarySelectedItem;
         }
 
         private void OnItemListOpen(HolderData holderData)

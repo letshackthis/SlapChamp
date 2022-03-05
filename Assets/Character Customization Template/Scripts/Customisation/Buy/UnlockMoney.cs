@@ -1,4 +1,5 @@
 using Customisation.UI;
+using GameAnalyticsSDK;
 using UnityEngine;
 
 namespace Customisation.Buy
@@ -20,6 +21,8 @@ namespace Customisation.Buy
             {
                 GameWallet.Money -= moneyAmount;
                 Unlock();
+                IndexData indexData = characterChannel.temporaryIndexData;
+                GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "coin", moneyAmount, "Customisation", indexData.itemType+" "+indexData.currentIndex);
             }
         }
 

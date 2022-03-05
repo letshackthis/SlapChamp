@@ -1,4 +1,5 @@
 using Customisation.UI;
+using GameAnalyticsSDK;
 using UnityEngine;
 
 namespace Customisation.Buy
@@ -19,6 +20,8 @@ namespace Customisation.Buy
             {
                 GameWallet.Blueprint -= blueprintAmount;
                 Unlock();
+                IndexData indexData = characterChannel.temporaryIndexData;
+                GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "blueprint", blueprintAmount, "Customisation", indexData.itemType+" "+indexData.currentIndex);
             }
        
         }

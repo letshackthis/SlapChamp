@@ -1,4 +1,5 @@
 using System;
+using GameAnalyticsSDK;
 using UnityEngine;
 
 namespace IAPSystem
@@ -11,6 +12,8 @@ namespace IAPSystem
         public override void GetReward()
         {
             OnUnlockCustomisationItem?.Invoke();
+
+            GameAnalytics.NewBusinessEvent("USD", price, productIdentifier.ToString(), "Customisation", "Customisation");
         }
     }
 }

@@ -16,6 +16,7 @@ public class LevelManager : Singleton<LevelManager>
     [SerializeField] private AddBluePrint addBluePrint;
     public static bool bonusLevel;
 
+    private bool isOnline;
     protected override void Awake()
     {
         base.Awake();
@@ -40,8 +41,10 @@ public class LevelManager : Singleton<LevelManager>
            // vsTextUI.fontSize = 100;
         }
         
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "LEVEL_" + ES3.Load(StringKeys.level, 1).ToString(), 
-            "COINS_" +  GameWallet.Money);
+        isOnline = ES3.Load(SaveKeys.IsOnline, false);
+
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "Map0", "LEVEL_" + ES3.Load(StringKeys.level, 1),
+            isOnline ? "ONLINE" : "OFFLINE", GameWallet.Money);
     }
 
     private void FixedUpdate()
@@ -87,8 +90,7 @@ public class LevelManager : Singleton<LevelManager>
         win.SetActive(true);
         SoundManager.Instance.PlaySound("win");
         GameWallet.Money += GetCoinsToAdd(25);
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "LEVEL_" + ES3.Load(StringKeys.level, 1).ToString(), 
-            "COINS_" +  GameWallet.Money);
+      
     }
 
     private void Fail()
@@ -98,8 +100,8 @@ public class LevelManager : Singleton<LevelManager>
         fail.SetActive(true);
         SoundManager.Instance.PlaySound("fail");
         GameWallet.Money += GetCoinsToAdd(10);
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "LEVEL_" + ES3.Load(StringKeys.level, 1).ToString(), 
-            "COINS_" +  GameWallet.Money);
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "Map0", "LEVEL_" + ES3.Load(StringKeys.level, 1),
+            isOnline ? "ONLINE" : "OFFLINE", GameWallet.Money);
     }
 
     private int GetCoinsToAdd(int multiplier)

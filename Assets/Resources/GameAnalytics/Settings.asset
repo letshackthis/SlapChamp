@@ -41,8 +41,45 @@ MonoBehaviour:
   SelectedOrganization: 00000000
   SelectedStudio: 00000000
   SelectedGame: 00000000
-  NewVersion: 
-  Changes: 
+  NewVersion: 7.3.21
+  Changes: '7.3.21
+
+    - fixed bug in internal error reporting
+
+
+    7.3.20
+
+    -
+    added event uuid to events sent
+
+
+    7.3.19
+
+    - updated dependencies
+
+
+    7.3.18
+
+    -
+    fixed fps event script to still run coroutines when Time.timeScale = 0 by using
+    WaitForSecondsRealtime instead of WaitForSeconds
+
+
+    7.3.17
+
+    - added method
+    manually update gamekey and secretkey
+
+
+    7.3.16
+
+    - fixed uwp build errors
+
+
+    7.3.15
+
+    -
+    changed frequency logic for fps events'
   SignUpOpen: 1
   StudioName: assguard
   GameName: Slap Warriors
@@ -55,13 +92,17 @@ MonoBehaviour:
   VerboseLogBuild: 0
   UseManualSessionHandling: 0
   SendExampleGameDataToMyGame: 0
-  UseIMEI: 0
   InternetConnectivity: 0
   CustomDimensions01: []
   CustomDimensions02: []
   CustomDimensions03: []
-  ResourceItemTypes: []
-  ResourceCurrencies: []
+  ResourceItemTypes:
+  - Customisation
+  - Upgrade
+  ResourceCurrencies:
+  - coin
+  - blueprint
+  - ads
   LastCreatedGamePlatform: 0
   Platforms: 0b000000
   CurrentInspectorState: 1
@@ -92,8 +133,8 @@ MonoBehaviour:
   FpsCriticalThreshold: 20
   FpsCirticalSubmitInterval: 1
   PlatformFoldOut: 01
-  CustomDimensions01FoldOut: 0
+  CustomDimensions01FoldOut: 1
   CustomDimensions02FoldOut: 0
   CustomDimensions03FoldOut: 0
-  ResourceItemTypesFoldOut: 0
-  ResourceCurrenciesFoldOut: 0
+  ResourceItemTypesFoldOut: 1
+  ResourceCurrenciesFoldOut: 1

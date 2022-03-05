@@ -1,4 +1,5 @@
 using Customisation.UI;
+using GameAnalyticsSDK;
 using Managers;
 using UnityEngine;
 
@@ -41,6 +42,8 @@ namespace Customisation.Buy
             if (currentAds >= maxAdsToSee)
             {
                 Unlock();
+                IndexData indexData = characterChannel.temporaryIndexData;
+                GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "ads", maxAdsToSee, "Customisation", indexData.itemType+" "+indexData.currentIndex);
             }
             else
             {

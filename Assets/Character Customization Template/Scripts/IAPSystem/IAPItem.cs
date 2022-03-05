@@ -5,12 +5,12 @@ namespace IAPSystem
 {
     public abstract class IAPItem : ScriptableObject
     {
-        [SerializeField] private ProductType productType;
-        [SerializeField] private ProductIdentifier productIdentifier;
-        [SerializeField] private string key;
-        [SerializeField] private string priceText;
-        [SerializeField] private string rewardText;
-
+        [SerializeField] protected ProductType productType;
+        [SerializeField] protected ProductIdentifier productIdentifier;
+        [SerializeField] protected string key;
+        [SerializeField] protected string priceText;
+        [SerializeField] protected string rewardText;
+        [SerializeField] protected int price;
         public ProductType Type => productType;
 
         public ProductIdentifier Identifier => productIdentifier;
