@@ -58,26 +58,14 @@ namespace IAPSystem
         private void BuyIapItem(ProductIdentifier productIdentifier)
         {
 #if UNITY_EDITOR
-            Debug.Log("Come: "+productIdentifier);
-            foreach (var item in iapItems)
-            {
-                Debug.Log("item: "+item.Identifier);
-            }
             IAPItem iapItem = Array.Find(iapItems, e => e.Identifier == productIdentifier);
             currentProductIdentifier = productIdentifier;
             iapItem.GetReward();
 #else
-
-#if UNITY_ANDROID
-             IAPItem iapItem = Array.Find(iapItems, e => e.Identifier == productIdentifier);
-            currentProductIdentifier = productIdentifier;
-            iapItem.GetReward();
-  #else
             Debug.Log("Item: "+productIdentifier);
             IAPItem iapItem = Array.Find(iapItems, e => e.Identifier == productIdentifier);
             currentProductIdentifier = productIdentifier;
             BuyProductID(iapItem.Key);
-#endif
 #endif
          
         }

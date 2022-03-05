@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   productType: 0
   productIdentifier: 3
-  key: Nino
+  key: com.assguard.slappack3
   priceText: 2 $
   rewardText: zaebisi
