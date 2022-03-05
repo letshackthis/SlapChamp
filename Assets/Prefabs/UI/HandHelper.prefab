@@ -70,7 +70,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -191.4, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1107574351782117281
 CanvasRenderer:
@@ -322,4 +322,4 @@ MonoBehaviour:
   startPosition: {fileID: 1107574351568461628}
   endPosition: {fileID: 1107574352229168258}
   isDown: 0
-  isRight: 0
+  isLeft: 0
