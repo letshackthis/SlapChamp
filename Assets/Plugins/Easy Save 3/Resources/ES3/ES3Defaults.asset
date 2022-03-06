@@ -32,9 +32,11 @@ MonoBehaviour:
     - MoreMountains.Feedbacks
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - StompyRobot.SRF
     - MoreMountains.NiceVibrations.Haptics
     - MoreMountains.Feel.Demos
     - MoreMountains.Tools
+    - StompyRobot.SRDebugger
     - MoreMountains.NiceVibrations.Demos
     - LeanCommonPlus
     - Cinemachine
@@ -53,14 +55,12 @@ MonoBehaviour:
     - MoreMountains.NiceVibrations
     - MoreMountains.Tools.TextMeshPro
     - MoreMountains.Feedbacks.NiceVibrations
-    - StompyRobot.SRF
-    - StompyRobot.SRDebugger
     - MoreMountains.Tools.Editor
     - MoreMountains.Feedbacks.Editor
+    - StompyRobot.SRF.Editor
+    - StompyRobot.SRDebugger.Editor
     - MoreMountains.Tools.Feedbacks.Editor
     - MoreMountains.NiceVibrations.Editor
-    - StompyRobot.SRDebugger.Editor
-    - StompyRobot.SRF.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
