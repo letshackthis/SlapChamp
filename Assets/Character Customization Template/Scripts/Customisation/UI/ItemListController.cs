@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using GameAnalyticsSDK;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ namespace Customisation.UI
         [SerializeField] private float heightAttachment;
         [SerializeField] private float minHeight;
         [SerializeField] private Swiper swiper;
+        [SerializeField] private  Button closeButton;
       
         private bool isOpened;
         private bool isOpenedAttachment;
@@ -21,6 +23,15 @@ namespace Customisation.UI
         private void Awake()
         {
             swiper.OnSwipeVertical += OnSwipe;
+            closeButton.onClick.AddListener(Close);
+        }
+
+        private void Close()
+        {
+            ItemHolderSelector.OnHide?.Invoke();
+            CameraViewChanger.OnCameraViewChange?.Invoke(ItemType.None);
+            Hide();
+            GameAnalytics.NewDesignEvent("CLOSE_OPTION",0);
         }
 
         private void OnDestroy()
@@ -32,6 +43,7 @@ namespace Customisation.UI
         {
             if (obj)
             {
+                GameAnalytics.NewDesignEvent("CLOSE_OPTION",1);
                 ItemHolderSelector.OnHide?.Invoke();
                 CameraViewChanger.OnCameraViewChange?.Invoke(ItemType.None);
                 Hide();

@@ -13,7 +13,7 @@ public class Loader : MonoBehaviour
     [SerializeField] private Text textLoad;
     [SerializeField] private Image loadingImage;
     [SerializeField] private GameObject panel;
-
+    private WaitForSeconds waitForSeconds = new WaitForSeconds(0.1f);
     private bool isInit;
     private void Awake()
     {
@@ -69,9 +69,10 @@ public class Loader : MonoBehaviour
 
         while (!asyncOperation.isDone)
         {
+            yield return waitForSeconds;
             if(loadingImage!=null)
                 loadingImage.fillAmount = asyncOperation.progress;
-            yield return null;
+  
         }
         
         if(panel!=null)
