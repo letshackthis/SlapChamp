@@ -1,5 +1,5 @@
 <dependencies>
-<unityversion>4.3.12.1</unityversion>
+<unityversion>4.3.12.2</unityversion>
   <androidPackages>
       <androidPackage spec="com.pangle.global:ads-sdk:4.1.1.9">
           <repositories>
@@ -15,7 +15,7 @@
     </androidPackage>
     </androidPackages>
     <iosPods>
-        <iosPod name="IronSourcePangleAdapter" version="4.3.11.1">
+        <iosPod name="IronSourcePangleAdapter" version="4.3.11.2">
             <sources>
                 <source>https://github.com/CocoaPods/Specs</source>
             </sources>

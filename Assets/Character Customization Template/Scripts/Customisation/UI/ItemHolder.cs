@@ -100,8 +100,8 @@ namespace Customisation.UI
 
         private void OnDestroy()
         {
-            characterChannel.OnItemSelect-= OnItemSelect;
-            swiper.OnSwipeVertical -= ChangeItemType;
+            characterChannel.OnItemSelect = null;
+            swiper.OnSwipeVertical = null;
         }
 
         private void OnItemSelect(IndexData indexData)
