@@ -5,15 +5,452 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60985104-22d2-4d23-adcc-b734971fa648" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SlapChamp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SlapChamp/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/ASE Templates/Universal 2019.3 Simple Lit.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockAds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockBlueprint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockBlueprint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockMoney.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/Buy/UnlockMoney.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/HeaderManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/ItemListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/ItemListController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterHouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterHouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/Examples/GameAnalyticsPlayMakerDemo.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StompyRobot/SRDebugger/usr/Resources/SRDebugger/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StompyRobot/SRDebugger/usr/Resources/SRDebugger/Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/MoneyAdsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/MoneyAdsButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Utilities/GameWallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Utilities/GameWallet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/1/UnlockMoney.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/1/UnlockMoney.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/2/UnlockMoney.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/2/UnlockMoney.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/3/UnlockMoney.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/3/UnlockMoney.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/4/UnlockMoney.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/4/UnlockMoney.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/5/UnlockMoney.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character Customization Template/UnlockItem/5/UnlockMoney.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Crafting Mecanim Animation Pack FREE/Elements/Editor/Resources/RatingSetup.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.IOSResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.IOSResolver.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.JarResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.JarResolver.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.PackageManagerResolver.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.PackageManagerResolver.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.VersionHandlerImpl.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/1.2.169/Google.VersionHandlerImpl.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/LICENSE.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/README.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.169_manifest.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.169_manifest.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/PlayMakerPresenceCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/PlayMakerPresenceCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/PlayMakerPresenceCheck.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/PlayMakerPresenceCheck.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendProgressionEventActionEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendProgressionEventActionEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendProgressionEventActionEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendProgressionEventActionEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendResourceEventActionEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendResourceEventActionEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendResourceEventActionEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker/SendResourceEventActionEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/active.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/active.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/default.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/default.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/delete.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/delete.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/game.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/game.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/home.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/home.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/info.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/info.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/instrument.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/instrument.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/question.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/question.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/update_orange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/update_orange.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/user.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/Images/user.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/gaLogo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Gizmos/GameAnalytics/gaLogo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/gameanalytics.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/instantapps-1.1.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/instantapps-1.1.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/unity_gameanalytics.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Android/unity_gameanalytics.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Linux.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Linux.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Linux/sqlite3.so.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Linux/sqlite3.so.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/Examples.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/Examples.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/Examples/GameAnalyticsPlayMakerDemo.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/Examples/GameAnalyticsPlayMakerDemo.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GAInitialize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GAInitialize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GAInitialize.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GAInitialize.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingId.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingId.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingId.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingVariantId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingVariantId.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingVariantId.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetABTestingVariantId.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetRemoteConfigsValueAsString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetRemoteConfigsValueAsString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetRemoteConfigsValueAsString.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/GetRemoteConfigsValueAsString.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/IsRemoteConfigsReady.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/IsRemoteConfigsReady.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/IsRemoteConfigsReady.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/IsRemoteConfigsReady.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendAdEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendAdEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendAdEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendAdEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendBusinessEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendBusinessEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendBusinessEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendBusinessEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendDesignEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendDesignEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendDesignEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendDesignEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendErrorEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendErrorEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendErrorEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendErrorEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendProgressionEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendProgressionEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendProgressionEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendProgressionEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendResourceEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendResourceEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendResourceEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SendResourceEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SetCustomDimension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SetCustomDimension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SetCustomDimension.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/SetCustomDimension.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs/GameAnalytics.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs/GameAnalytics.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs/GameAnalytics.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Prefabs/GameAnalytics.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/GameAnalytics.SamsungTV.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/GameAnalytics.SamsungTV.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/GameAnalytics.SamsungTV.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/GameAnalytics.SamsungTV.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/Mono.Data.Sqlite.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/Mono.Data.Sqlite.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.c.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.c.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/SamsungTV/sqlite3.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTClient.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTClient.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTObjCBridge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTObjCBridge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTObjCBridge.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ATT/GameAnalyticsATTObjCBridge.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Enums.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Enums.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Enums.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GAValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GAValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GAValidator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GAValidator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Ads.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Ads.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Ads.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Ads.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Business.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Business.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Business.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Business.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Debug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Debug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Debug.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Debug.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Design.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Design.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Design.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Design.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Error.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Error.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Error.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Error.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Progression.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Progression.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Progression.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Progression.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Resource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Resource.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Resource.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Setup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Setup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Setup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_Setup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_SpecialEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_SpecialEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_SpecialEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Events/GA_SpecialEvents.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/IGameAnalyticsATTListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/IGameAnalyticsATTListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/IGameAnalyticsATTListener.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/IGameAnalyticsATTListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/GameAnalyticsILRD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/GameAnalyticsILRD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/IronSource.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/IronSource.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/IronSource/GAIronSourceIntegration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/IronSource/GAIronSourceIntegration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/IronSource/GAIronSourceIntegration.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/ILRD/IronSource/GAIronSourceIntegration.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup/Settings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Setup/Settings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/State.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/State.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/State/GAState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/State/GAState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/State/GAState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/State/GAState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Utilities.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Utilities.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Utilities/GA_MiniJson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Utilities/GA_MiniJson.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Utilities/GA_MiniJson.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Utilities/GA_MiniJson.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_AndroidWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_AndroidWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_AndroidWrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_AndroidWrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_MonoWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_MonoWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_MonoWrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_MonoWrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_TizenWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_TizenWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_TizenWrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_TizenWrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_UWPWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_UWPWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_UWPWrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_UWPWrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_WebGLWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_WebGLWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_WebGLWrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_WebGLWrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_Wrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_Wrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_Wrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_Wrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_iOSWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_iOSWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_iOSWrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_iOSWrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_tvOSWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_tvOSWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_tvOSWrapper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/Wrapper/GA_tvOSWrapper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen/libGameAnalytics.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen/libGameAnalytics.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen/libGameAnalytics.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Tizen/libGameAnalytics.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/ARM.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/ARM.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/ARM/GameAnalytics.UWP.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/ARM/GameAnalytics.UWP.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/ARM/GameAnalytics.UWP.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/ARM/GameAnalytics.UWP.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x64.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x64.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x64/GameAnalytics.UWP.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x64/GameAnalytics.UWP.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x64/GameAnalytics.UWP.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x64/GameAnalytics.UWP.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x86.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x86.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x86/GameAnalytics.UWP.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x86/GameAnalytics.UWP.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x86/GameAnalytics.UWP.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WSA/x86/GameAnalytics.UWP.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalytics.jspre" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalytics.jspre" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalytics.jspre.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalytics.jspre.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalyticsUnity.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalyticsUnity.jslib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalyticsUnity.jslib.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/WebGL/GameAnalyticsUnity.jslib.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x64.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x64.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x64/sqlite3.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x64/sqlite3.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x86.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x86.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x86/sqlite3.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Windows/x86/sqlite3.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalytics.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalytics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalytics.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalytics.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsATTObjCBridge.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsHyperBidHelper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsHyperBidHelper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsHyperBidHelper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsHyperBidHelper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsTopOnHelper.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsTopOnHelper.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsTopOnHelper.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsTopOnHelper.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsUnity.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsUnity.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsUnity.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/GameAnalyticsUnity.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/libGameAnalytics.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/libGameAnalytics.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/libGameAnalytics.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/iOS/libGameAnalytics.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOS.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/GameAnalyticsTVOSUnity.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/tvOS/libGameAnalyticsTVOS.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Readme.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Readme.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemo.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemo.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemoScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemoScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemoScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/IronSourceDemoScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/DemoScene/logo_small.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/DemoScene/logo_small.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IAdapterSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IAdapterSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IAdapterSettings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IAdapterSettings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAdColonyAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAdColonyAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAdMobAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAppLovinAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISAppLovinAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISFacebookAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISFacebookAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISPangleAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISPangleAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISTapJoyAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISTapJoyAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISUnityAdsAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/ISVungleAdapterDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/ISVungleAdapterDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceBuildPostprocessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceBuildPostprocessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceBuildPostprocessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceBuildPostprocessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceDependenciesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceDependenciesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceDependenciesManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceDependenciesManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceEditorCoroutines.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceEditorCoroutines.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceEditorCoroutines.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceEditorCoroutines.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceManifestProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceManifestProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceManifestProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceManifestProcessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettingsInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettingsInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettingsInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediatedNetworkSettingsInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediationSettingsInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediationSettingsInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediationSettingsInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMediationSettingsInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourcePlistProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourcePlistProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourcePlistProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourcePlistProcessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceSDKDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceSDKDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceSDKDependencies.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSourceSDKDependencies.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSource_IntegrationManager.unitypackage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Editor/IronSource_IntegrationManager.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/AndroidManifest.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/AndroidManifest.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs/android-bridge.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs/android-bridge.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs/android-bridge.jar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/libs/android-bridge.jar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/project.properties.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/Android/IronSource.plugin/project.properties.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/IronSourceUnityConfig.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/IronSourceUnityConfig.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/IronSourceUnityConfig.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/IronSourceUnityConfig.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.h.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.h.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.m" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Plugins/iOS/iOSBridge.m.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/AndroidAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/AndroidAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/AndroidAgent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/AndroidAgent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityBanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityBanner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityBanner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityBanner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityImpressionData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityImpressionData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityImpressionData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityImpressionData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInitialization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInitialization.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInitialization.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInterstitial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInterstitial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInterstitial.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityInterstitial.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityOfferwall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityOfferwall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityOfferwall.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityOfferwall.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideoManual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideoManual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideoManual.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnityRewardedVideoManual.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnitySegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnitySegment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnitySegment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IUnitySegment.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceBannerAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceBannerAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceBannerAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceBannerAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConstants.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceConstants.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceError.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceError.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceError.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceError.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEvents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEvents.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEventsDispatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEventsDispatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEventsDispatcher.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceEventsDispatcher.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceIAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceIAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceIAgent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceIAgent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionDataAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionDataAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionDataAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceImpressionDataAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitializationAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitializationAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitializationAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitializationAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitilizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitilizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitilizer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInitilizer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInterstitialAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInterstitialAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInterstitialAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceInterstitialAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceJSON.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceJSON.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceJSON.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceJSON.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceMediationSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceMediationSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceMediationSettings.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceMediationSettings.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceOfferwallAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceOfferwallAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceOfferwallAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceOfferwallAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoManualAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoManualAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoManualAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceRewardedVideoManualAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegment.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegmentAndroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegmentAndroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegmentAndroid.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceSegmentAndroid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceUtils.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourceUtils.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/UnsupportedPlatformAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/UnsupportedPlatformAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/UnsupportedPlatformAgent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/UnsupportedPlatformAgent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/iOSAgent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/iOSAgent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IronSource/Scripts/iOSAgent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IronSource/Scripts/iOSAgent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.browser.browser-1.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.browser.browser-1.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.media.media-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.media.media-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.startup.startup-runtime-1.0.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.work.work-runtime-2.7.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.adcolony.sdk-4.6.5.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.adcolony.sdk-4.6.5.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.android.installreferrer.installreferrer-1.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.android.installreferrer.installreferrer-1.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.applovin.applovin-sdk-10.3.5.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.applovin.applovin-sdk-10.3.5.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.facebook.android.audience-network-sdk-6.8.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.facebook.android.audience-network-sdk-6.8.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.facebook.android.facebook-common-11.3.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.facebook.android.facebook-common-11.3.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.facebook.android.facebook-core-11.3.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.facebook.android.facebook-core-11.3.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.datatransport.transport-backend-cct-3.1.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.datatransport.transport-backend-cct-3.1.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.datatransport.transport-runtime-3.1.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.datatransport.transport-runtime-3.1.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-20.5.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-20.5.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-20.5.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-20.5.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-18.0.1.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-18.0.1.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-20.5.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-20.5.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-appset-16.0.2.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-appset-16.0.2.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-base-18.0.1.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-base-18.0.1.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-18.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-18.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-api-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-api-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-impl-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-impl-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-stats-17.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-stats-17.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-18.0.1.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-18.0.1.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-analytics-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-analytics-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-analytics-unity-8.8.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-analytics-unity-8.8.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-app-unity-8.8.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-app-unity-8.8.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-common-20.0.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-common-20.0.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-common-20.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-common-20.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-18.2.7.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-18.2.7.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-ndk-18.2.7.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-ndk-18.2.7.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-ndk-18.2.7.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-ndk-18.2.7.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-unity-8.8.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-crashlytics-unity-8.8.0.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-installations-17.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-installations-17.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-installations-interop-17.0.0.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.firebase.firebase-installations-interop-17.0.0.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.guava.listenablefuture-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.guava.listenablefuture-1.0.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.adcolonyadapter-4.3.10.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.adcolonyadapter-4.3.10.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.admobadapter-4.3.26.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.admobadapter-4.3.26.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.applovinadapter-4.3.29.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.applovinadapter-4.3.29.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.facebookadapter-4.3.34.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.facebookadapter-4.3.34.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.pangleadapter-4.3.10.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.pangleadapter-4.3.10.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.tapjoyadapter-4.1.19.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.tapjoyadapter-4.1.19.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.unityadsadapter-4.3.20.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.unityadsadapter-4.3.20.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.vungleadapter-4.3.15.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.adapters.vungleadapter-4.3.15.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.sdk.mediationsdk-7.2.1.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.ironsource.sdk.mediationsdk-7.2.1.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.pangle.global.ads-sdk-4.1.1.9.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.pangle.global.ads-sdk-4.1.1.9.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.pangle.global.crash_monitor-1.3.8.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.pangle.global.crash_monitor-1.3.8.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.pangle.global.encryptor-0.0.9-rc.2-private.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.pangle.global.encryptor-0.0.9-rc.2-private.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.okhttp-3.12.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okhttp3.okhttp-3.12.12.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okio.okio-1.15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.squareup.okio.okio-1.15.0.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.tapjoy.tapjoy-android-sdk-12.8.1.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.tapjoy.tapjoy-android-sdk-12.8.1.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.unity3d.ads.unity-ads-4.0.1.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.unity3d.ads.unity-ads-4.0.1.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.vungle.publisher-sdk-android-6.10.4.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.vungle.publisher-sdk-android-6.10.4.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-android-extensions-runtime-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-android-extensions-runtime-1.5.10.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-1.5.10.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-common-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/org.jetbrains.kotlin.kotlin-stdlib-common-1.5.10.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Loader.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Loader.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveKeys.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ToDoList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ToDoList.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,93 +470,93 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/MoneyAdsButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/TextDataProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Editor/Build/DataBuilders/BuildScriptPackedPlayMode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Editor/Build/DataBuilders/BuildScriptVirtualMode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_CollisionModule.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Editor/BEditorUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/SettingsUtils/Editor/LoadSettingsData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/SceneProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Editor/Build/DataBuilders/BuildScriptFastMode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Magic Light Probes/MagicLightProbes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Playables/ControlPlayableInspector.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/ItemHolder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Magic Light Probes/MLPQuickEditing.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledGUI/Editor/DrawInspectorBanner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Utilities/GameWallet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyBrickHouses/Editor/ModelCustomizerInspector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ListType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/LegacyResourcesProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIIconLoopRotateAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Tests/Runtime/AddressablesIntegrationTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/AssetBundleProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3Reader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Utils/Editor/BoxophobicUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Tests/Runtime/AddressablesTestFixture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3JSONReader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Tests/Runtime/AddressablesTestUtilities.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipRotation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Camera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Text.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Managers/GameAnalyticsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/CGIncludes/VS_indirect.cginc" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/living birds/scripts/lb_Bird.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SlapController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/Initialization/InitializationObjectsOperation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HitPower.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_PolygonCollider2D.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_CoroutineTween.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/Addressables.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyShaders/Shaders/LowPolyPBRShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/AddressablesImpl.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Shaders/Unlit Prototype Ground.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditor/SpriteEditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Shaders/SimpleLit Prototype Terrain.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LayerMask.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3Window.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/CoinManager.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditor/SpriteUtilityWindow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Texture2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Editor/BEditorUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Readers/ES3JSONReader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HitPower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StringKeys.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Utilities/GameWallet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Magic Light Probes/MLPQuickEditing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonStateAnimation0.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/Utils/Editor/BoxophobicUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/living birds/scripts/lb_Bird.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_CoroutineTween.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/Simulation/VirtualAssetBundle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3GlobalReferencesEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Magic Light Probes/MagicLightProbes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Tests/Runtime/AddressablesTestUtilities.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3ReferenceMgrBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/Simulation/VirtualAssetBundleProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Drawers/Editor/BLayersEnumAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MobileColorGrading/Shaders/MobileColorGrading.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonStateAnimation0.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_CollisionModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIIconLoopRotateAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/CrashlyticsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FacebookSDK/Examples/Scripts/ConsoleBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PolygonFantasyHeroCharacters/Scripts/CharacterRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/StyledGUI/Editor/DrawInspectorBanner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Text.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IronSource/Scripts/IronSourcePlacement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_Camera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/Component Types/ES3Type_PolygonCollider2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Editor/Build/DataBuilders/BuildScriptFastMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RewardManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/MoneyAdsButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SlapController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Shaders/Unlit Prototype Ground.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/CoinManager.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Editor/Build/DataBuilders/BuildScriptPackedPlayMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Drawers/Editor/BLayersEnumAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Playables/ControlPlayableInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Editor/Build/DataBuilders/BuildScriptVirtualMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character Customization Template/Scripts/Customisation/UI/ItemHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditor/SpriteUtilityWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@2.0.7/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditor/SpriteEditorWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_Texture2D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Primitive Types/ES3Type_double.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyCustomBuildProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/Initialization/InitializationObjectsOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Legacy/Shaders/SimpleLit Prototype Terrain.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/Scripts/SettingsUtils/Editor/LoadSettingsData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IronSource/Scripts/IronSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/IronSourceManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BOXOPHOBIC/Utils/CGIncludes/VS_indirect.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/TimelineTreeView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Unity Types/ES3Type_LayerMask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Tests/Runtime/AddressablesIntegrationTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/Addressables.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/AssetBundleProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyShaders/Shaders/LowPolyPBRShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Scripts/GameAnalytics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Managers/GameAnalyticsInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Editor/ES3GlobalReferencesEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/TextDataProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/SceneProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/Types/Collection Types/ES3ListType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BrokenVector/LowPolyBrickHouses/Editor/ModelCustomizerInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyCustomBuildProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.18.19/Runtime/ResourceManager/ResourceProviders/LegacyResourcesProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -129,6 +566,9 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="22akDpqsKcJDIcMhvBXsJfQENbK" />
   <component name="ProjectViewState">
@@ -143,7 +583,12 @@
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="do_not_show_Android_plugin_suggestion" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -152,16 +597,24 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -211,12 +664,14 @@
       <workItem from="1646649917554" duration="1107000" />
       <workItem from="1646655626949" duration="3707000" />
       <workItem from="1646763552890" duration="872000" />
+      <workItem from="1654611211605" duration="12592000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,9 +679,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -234,15 +687,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="299" y="116" width="762" height="536" key="find.popup" timestamp="1646763766551">
-      <screen x="0" y="0" width="1360" height="768" />
-    </state>
-    <state x="299" y="116" width="762" height="536" key="find.popup/0.0.1360.768@0.0.1360.768" timestamp="1646763766551" />
-    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1646662177622">
-      <screen x="0" y="0" width="1360" height="768" />
-    </state>
-    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1360.768/1360.0.1920.1080@0.0.1360.768" timestamp="1646662177622" />
   </component>
 </project>

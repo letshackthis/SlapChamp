@@ -31,7 +31,6 @@ namespace Customisation.UI
             ItemHolderSelector.OnHide?.Invoke();
             CameraViewChanger.OnCameraViewChange?.Invoke(ItemType.None);
             Hide();
-            GameAnalytics.NewDesignEvent("CLOSE_OPTION",0);
         }
 
         private void OnDestroy()
@@ -43,7 +42,6 @@ namespace Customisation.UI
         {
             if (obj)
             {
-                GameAnalytics.NewDesignEvent("CLOSE_OPTION",1);
                 ItemHolderSelector.OnHide?.Invoke();
                 CameraViewChanger.OnCameraViewChange?.Invoke(ItemType.None);
                 Hide();

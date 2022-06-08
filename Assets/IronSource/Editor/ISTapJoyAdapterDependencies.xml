@@ -1,21 +1,21 @@
 <dependencies>
-<unityversion>4.1.23.5</unityversion>
+<unityversion>4.1.24.2</unityversion>
     <androidPackages>
-    <androidPackage spec="com.ironsource.adapters:tapjoyadapter:4.1.19">
+    <androidPackage spec="com.ironsource.adapters:tapjoyadapter:4.1.20">
       <repositories>
           <repository>https://android-sdk.is.com/</repository>
       </repositories>
     </androidPackage>
   </androidPackages>
     <androidPackages>
-       <androidPackage spec="com.tapjoy:tapjoy-android-sdk:12.8.1@aar">
+       <androidPackage spec="com.tapjoy:tapjoy-android-sdk:12.9.1">
          <repositories>
              <repository>https://sdk.tapjoy.com/</repository>
          </repositories>
        </androidPackage>
      </androidPackages>
   <iosPods>
-    <iosPod name="IronSourceTapjoyAdapter" version="4.1.18.7">
+    <iosPod name="IronSourceTapjoyAdapter" version="4.1.19.2">
       <sources>
         <source>https://github.com/CocoaPods/Specs</source>
       </sources>

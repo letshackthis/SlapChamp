@@ -39,7 +39,7 @@ public static class GameWallet
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
     public static void Initialize()
     {
-        currentMoney = ES3.Load(Customisation.SaveKeys.Money,40);
+        currentMoney = ES3.Load(Customisation.SaveKeys.Money,50);
         currentBlueprint = ES3.Load(Customisation.SaveKeys.Blueprint,2);
     }
 

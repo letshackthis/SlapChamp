@@ -19,6 +19,7 @@ public class SoundManager : Singleton<SoundManager>
     protected override void Awake()
     {
         base.Awake();
+        aSource = GetComponent<AudioSource>();
         DontDestroyOnLoad(this);
         CheckSounds();
         OnSoundCheck += CheckSounds;
@@ -47,6 +48,9 @@ public class SoundManager : Singleton<SoundManager>
                 fire.Stop();
                 rainController.Stop();
             }
+            
+            city.Stop();
+            aSource.Stop();
         }
         else if (SceneManager.GetActiveScene().name == "Level1")
         {
@@ -73,12 +77,7 @@ public class SoundManager : Singleton<SoundManager>
             music.Stop();
         }
     }
-
-    void Start()
-    {
-        aSource = GetComponent<AudioSource>();
-    }
-
+    
     public void PlaySound(string name)
     {
         if (ES3.Load("sound", true) == false)

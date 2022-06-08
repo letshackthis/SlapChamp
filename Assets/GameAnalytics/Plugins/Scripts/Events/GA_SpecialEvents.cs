@@ -29,24 +29,54 @@ namespace GameAnalyticsSDK.Events
 
         private static int _criticalFpsCount = 0;
 
+        private static int _fpsWaitTimeMultiplier = 1;
+        private static float _lastPauseStartTime;
+        private static float _pauseDurationAvg;
+        private static float _pauseDurationCrit;
+
         #endregion
 
         #region unity derived methods
 
         public void Start ()
         {
-            DontDestroyOnLoad(this);
             StartCoroutine(SubmitFPSRoutine());
             StartCoroutine(CheckCriticalFPSRoutine());
+        }
+
+        private void OnApplicationPause(bool pauseStatus)
+        {
+            if (GameAnalytics.SettingsGA == null
+                || !GameAnalytics.SettingsGA.SubmitFpsAverage && !GameAnalytics.SettingsGA.SubmitFpsCritical)
+            {
+                return;
+            }
             
-            GameAnalyticsILRD.SubscribeIronSourceImpressions();
+            if (pauseStatus)
+            {
+                _lastPauseStartTime = Time.realtimeSinceStartup;
+            }
+            else
+            {
+                if (GameAnalytics.SettingsGA.SubmitFpsAverage)
+                {
+                    _pauseDurationAvg += Time.realtimeSinceStartup - _lastPauseStartTime;
+                }
+
+                if (GameAnalytics.SettingsGA.SubmitFpsCritical)
+                {
+                    _pauseDurationCrit += Time.realtimeSinceStartup - _lastPauseStartTime;
+                }
+            }
         }
 
         private IEnumerator SubmitFPSRoutine()
         {
             while(Application.isPlaying && GameAnalytics.SettingsGA != null &&  GameAnalytics.SettingsGA.SubmitFpsAverage)
             {
-                yield return new WaitForSeconds(30);
+                int waitingTime = 30 * _fpsWaitTimeMultiplier;
+                yield return new WaitForSecondsRealtime(waitingTime);
+                _fpsWaitTimeMultiplier *= 2;
                 SubmitFPS();
             }
         }
@@ -55,7 +85,7 @@ namespace GameAnalyticsSDK.Events
         {
             while(Application.isPlaying && GameAnalytics.SettingsGA != null &&  GameAnalytics.SettingsGA.SubmitFpsCritical)
             {
-                yield return new WaitForSeconds(GameAnalytics.SettingsGA.FpsCirticalSubmitInterval);
+                yield return new WaitForSecondsRealtime(GameAnalytics.SettingsGA.FpsCirticalSubmitInterval);
                 CheckCriticalFPS();
             }
         }
@@ -80,7 +110,8 @@ namespace GameAnalyticsSDK.Events
             //average FPS
             if (GameAnalytics.SettingsGA != null && GameAnalytics.SettingsGA.SubmitFpsAverage)
             {
-                float timeSinceUpdate = Time.unscaledTime - _lastUpdateAvg;
+                float timeSinceUpdate = Time.unscaledTime - _lastUpdateAvg - _pauseDurationAvg;
+                _pauseDurationAvg = 0f;
 
                 if (timeSinceUpdate > 1.0f)
                 {
@@ -110,7 +141,8 @@ namespace GameAnalyticsSDK.Events
             //critical FPS
             if (GameAnalytics.SettingsGA != null && GameAnalytics.SettingsGA.SubmitFpsCritical)
             {
-                float timeSinceUpdate = Time.unscaledTime - _lastUpdateCrit;
+                float timeSinceUpdate = Time.unscaledTime - _lastUpdateCrit - _pauseDurationCrit;
+                _pauseDurationCrit = 0f;
 
                 if (timeSinceUpdate >= 1.0f)
                 {

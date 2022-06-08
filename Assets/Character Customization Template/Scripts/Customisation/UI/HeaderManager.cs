@@ -1,5 +1,6 @@
 using System;
 using Customisation.SO;
+using GameAnalyticsSDK;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -57,6 +58,8 @@ namespace Customisation.UI
             blueprintText.text = GameWallet.Blueprint.ToString();
             
             SoundManager.OnSoundCheck?.Invoke();
+            
+            GameAnalytics.NewDesignEvent("main_menu");
         }
 
         private void OnLoadCharacterData(CharacterLoadSave obj)

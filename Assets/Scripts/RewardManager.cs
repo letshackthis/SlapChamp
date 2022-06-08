@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using GameAnalyticsSDK;
 using Managers;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,10 +33,17 @@ public class RewardManager : MonoBehaviour
 
     private void AddCoins()
     {
-        Debug.Log("AddCoins");
+        
+        Dictionary<string, object> fields = new Dictionary<string, object>();
+        fields.Add("placement", "LEVEL_REWARD_COINS");
+        GameAnalytics.NewDesignEvent("rewarded_start", fields); 
+        
         IronSourceManager.Instance.CallReward(RewardPlacement.REWARD_COINS.ToString(), () =>
         {
-            Debug.Log("Added");
+            Dictionary<string, object> fields = new Dictionary<string, object>();
+            fields.Add("placement", "LEVEL_REWARD_COINS");
+            GameAnalytics.NewDesignEvent("rewarded_shown", fields); 
+            
             gameObject.SetActive(false);
             GameWallet.Money += (50 * level);
         });

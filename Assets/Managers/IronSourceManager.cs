@@ -41,12 +41,14 @@ namespace Managers
             if (!IronSource.Agent.isRewardedVideoAvailable())
             {
                 IronSource.Agent.loadRewardedVideo();
-                GameAnalytics.NewAdEvent(GAAdAction.FailedShow, GAAdType.RewardedVideo, "ironsource", placement);
+          
             }
             else
             {
                 IronSource.Agent.showRewardedVideo(placement);
             }
+            
+            
 
 #if UNITY_EDITOR
             tempReward();
@@ -63,14 +65,18 @@ namespace Managers
             if (!IronSource.Agent.isInterstitialReady())
             {
                 IronSource.Agent.loadInterstitial();
-                GameAnalytics.NewAdEvent(GAAdAction.FailedShow, GAAdType.Interstitial, "ironsource", placement);
             }
             else
             {
-                IronSource.Agent.showInterstitial(placement);
-                GameAnalytics.NewAdEvent(GAAdAction.Show, GAAdType.Interstitial, "ironsource", placement);
-            }
+                Dictionary<string, object> fields = new Dictionary<string, object>();
                 
+                fields.Add("placement", placement);
+                GameAnalytics.NewDesignEvent("interstitial_start", fields); 
+                
+                IronSource.Agent.showInterstitial(placement);
+            }
+            
+            
         }
 
         public void Start()
@@ -153,7 +159,7 @@ namespace Managers
             Debug.Log("unity-script: I got RewardedVideoAdRewardedEvent, amount = " + ssp.getRewardAmount() +
                       " name = " + ssp.getRewardName());
             Debug.Log("Reward for placement " + ssp.getPlacementName());
-            GameAnalytics.NewAdEvent(GAAdAction.Show, GAAdType.RewardedVideo, "ironsource", ssp.getPlacementName());
+           // GameAnalytics.NewAdEvent(GAAdAction.Show, GAAdType.RewardedVideo, "ironsource", ssp.getPlacementName());
             tempReward?.Invoke();
         }
 

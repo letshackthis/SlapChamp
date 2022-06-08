@@ -29,8 +29,8 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
-    - Assembly-CSharp
     - MoreMountains.Feedbacks
+    - Assembly-CSharp
     - Assembly-CSharp-firstpass
     - StompyRobot.SRF
     - MoreMountains.NiceVibrations.Haptics

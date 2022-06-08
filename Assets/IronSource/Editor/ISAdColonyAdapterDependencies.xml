@@ -1,7 +1,7 @@
 <dependencies>
-    <unityversion>4.3.15.4</unityversion>
+    <unityversion>4.3.17</unityversion>
   <androidPackages>
-    <androidPackage spec="com.adcolony:sdk:4.6.5">
+    <androidPackage spec="com.adcolony:sdk:4.7.1">
       <repositories>
           <repository>https://maven.google.com/</repository>
       </repositories>
@@ -9,7 +9,7 @@
   </androidPackages>
 
     <androidPackages>
-    <androidPackage spec="com.ironsource.adapters:adcolonyadapter:4.3.10">
+    <androidPackage spec="com.ironsource.adapters:adcolonyadapter:4.3.12">
       <repositories>
         <repository>https://android-sdk.is.com/</repository>
       </repositories>
@@ -17,7 +17,7 @@
   </androidPackages>
 
   <iosPods>
-    <iosPod name="IronSourceAdColonyAdapter" version="4.3.12.4">
+    <iosPod name="IronSourceAdColonyAdapter" version="4.3.14.0">
       <sources>
         <source>https://github.com/CocoaPods/Specs</source>
       </sources>

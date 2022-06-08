@@ -16,4 +16,4 @@ MonoBehaviour:
   unlockName: BUY FOR COINS
   unlockButtonText: BUY
   characterChannel: {fileID: 11400000, guid: 6bc76221ffc11fa4d98d35e81653ee9e, type: 2}
-  moneyAmount: 100
+  moneyAmount: 250

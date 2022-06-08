@@ -1,4 +1,5 @@
-﻿using GameAnalyticsSDK;
+﻿using System.Collections.Generic;
+using GameAnalyticsSDK;
 using Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,7 @@ public class LevelManager : Singleton<LevelManager>
     [SerializeField] private AddBluePrint addBluePrint;
     public static bool bonusLevel;
 
+    private float timeSpent;
     private bool isOnline;
     protected override void Awake()
     {
@@ -24,27 +26,33 @@ public class LevelManager : Singleton<LevelManager>
 
     void Start()
     {
+        timeSpent = 0;
         nextLevelButton.onClick.AddListener(NextLevel);
         retryLevelButton.onClick.AddListener(RetryLevel);
 
         if (bonusLevel)
         {
-           // vsTextUI.fontSize = 60;
-           // vsTextUI.text = "BONUS";
+            // vsTextUI.fontSize = 60;
+            // vsTextUI.text = "BONUS";
             levelTextUI.text = "LEVEL";
         }
         else
         {
             Debug.Log(ES3.Load(StringKeys.level, 1));
             levelTextUI.text = "LEVEL " + ES3.Load(StringKeys.level, 1).ToString();
-           // vsTextUI.text = "VS";
-           // vsTextUI.fontSize = 100;
+            // vsTextUI.text = "VS";
+            // vsTextUI.fontSize = 100;
         }
-        
+
         isOnline = ES3.Load(SaveKeys.IsOnline, false);
 
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "Map0", "LEVEL_" + ES3.Load(StringKeys.level, 1),
-            isOnline ? "ONLINE" : "OFFLINE", GameWallet.Money);
+        // GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "Map0", "LEVEL_" + ES3.Load(StringKeys.level, 1),
+        //     isOnline ? "ONLINE" : "OFFLINE", GameWallet.Money);
+
+        Dictionary<string, object> fields = new Dictionary<string, object>();
+        fields.Add("level", ES3.Load(StringKeys.level, 1));
+        
+        GameAnalytics.NewDesignEvent ("level_start", fields);
     }
 
     private void FixedUpdate()
@@ -58,6 +66,11 @@ public class LevelManager : Singleton<LevelManager>
         {
             gameManager.playerLoose = false;
             Fail();
+        }
+
+        if (!gameManager.playerLoose)
+        {
+            timeSpent += Time.fixedTime;
         }
     }
 
@@ -75,7 +88,15 @@ public class LevelManager : Singleton<LevelManager>
         IronSourceManager.Instance.CallInterstitial(InterstitialPlacement.LEVEL_FINISHED.ToString());
         var sceneName = SceneManager.GetActiveScene().name;
         
+        
+        Dictionary<string, object> fields = new Dictionary<string, object>();
+        fields.Add("level", ES3.Load(StringKeys.level, 1));
+        
+        GameAnalytics.NewDesignEvent("restart", fields); 
+        
         Loader.OnLoadScene?.Invoke(ES3.Load(SaveKeys.IsOnline,false),"Level1");
+        
+        
     }
 
     private void Win()
@@ -100,8 +121,14 @@ public class LevelManager : Singleton<LevelManager>
         fail.SetActive(true);
         SoundManager.Instance.PlaySound("fail");
         GameWallet.Money += GetCoinsToAdd(10);
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "Map0", "LEVEL_" + ES3.Load(StringKeys.level, 1),
-            isOnline ? "ONLINE" : "OFFLINE", GameWallet.Money);
+
+        int currentLevel = ES3.Load(StringKeys.level, 1);
+        
+        Dictionary<string, object> fields = new Dictionary<string, object>();
+        fields.Add("level", currentLevel);
+        fields.Add("time_spent", (int) timeSpent);
+
+        GameAnalytics.NewDesignEvent("fail", fields);
     }
 
     private int GetCoinsToAdd(int multiplier)

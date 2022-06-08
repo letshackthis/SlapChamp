@@ -61,8 +61,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ParticleSystem hpParticles;
     [SerializeField] private ParticleSystem powerParticles;
 
+    private float timeSpent;
     private void Awake()
     {
+        timeSpent = 0;
         Initialization();
         CheckHealthButton();
         CheckPowerButton();
@@ -81,6 +83,11 @@ public class GameManager : MonoBehaviour
         playerHealthText.text = playerHealth.ToString();
         maxHealhEnemy = enemyHealth;
         maxHealhPlayer = playerHealth;
+    }
+
+    private void Update()
+    {
+        timeSpent += Time.deltaTime;
     }
 
     public void EnemyAttackPower()
@@ -163,9 +170,14 @@ public class GameManager : MonoBehaviour
                 ES3.Save(StringKeys.level, nextLevel);
             }
 
-            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Map0",
-                "LEVEL_" + ES3.Load(StringKeys.level, 1),
-                isOnline ? "ONLINE" : "OFFLINE", GameWallet.Money);
+            
+            int currentLevel = ES3.Load(StringKeys.level, 1);
+        
+            Dictionary<string, object> fields = new Dictionary<string, object>();
+            fields.Add("level", currentLevel);
+            fields.Add("time_spent", (int) timeSpent);
+
+            GameAnalytics.NewDesignEvent("level_complete", fields);
         }
         else
         {
@@ -218,7 +230,23 @@ public class GameManager : MonoBehaviour
             ES3.Save(StringKeys.playerMaxHealth, playerHealth);
             bonusHealthValue += 1;
             ES3.Save(StringKeys.bonusHealth, bonusHealthValue);
-            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "coin", healthPrice, "Upgrade", "Health");
+          //  GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "coin", healthPrice, "Upgrade", "Health");
+            
+            int currentSoftSpentCount = ES3.Load(global::SaveKeys.SoftSpentCount, 0);
+            currentSoftSpentCount++;
+            ES3.Save(global::SaveKeys.SoftSpentCount, currentSoftSpentCount);
+                
+            Dictionary<string, object> fields = new Dictionary<string, object>();
+                
+            fields.Add("type", "Upgrade");
+            fields.Add("currency", "coin");
+            fields.Add("name", "Health");
+            fields.Add("amount", healthPrice);
+            fields.Add("count", currentSoftSpentCount);
+        
+            GameAnalytics.NewDesignEvent("soft_spent", fields); 
+            
+            
             healthPrice += 50;
             ES3.Save(StringKeys.healthPrice, healthPrice);
             Initialization();
@@ -237,7 +265,25 @@ public class GameManager : MonoBehaviour
             ES3.Save(StringKeys.playerMaxPower, playerPower);
             bonusHealthValue += 1;
             ES3.Save(StringKeys.bonusPower, bonusPowerValue);
-            GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "coin", powerPrice, "Upgrade", "Power");
+           // GameAnalytics.NewResourceEvent(GAResourceFlowType.Source, "coin", powerPrice, "Upgrade", "Power");
+            
+            int currentSoftSpentCount = ES3.Load(global::SaveKeys.SoftSpentCount, 0);
+            currentSoftSpentCount++;
+            ES3.Save(global::SaveKeys.SoftSpentCount, currentSoftSpentCount);
+                
+            Dictionary<string, object> fields = new Dictionary<string, object>();
+                
+            fields.Add("type", "Upgrade");
+            fields.Add("currency", "coin");
+            fields.Add("name", "Power");
+            fields.Add("amount", powerPrice);
+            fields.Add("count", currentSoftSpentCount);
+        
+            GameAnalytics.NewDesignEvent("soft_spent", fields); 
+            
+            
+            
+            
             powerPrice += 50;
             ES3.Save(StringKeys.powerPrice, powerPrice);
             Initialization();
